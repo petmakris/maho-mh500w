@@ -1,0 +1,23 @@
+# MAHO INPUTS / LINUXCNC OUTPUTS - 19X6
+
+# net output-1-handwheel-x
+# net output-2-handwheel-z
+# net output-3-handwheel-y
+
+# net output-4-spindle-cw
+# net output-5-spindle-ccw
+
+# net output-6-coolant-pump
+# net output-7-tool-change
+# net output-8-lubricant
+
+# MAHO OUTPUTS / LINUXCNC INPUTS - 19X7 
+
+# net input-1-handwheel-x
+# net input-2-handwheel-z
+# net input-3-handwheel-y
+
+# net input-4-pwr-ok
+# net input-5-not-estop
+# net input-6-not-spindle-halt 
+# net input-7-pump

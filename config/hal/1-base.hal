@@ -1,0 +1,31 @@
+# kinematics
+loadrt [KINS](KINEMATICS)
+
+# motion controller
+loadrt [EMCMOT](EMCMOT) servo_period_nsec=[EMCMOT](SERVO_PERIOD) num_joints=[KINS](JOINTS)
+
+# standard components
+loadrt pid num_chan=3 debug=1
+
+# hostmot2 driver
+loadrt hostmot2
+
+loadrt [HM2](DRIVER) board_ip=[HM2](IPADDRESS) 
+setp hm2_7i97.0.watchdog.timeout_ns 5000000
+
+# THREADS
+addf hm2_7i97.0.read servo-thread
+addf motion-command-handler servo-thread
+addf motion-controller servo-thread
+addf pid.0.do-pid-calcs servo-thread
+addf pid.1.do-pid-calcs servo-thread
+addf pid.2.do-pid-calcs servo-thread
+
+addf hm2_7i97.0.write servo-thread
+
+# DPLL TIMER
+setp hm2_7i97.0.dpll.01.timer-us -50
+
+# PWM FREQUENCY
+# setp hm2_7i97.0.pwmgen.pwm_frequency 48000
+
