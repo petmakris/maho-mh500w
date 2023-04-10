@@ -1,0 +1,116 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 6b7450d6-3952-419a-ab30-dcf88fa68fd4)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 186.69 69.85) (size 35.56 15.24) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 02d242bf-6dbf-4d5d-8cc6-9f47b3a7e77a)
+    (property "Sheetname" "PWR" (at 186.69 69.1384 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "PWR.kicad_sch" (at 186.69 85.6746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "retrofit"
+        (path "/6b7450d6-3952-419a-ab30-dcf88fa68fd4" (page "6"))
+      )
+    )
+  )
+
+  (sheet (at 144.78 69.85) (size 34.29 15.24) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 0fa57f27-1733-4bf7-9419-ce52913b1a5e)
+    (property "Sheetname" "MAHO Inputs" (at 144.78 69.1384 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "MAHO_Inputs.kicad_sch" (at 144.78 85.6746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "retrofit"
+        (path "/6b7450d6-3952-419a-ab30-dcf88fa68fd4" (page "4"))
+      )
+    )
+  )
+
+  (sheet (at 104.14 95.25) (size 34.29 15.24) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 1b567c02-cc80-47cd-8b0e-9062627a7795)
+    (property "Sheetname" "Servos" (at 104.14 94.5384 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Servos.kicad_sch" (at 104.14 111.0746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "retrofit"
+        (path "/6b7450d6-3952-419a-ab30-dcf88fa68fd4" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 186.69 95.25) (size 35.56 15.24) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 76cff72e-dba5-42e7-a794-44db4507511d)
+    (property "Sheetname" "RS485" (at 186.69 94.5384 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "RS485.kicad_sch" (at 186.69 111.0746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "retrofit"
+        (path "/6b7450d6-3952-419a-ab30-dcf88fa68fd4" (page "7"))
+      )
+    )
+  )
+
+  (sheet (at 144.78 95.25) (size 34.29 15.24) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 7b0607c3-4517-45e8-9fcd-3553c3425125)
+    (property "Sheetname" "MAHO Outputs" (at 144.78 94.5384 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "MAHO_Outputs.kicad_sch" (at 144.78 111.0746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "retrofit"
+        (path "/6b7450d6-3952-419a-ab30-dcf88fa68fd4" (page "5"))
+      )
+    )
+  )
+
+  (sheet (at 104.14 69.85) (size 34.29 15.24) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid de96b768-dd42-4f17-8d2c-c018d1fd3afc)
+    (property "Sheetname" "Encoders" (at 104.14 69.1384 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Encoders.kicad_sch" (at 104.14 85.6746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "retrofit"
+        (path "/6b7450d6-3952-419a-ab30-dcf88fa68fd4" (page "2"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

@@ -432,6 +432,30 @@
     [
       "6b7450d6-3952-419a-ab30-dcf88fa68fd4",
       ""
+    ],
+    [
+      "de96b768-dd42-4f17-8d2c-c018d1fd3afc",
+      "Encoders"
+    ],
+    [
+      "1b567c02-cc80-47cd-8b0e-9062627a7795",
+      "Servos"
+    ],
+    [
+      "0fa57f27-1733-4bf7-9419-ce52913b1a5e",
+      "MAHO Inputs"
+    ],
+    [
+      "7b0607c3-4517-45e8-9fcd-3553c3425125",
+      "MAHO Outputs"
+    ],
+    [
+      "02d242bf-6dbf-4d5d-8cc6-9f47b3a7e77a",
+      "PWR"
+    ],
+    [
+      "76cff72e-dba5-42e7-a794-44db4507511d",
+      "RS485"
     ]
   ],
   "text_variables": {}
