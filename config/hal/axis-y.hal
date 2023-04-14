@@ -7,7 +7,7 @@ setp pid.1.FF1 [JOINT_1](FF1)
 setp pid.1.FF2 [JOINT_1](FF2)
 setp pid.1.deadband [JOINT_1](DEADBAND)
 setp pid.1.maxoutput [JOINT_1](MAX_OUTPUT)
-setp pid.1.maxerror [JOINT_1](MAX_ERROR)
+# setp pid.1.maxerror [JOINT_1](MAX_ERROR)
 setp pid.1.error-previous-target true
 
 # PWM pin0
