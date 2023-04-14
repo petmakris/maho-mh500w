@@ -1,0 +1,7 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "XY2500R-C(5.08)-2P")(type "KiCad")(uri "${KICAD_LIBS}/parts/connectors/terminal/XY2500R-C(5.08)-2P")(options "")(descr ""))
+  (lib (name "XY2500R-C(5.08)-3P")(type "KiCad")(uri "${KICAD_LIBS}/parts/connectors/terminal/XY2500R-C(5.08)-3P")(options "")(descr ""))
+  (lib (name "XY2500R-C(5.08)-4P")(type "KiCad")(uri "${KICAD_LIBS}/parts/connectors/terminal/XY2500R-C(5.08)-4P")(options "")(descr ""))
+  (lib (name "MTJ-88FX1")(type "KiCad")(uri "${KICAD_LIBS}/parts/connectors/RJ45/MTJ-88FX1")(options "")(descr ""))
+)
