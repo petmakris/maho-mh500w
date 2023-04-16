@@ -3,19 +3,19 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "(6.0.7)"
+      "Version": "7.0.1"
     },
-    "CreationDate": "2022-09-12T17:06:16+03:00"
+    "CreationDate": "2023-04-16T18:01:34+03:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
-      "Name": "io-breakout",
-      "GUID": "696f2d62-7265-4616-9b6f-75742e6b6963",
+      "Name": "maho-io",
+      "GUID": "6d61686f-2d69-46f2-9e6b-696361645f70",
       "Revision": "rev?"
     },
     "Size": {
-      "X": 99.16,
-      "Y": 48.36
+      "X": 190.1,
+      "Y": 110.1
     },
     "LayerNumber": 2,
     "BoardThickness": 1.6,
@@ -24,57 +24,57 @@
   "DesignRules": [
     {
       "Layers": "Outer",
-      "PadToPad": 0.0,
-      "PadToTrack": 0.0,
+      "PadToPad": 0.2,
+      "PadToTrack": 0.2,
       "TrackToTrack": 0.2,
-      "MinLineWidth": 1.0,
+      "MinLineWidth": 0.5,
       "TrackToRegion": 0.508,
       "RegionToRegion": 0.508
     }
   ],
   "FilesAttributes": [
     {
-      "Path": "io-breakout-F_Cu.gbr",
+      "Path": "maho-io-F_Cu.gbr",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "io-breakout-B_Cu.gbr",
+      "Path": "maho-io-B_Cu.gbr",
       "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "io-breakout-F_Paste.gbr",
+      "Path": "maho-io-F_Paste.gbr",
       "FileFunction": "SolderPaste,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "io-breakout-B_Paste.gbr",
+      "Path": "maho-io-B_Paste.gbr",
       "FileFunction": "SolderPaste,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "io-breakout-F_Silkscreen.gbr",
+      "Path": "maho-io-F_Silkscreen.gbr",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "io-breakout-B_Silkscreen.gbr",
+      "Path": "maho-io-B_Silkscreen.gbr",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "io-breakout-F_Mask.gbr",
+      "Path": "maho-io-F_Mask.gbr",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "io-breakout-B_Mask.gbr",
+      "Path": "maho-io-B_Mask.gbr",
       "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "io-breakout-Edge_Cuts.gbr",
+      "Path": "maho-io-Edge_Cuts.gbr",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }

@@ -5,7 +5,7 @@
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
-    "high_contrast_mode": 1,
+    "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
       "images": 0.6,
@@ -17,7 +17,7 @@
     "ratsnest_display_mode": 0,
     "selection_filter": {
       "dimensions": true,
-      "footprints": true,
+      "footprints": false,
       "graphics": true,
       "keepouts": true,
       "lockedItems": true,
@@ -64,8 +64,8 @@
       39,
       40
     ],
-    "visible_layers": "800d1ff_ffffffff",
-    "zone_display_mode": 1
+    "visible_layers": "80013ff_ffffffff",
+    "zone_display_mode": 0
   },
   "meta": {
     "filename": "maho-io.kicad_prl",
