@@ -9,20 +9,18 @@ addf estop-latch.0 servo-thread
 # iocontrol.0.user-enable-out - (bit, OUT) FALSE when an internal E-Stop condition exists.
 # iocontrol.0.user-request-enable - (bit, OUT) TRUE when the user has requested that E-Stop be cleared.
 
-net external-estop              hm2_7i97.0.inmux.00.input-00
-net power-on-switch-momentary   hm2_7i97.0.inmux.00.input-01
 
 net external-estop-not          estop-latch.0.ok-in
-net power-on-switch-momentary   estop-latch.0.reset
-net machine-power-on            estop-latch.0.ok-out
+net input-power-on-switch       estop-latch.0.reset
+net output-machine-power-on     estop-latch.0.ok-out
 net internal-estop              estop-latch.0.fault-in
 
-net external-estop              not.0.in
+net input-external-estop        not.0.in
 net external-estop-not          not.0.out
 
 net internal-estop-not          iocontrol.0.user-enable-out
 net internal-estop-not          not.1.in
 net internal-estop              not.1.out
 
-net machine-power-on            iocontrol.0.emc-enable-in
-net machine-power-on            hm2_7i97.0.ssr.00.out-00
+net output-machine-power-on     iocontrol.0.emc-enable-in
+net output-machine-power-on     hm2_7i97.0.ssr.00.out-00

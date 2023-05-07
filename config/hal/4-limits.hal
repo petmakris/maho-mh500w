@@ -1,0 +1,12 @@
+# Should be driven TRUE if the home switch for this joint is closed
+# joint.N.home-sw-in IN BIT
+
+# Should be driven TRUE if the negative limit switch for this joint is tripped.
+# joint.N.neg-lim-sw-in IN BIT
+
+# Should be driven TRUE if the positive limit switch for this joint is tripped.
+# joint.N.pos-lim-sw-in IN BIT
+
+net input-home-min-x <= joint.0.home-sw-in
+net input-home-min-y <= joint.1.home-sw-in
+net input-home-max-z <= joint.2.home-sw-in
