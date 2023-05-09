@@ -1,0 +1,28 @@
+# net output-lubricant ??
+
+# https://linuxcnc.org/docs/2.8/html/man/man9/timedelay.9.html
+
+# loadrt timedelay count=1
+# addf timedelay.0 servo-thread
+
+# loadrt siggen num_chan=1
+# addf siggen.0.update test-thread
+
+# net every-ten-minutes <= siggen.0.clock
+# net every-ten-minutes => timedelay.0.in
+
+# setp siggen.0.frequency 0.00167
+
+# net every-ten-minutes-pulse <= timedelay.0.out
+# # net output-lubricant => timedelay.0.out
+
+# setp timedelay.0.on-delay 15
+# setp timedelay.0.off-delay 0
+
+
+loadrt pwmgen output_type=type0
+
+addf pwmgen.make-pulses servo-thread
+
+
+
