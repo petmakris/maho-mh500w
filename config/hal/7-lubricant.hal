@@ -20,9 +20,9 @@
 # setp timedelay.0.off-delay 0
 
 
-loadrt pwmgen output_type=type0
+# loadrt pwmgen output_type=type0
 
-addf pwmgen.make-pulses servo-thread
+# addf pwmgen.make-pulses servo-thread
 
 
 

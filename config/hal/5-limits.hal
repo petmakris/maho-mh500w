@@ -7,6 +7,13 @@
 # Should be driven TRUE if the positive limit switch for this joint is tripped.
 # joint.N.pos-lim-sw-in IN BIT
 
-net input-home-min-x <= joint.0.home-sw-in
-net input-home-min-y <= joint.1.home-sw-in
-net input-home-max-z <= joint.2.home-sw-in
+
+net input-home-min-x    hm2_7i97.0.inmux.00.input-00-not
+net input-home-min-x    joint.0.home-sw-in
+
+net input-home-min-y    hm2_7i97.0.inmux.00.input-01-not
+net input-home-min-y    joint.1.home-sw-in
+
+net input-home-max-z    hm2_7i97.0.inmux.00.input-02-not
+net input-home-max-z    joint.2.home-sw-in
+
