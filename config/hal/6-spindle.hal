@@ -1,9 +1,6 @@
-# net spindle-enable spindle.0.on => parport.0.pin-14-out
-
-
 # G-codes M3 and M4. 
 # Spindle speed Sn must be set to a positive 
 # non-zero value for M3/M4 to turn on spindle motion.
 
-net output-spindle-cw  spindle.0.forward
-net output-spindle-ccw spindle.0.reverse
+net output-spindle-ccw  spindle.0.forward
+net output-spindle-cw   spindle.0.reverse
