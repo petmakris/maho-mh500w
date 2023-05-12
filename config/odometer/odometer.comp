@@ -1,0 +1,31 @@
+component odometer;
+pin in float velocity;
+pin out bit lube;
+param rw float travel = 1000;
+param rw unsigned lube_ms = 15000;
+
+function _;
+license "GPL";
+;;
+static unsigned lube_time;
+static double s_units;
+static bool lube_triggered;
+
+FUNCTION(_) {
+    s_units += velocity * (fperiod);
+    if (s_units > travel) {
+        lube_triggered = true;
+        s_units = 0;
+    }
+    if (lube_triggered) {
+        lube_time += (period / 1000000);
+        if (lube_time <= lube_ms) {
+            lube = true;
+        } else {
+            lube_triggered = false;
+        }
+    } else {
+        lube = 0;
+        lube_time = 0;
+    }
+}
