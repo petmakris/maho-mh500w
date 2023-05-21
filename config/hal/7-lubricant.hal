@@ -1,7 +1,7 @@
 loadrt odometer
 addf odometer.0 servo-thread
 
-setp odometer.0.travel      500
+setp odometer.0.travel      5000
 setp odometer.0.lube-ms     10000
 
 net odometer-velocity   motion.current-vel      odometer.0.velocity
