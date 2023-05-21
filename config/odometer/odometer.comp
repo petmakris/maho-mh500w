@@ -1,8 +1,8 @@
 component odometer;
 pin in float velocity;
 pin out bit lube;
-param rw float travel = 1000;
-param rw unsigned lube_ms = 15000;
+param rw float travel = 10000;
+param rw unsigned lube_ms = 8000;
 
 function _;
 license "GPL";
