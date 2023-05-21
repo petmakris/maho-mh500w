@@ -1,6 +1,6 @@
 # Halshow settings
 # This file is generated automatically.
-wm geometry . 888x987+1022+27
+wm geometry . 793x987+1117+27
 placeFrames 0.2694063926940639
 set ::ratio 0.2694063926940639
 set ::old_w_leftf 160
@@ -8,11 +8,15 @@ set ::watchlist {
     sig+input-hd-off
     sig+input-lubricant
     sig+input-spindle
-    sig+output-lubricant
     sig+input-home-min-x
     sig+input-home-min-y
     sig+input-home-max-z
     sig+output-tool-release
+    sig+output-lubricant
+    sig+output-spindle-cw
+    sig+output-spindle-ccw
+    sig+odometer-velocity
+    sig+odometer-distance
 }
 set ::workmode watchhal
 set ::watchInterval 100

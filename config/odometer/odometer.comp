@@ -1,4 +1,5 @@
 component odometer;
+pin out float distance;
 pin in float velocity;
 pin out bit lube;
 param rw float travel = 10000;
@@ -13,6 +14,7 @@ static bool lube_triggered;
 
 FUNCTION(_) {
     s_units += velocity * (fperiod);
+    
     if (s_units > travel) {
         lube_triggered = true;
         s_units = 0;
@@ -28,4 +30,5 @@ FUNCTION(_) {
         lube = 0;
         lube_time = 0;
     }
+    distance = s_units;
 }

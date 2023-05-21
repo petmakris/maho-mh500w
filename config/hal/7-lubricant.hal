@@ -1,9 +1,10 @@
 loadrt odometer
 addf odometer.0 servo-thread
 
-setp odometer.0.travel 1000
-setp odometer.0.lube_ms = 8000
+setp odometer.0.travel      1000
+setp odometer.0.lube-ms     8000
 
-net odometer-velocity  motion.current-vel => odometer.0.velocity
-net odometer-distance odometer.0.lube => output-lubricant
+net odometer-velocity   motion.current-vel      odometer.0.velocity
+net odometer-distance   odometer.0.distance
+net output-lubricant    odometer.0.lube         
 
