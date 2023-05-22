@@ -1,9 +1,45 @@
-# #  Manual Tool Change Dialog
-# loadusr -W hal_manualtoolchange
-# net tool-change-request    =>  hal_manualtoolchange.change
-# net tool-change-confirmed  <=  hal_manualtoolchange.changed
-# net tool-number            =>  hal_manualtoolchange.number
+# https://linuxcnc.org/docs/html/man/man1/hal_manualtoolchange.1.html
 
-# # create signals for tool loading loopback
-# net tool-prep-loop iocontrol.0.tool-prepare => iocontrol.0.tool-prepared
-# net tool-change-loop iocontrol.0.tool-change => iocontrol.0.tool-changed
+# Manual Tool Change Dialog
+loadusr -W hal_manualtoolchange
+
+
+# hal_manualtoolchange.number           s32 in     Receives last programmed T- number.
+# hal_manualtoolchange.change           bit in     Receives signal to do tool change.
+# hal_manualtoolchange.changed          bit out    Signifies that the tool change is complete.
+# hal_manualtoolchange.change_button    bit in     Pin to allow an external switch to signify that the tool change is complete.
+
+
+# When an M6 code is run, motion sets iocontrol.0.tool-change to high indicating a tool change. 
+# This pin should be netted to hal_manualtoolchange.change. This causes the Tool change dialog 
+# to be displayed on screen and wait for the user to either click the continue button on the dialog 
+# or press an externally connected button.
+
+net tool-change iocontrol.0.tool-change => hal_manualtoolchange.change
+
+# When the Tool change dialog’s continue button is pressed, it will set the 
+# hal_manualtoolchange.changed pin to high, this should be netted to the iocontrol.0.tool-changed pin, 
+# indicating to the motion controller that the tool change has been completed and can continue with 
+# the execution of the G-code program.
+
+net tool-changed iocontrol.0.tool-changed <= hal_manualtoolchange.changed
+
+# When a T- command is executed in a G-code program, the tool number will held in the 
+# iocontrol.0.tool-prep-number. This pin should be netted to hal_manualtoolchange.number. 
+# The value of this pin, the tool number is displayed in the Tool change dialog to let 
+# the user know which tool should be loaded.
+
+net tool-number iocontrol.0.tool-prep-number => hal_manualtoolchange.number
+
+# The iocontrol.0.tool-prepare pin will go true when a Tn tool prepare is requested. 
+# Since there is not automated tool changer this pin should be netted to 
+# iocontrol.0.tool-prepared to indocate that the tool has been prepared.
+
+net tool-prepare-loopback iocontrol.0.tool-prepare => iocontrol.0.tool-prepared
+
+# If you wish to use an external button to signal the hal_manualtoolchange component 
+# that the tool change is complete simply bring the button into HAL (via a parport 
+# input pin or a hostmot2 gpio input or similar), and wire it directly to the 
+# hal_manualtoolchange.change_button pin. For Example:
+
+net tool-changed-btn hal_manualtoolchange.change_button <= parport.0.pin-15-in

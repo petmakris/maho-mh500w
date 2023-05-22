@@ -1,0 +1,5 @@
+
+
+
+# iocontrol.0.coolant-flood - (bit, out) TRUE when flood coolant is requested.
+# iocontrol.0.coolant-mist - (bit, out) TRUE when mist coolant is requested.

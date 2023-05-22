@@ -2,5 +2,17 @@
 # Spindle speed Sn must be set to a positive 
 # non-zero value for M3/M4 to turn on spindle motion.
 
-net output-spindle-ccw  spindle.0.forward
-net output-spindle-cw   spindle.0.reverse
+
+# https://linuxcnc.org/docs/2.9/html/config/core-components.html#_spindle
+
+
+# spindle.N.on - (bit, out) TRUE when spindle should rotate.
+# spindle.N.brake - (bit, out) TRUE when the spindle brake should be applied.
+# spindle.N.forward - (bit, out) TRUE when the spindle should rotate forward.
+# spindle.N.reverse - (bit, out) TRUE when the spindle should rotate backward
+
+
+# net output-spindle-ccw  spindle.0.forward
+# net output-spindle-cw   spindle.0.reverse
+
+
