@@ -1,6 +1,6 @@
 # Halshow settings
 # This file is generated automatically.
-wm geometry . 793x987+1117+27
+wm geometry . 1149x987+761+27
 placeFrames 0.2694063926940639
 set ::ratio 0.2694063926940639
 set ::old_w_leftf 160
@@ -17,6 +17,54 @@ set ::watchlist {
     sig+output-spindle-ccw
     sig+odometer-velocity
     sig+odometer-distance
+    pin+hm2_7i97.0.7i84.0.0.input-00
+    pin+hm2_7i97.0.7i84.0.0.input-01
+    pin+hm2_7i97.0.7i84.0.0.input-02
+    pin+hm2_7i97.0.7i84.0.0.input-03
+    pin+hm2_7i97.0.7i84.0.0.input-04
+    pin+hm2_7i97.0.7i84.0.0.input-05
+    pin+hm2_7i97.0.7i84.0.0.input-06
+    pin+hm2_7i97.0.7i84.0.0.input-07
+    pin+hm2_7i97.0.7i84.0.0.input-08
+    pin+hm2_7i97.0.7i84.0.0.input-09
+    pin+hm2_7i97.0.7i84.0.0.input-10
+    pin+hm2_7i97.0.7i84.0.0.input-11
+    pin+hm2_7i97.0.7i84.0.0.input-12
+    pin+hm2_7i97.0.7i84.0.0.input-13
+    pin+hm2_7i97.0.7i84.0.0.input-14
+    pin+hm2_7i97.0.7i84.0.0.input-15
+    pin+hm2_7i97.0.7i84.0.0.input-16
+    pin+hm2_7i97.0.7i84.0.0.input-17
+    pin+hm2_7i97.0.7i84.0.0.input-18
+    pin+hm2_7i97.0.7i84.0.0.input-19
+    pin+hm2_7i97.0.7i84.0.0.input-20
+    pin+hm2_7i97.0.7i84.0.0.input-21
+    pin+hm2_7i97.0.7i84.0.0.input-22
+    pin+hm2_7i97.0.7i84.0.0.input-23
+    pin+hm2_7i97.0.7i84.0.0.input-24
+    pin+hm2_7i97.0.7i84.0.0.input-25
+    pin+hm2_7i97.0.7i84.0.0.input-26
+    pin+hm2_7i97.0.7i84.0.0.input-27
+    pin+hm2_7i97.0.7i84.0.0.input-28
+    pin+hm2_7i97.0.7i84.0.0.input-29
+    pin+hm2_7i97.0.7i84.0.0.input-30
+    pin+hm2_7i97.0.7i84.0.0.input-31
+    pin+hm2_7i97.0.7i84.0.0.output-00
+    pin+hm2_7i97.0.7i84.0.0.output-01
+    pin+hm2_7i97.0.7i84.0.0.output-02
+    pin+hm2_7i97.0.7i84.0.0.output-03
+    pin+hm2_7i97.0.7i84.0.0.output-04
+    pin+hm2_7i97.0.7i84.0.0.output-05
+    pin+hm2_7i97.0.7i84.0.0.output-06
+    pin+hm2_7i97.0.7i84.0.0.output-07
+    pin+hm2_7i97.0.7i84.0.0.output-08
+    pin+hm2_7i97.0.7i84.0.0.output-09
+    pin+hm2_7i97.0.7i84.0.0.output-10
+    pin+hm2_7i97.0.7i84.0.0.output-11
+    pin+hm2_7i97.0.7i84.0.0.output-12
+    pin+hm2_7i97.0.7i84.0.0.output-13
+    pin+hm2_7i97.0.7i84.0.0.output-14
+    pin+hm2_7i97.0.7i84.0.0.output-15
 }
 set ::workmode watchhal
 set ::watchInterval 100

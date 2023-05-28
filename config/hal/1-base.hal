@@ -10,7 +10,7 @@ loadrt pid num_chan=3 debug=1
 # hostmot2 driver
 loadrt hostmot2
 
-loadrt [HM2](DRIVER) board_ip=[HM2](IPADDRESS) sserial_port_0=00000000
+loadrt [HM2](DRIVER) board_ip=[HM2](IPADDRESS) config="sserial_port_0=00000000"
 setp hm2_7i97.0.watchdog.timeout_ns 5000000
 
 
