@@ -1,5 +1,6 @@
-
-
-
 # iocontrol.0.coolant-flood - (bit, out) TRUE when flood coolant is requested.
 # iocontrol.0.coolant-mist - (bit, out) TRUE when mist coolant is requested.
+
+# net output-coolant-pump     hm2_7i97.0.ssr.00.out-03
+# net output-coolant-pump     iocontrol.0.coolant-flood  
+

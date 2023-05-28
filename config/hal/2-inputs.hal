@@ -1,8 +1,8 @@
 # LINUXCNC INPUTS - 19X7 
 
-# net input-handwheel-x       hm2_7i97.0.inmux.00.input-03
-# net input-handwheel-z       hm2_7i97.0.inmux.00.input-04
-# net input-handwheel-y       hm2_7i97.0.inmux.00.input-05
+net input-handwheel-x       hm2_7i97.0.inmux.00.input-03
+net input-handwheel-z       hm2_7i97.0.inmux.00.input-04
+net input-handwheel-y       hm2_7i97.0.inmux.00.input-05
 
 net input-pwr-ok            hm2_7i97.0.inmux.00.input-06
 net input-hd-off            hm2_7i97.0.inmux.00.input-07

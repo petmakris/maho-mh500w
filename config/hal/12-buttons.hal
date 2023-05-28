@@ -1,0 +1,21 @@
+# halui.program.is-idle bit out   status pin telling that no program is running
+# halui.program.is-paused bit out status pin telling that a program is paused
+# halui.program.is-running bit out    status pin telling that a program is running
+
+# halui.program.optional-stop.is-on bit out   status pin telling that the optional stop is on
+# halui.program.optional-stop.off bit in  pin requesting that the optional stop is off
+# halui.program.optional-stop.on bit in   pin requesting that the optional stop is on
+
+# halui.program.step bit in   pin for stepping in a program
+
+
+net sserial-input-18       halui.program.stop
+net sserial-input-16       halui.program.run
+
+net sserial-input-19       halui.program.pause
+net sserial-input-17       halui.program.resume
+
+
+net g54-set-zero-x      halui.mdi-command-05
+net g54-set-zero-y      halui.mdi-command-06
+net g54-set-zero-z      halui.mdi-command-07

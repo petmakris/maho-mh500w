@@ -1,0 +1,77 @@
+# https://linuxcnc.org/docs/html/man/man9/sserial.9.htm
+
+net sserial-input-00  hm2_7i97.0.7i84.0.0.input-00
+net sserial-input-01  hm2_7i97.0.7i84.0.0.input-01
+net sserial-input-02  hm2_7i97.0.7i84.0.0.input-02
+net sserial-input-03  hm2_7i97.0.7i84.0.0.input-03
+net sserial-input-04  hm2_7i97.0.7i84.0.0.input-04
+net sserial-input-05  hm2_7i97.0.7i84.0.0.input-05
+
+
+
+net g54-set-zero-z  hm2_7i97.0.7i84.0.0.input-06
+net g54-set-zero-y  hm2_7i97.0.7i84.0.0.input-07
+net g54-set-zero-x  hm2_7i97.0.7i84.0.0.input-08
+
+
+net sserial-input-09  hm2_7i97.0.7i84.0.0.input-09
+
+net sserial-input-10  hm2_7i97.0.7i84.0.0.input-10 # tool change
+net sserial-input-11  hm2_7i97.0.7i84.0.0.input-11 # tool change
+
+
+net sserial-arrow-right     hm2_7i97.0.7i84.0.0.input-12
+net sserial-arrow-down      hm2_7i97.0.7i84.0.0.input-13
+net sserial-arrow-up        hm2_7i97.0.7i84.0.0.input-14
+net sserial-arrow-left      hm2_7i97.0.7i84.0.0.input-15
+
+net sserial-input-16  hm2_7i97.0.7i84.0.0.input-16
+net sserial-input-17  hm2_7i97.0.7i84.0.0.input-17
+net sserial-input-18  hm2_7i97.0.7i84.0.0.input-18
+net sserial-input-19  hm2_7i97.0.7i84.0.0.input-19
+net sserial-input-20  hm2_7i97.0.7i84.0.0.input-20
+net sserial-input-21  hm2_7i97.0.7i84.0.0.input-21
+
+net sserial-page-up     hm2_7i97.0.7i84.0.0.input-22
+net sserial-page-down   hm2_7i97.0.7i84.0.0.input-23
+
+net sserial-input-24  hm2_7i97.0.7i84.0.0.input-24
+net sserial-input-25  hm2_7i97.0.7i84.0.0.input-25
+net sserial-input-26  hm2_7i97.0.7i84.0.0.input-26
+net sserial-input-27  hm2_7i97.0.7i84.0.0.input-27
+net sserial-input-29  hm2_7i97.0.7i84.0.0.input-29
+net sserial-input-30  hm2_7i97.0.7i84.0.0.input-30
+net sserial-input-31  hm2_7i97.0.7i84.0.0.input-31
+
+
+
+
+
+
+net sserial-output-00  hm2_7i97.0.7i84.0.0.output-00
+net sserial-output-01  hm2_7i97.0.7i84.0.0.output-01
+net sserial-output-02  hm2_7i97.0.7i84.0.0.output-02
+net sserial-output-03  hm2_7i97.0.7i84.0.0.output-03
+net sserial-output-04  hm2_7i97.0.7i84.0.0.output-04
+net sserial-output-05  hm2_7i97.0.7i84.0.0.output-05
+net sserial-output-06  hm2_7i97.0.7i84.0.0.output-06
+net sserial-output-07  hm2_7i97.0.7i84.0.0.output-07
+net sserial-output-08  hm2_7i97.0.7i84.0.0.output-08
+net sserial-output-09  hm2_7i97.0.7i84.0.0.output-09
+net sserial-output-10  hm2_7i97.0.7i84.0.0.output-10
+net sserial-output-11  hm2_7i97.0.7i84.0.0.output-11
+net sserial-output-12  hm2_7i97.0.7i84.0.0.output-12
+net sserial-output-13  hm2_7i97.0.7i84.0.0.output-13
+net sserial-output-14  hm2_7i97.0.7i84.0.0.output-14
+net sserial-output-15  hm2_7i97.0.7i84.0.0.output-15
+
+
+
+
+
+
+
+
+
+
+
