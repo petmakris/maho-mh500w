@@ -7,15 +7,3 @@
 # halui.program.optional-stop.on bit in   pin requesting that the optional stop is on
 
 # halui.program.step bit in   pin for stepping in a program
-
-
-net sserial-input-18       halui.program.stop
-net sserial-input-16       halui.program.run
-
-net sserial-input-19       halui.program.pause
-net sserial-input-17       halui.program.resume
-
-
-net g54-set-zero-x      halui.mdi-command-05
-net g54-set-zero-y      halui.mdi-command-06
-net g54-set-zero-z      halui.mdi-command-07

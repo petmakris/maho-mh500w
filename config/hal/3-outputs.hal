@@ -1,8 +1,8 @@
 # LINUXCNC OUTPUTS - 19X6
 
 net output-machine-power-on hm2_7i97.0.ssr.00.out-00
-net output-spindle-cw       hm2_7i97.0.ssr.00.out-01
-net output-spindle-ccw      hm2_7i97.0.ssr.00.out-02
+net output-spindle-cw       hm2_7i97.0.ssr.00.out-01    spindle.0.reverse
+net output-spindle-ccw      hm2_7i97.0.ssr.00.out-02    spindle.0.forward
 net output-coolant-pump     hm2_7i97.0.ssr.00.out-03
 net output-tool-release     hm2_7i97.0.ssr.00.out-04
 net output-lubricant        hm2_7i97.0.ssr.00.out-05
@@ -10,5 +10,3 @@ net output-lubricant        hm2_7i97.0.ssr.00.out-05
 # net output-handwheel-x  hm2_7i97.0.ssr.00.out-XX
 # net output-handwheel-z  hm2_7i97.0.ssr.00.out-XX
 # net output-handwheel-y  hm2_7i97.0.ssr.00.out-XX
-
-

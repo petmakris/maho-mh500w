@@ -9,9 +9,14 @@ net sserial-input-05  hm2_7i97.0.7i84.0.0.input-05
 
 
 
-net g54-set-zero-z  hm2_7i97.0.7i84.0.0.input-06
-net g54-set-zero-y  hm2_7i97.0.7i84.0.0.input-07
-net g54-set-zero-x  hm2_7i97.0.7i84.0.0.input-08
+# G54 set z axis zero
+net sserial-input-06  hm2_7i97.0.7i84.0.0.input-06      halui.mdi-command-07
+
+# G54 set y axis zero
+net sserial-input-07  hm2_7i97.0.7i84.0.0.input-07      halui.mdi-command-06
+
+# G54 set x axis zero
+net sserial-input-08  hm2_7i97.0.7i84.0.0.input-08      halui.mdi-command-05
 
 
 net sserial-input-09  hm2_7i97.0.7i84.0.0.input-09
@@ -25,10 +30,22 @@ net sserial-arrow-down      hm2_7i97.0.7i84.0.0.input-13
 net sserial-arrow-up        hm2_7i97.0.7i84.0.0.input-14
 net sserial-arrow-left      hm2_7i97.0.7i84.0.0.input-15
 
-net sserial-input-16  hm2_7i97.0.7i84.0.0.input-16
-net sserial-input-17  hm2_7i97.0.7i84.0.0.input-17
-net sserial-input-18  hm2_7i97.0.7i84.0.0.input-18
-net sserial-input-19  hm2_7i97.0.7i84.0.0.input-19
+
+
+# net sserial-input-16
+# net pendant.program.run     hm2_7i97.0.7i84.0.0.input-16
+
+# net sserial-input-17
+# net pendant.program.resume  hm2_7i97.0.7i84.0.0.input-17
+
+# net sserial-input-18
+# net pendant.program.stop    hm2_7i97.0.7i84.0.0.input-18
+
+# net sserial-input-19
+# net pendant.program.pause   hm2_7i97.0.7i84.0.0.input-19
+
+
+
 net sserial-input-20  hm2_7i97.0.7i84.0.0.input-20
 net sserial-input-21  hm2_7i97.0.7i84.0.0.input-21
 
@@ -42,7 +59,6 @@ net sserial-input-27  hm2_7i97.0.7i84.0.0.input-27
 net sserial-input-29  hm2_7i97.0.7i84.0.0.input-29
 net sserial-input-30  hm2_7i97.0.7i84.0.0.input-30
 net sserial-input-31  hm2_7i97.0.7i84.0.0.input-31
-
 
 
 

@@ -1,6 +1,11 @@
-loadrt not count=2
+loadrt not count=3
 addf not.0 servo-thread
 addf not.1 servo-thread
+
+# used in tool change
+addf not.2 servo-thread 
+
+
 
 loadrt estop_latch
 addf estop-latch.0 servo-thread
