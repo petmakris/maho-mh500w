@@ -9,6 +9,38 @@
 # load pendant components
 loadusr -W xhc-whb04b-6 -HsfB
 
+# -H Run xhc-whb04b-6 in HAL-mode instead of interactive mode. When in HAL mode commands from device will be exposed to HAL’s shred memory. Interactive mode is useful for testing device connectivity and debugging.
+# -s Lead + jogwheel changes the spindle override speed. Each tick will increase/decrease the spindle override.
+# -f MPG + jogwheel changes the feed override. Each tick will increment/decrement the feed override.
+# -B Add 5 mm and 10 mm to Step feedrate output
+
+# pass jog counts through lowpass to prevent jerking and following errors
+loadrt ilowpass names=ilowpass.jog.x,ilowpass.jog.y,ilowpass.jog.z
+addf   ilowpass.jog.x       servo-thread
+addf   ilowpass.jog.y       servo-thread
+addf   ilowpass.jog.z       servo-thread
+setp   ilowpass.jog.x.scale 100
+setp   ilowpass.jog.y.scale 100
+setp   ilowpass.jog.z.scale 100
+setp   ilowpass.jog.x.gain  0.2
+setp   ilowpass.jog.y.gain  0.2
+setp   ilowpass.jog.z.gain  0.2
+
+# re-scale low-passed jog counts
+loadrt scale names=scale.axis.x,scale.axis.y,scale.axis.z
+addf   scale.axis.x         servo-thread
+addf   scale.axis.y         servo-thread
+addf   scale.axis.z         servo-thread
+setp   scale.axis.x.gain    0.01 
+setp   scale.axis.y.gain    0.01 
+setp   scale.axis.z.gain    0.01 
+setp   scale.axis.x.offset  0
+setp   scale.axis.y.offset  0
+setp   scale.axis.z.offset  0
+
+
+
+
 # On/Off signals
 net pendant.machine.machine-is-on            whb.halui.machine.is-on               halui.machine.is-on
 net pendant.machine.on                       whb.halui.machine.on                  halui.machine.on
@@ -19,14 +51,12 @@ net pendant.program.is-idle                  whb.halui.program.is-idle          
 net pendant.program.is-paused                whb.halui.program.is-paused           halui.program.is-paused
 net pendant.program-is-running               whb.halui.program.is-running          halui.program.is-running
 
-
 # ORIG START
 net pendant.program.resume                   whb.halui.program.resume              halui.program.resume
 net pendant.program.pause                    whb.halui.program.pause               halui.program.pause
 net pendant.program.run                      whb.halui.program.run                 halui.program.run
 net pendant.program.stop                     whb.halui.program.stop                halui.program.stop
 # ORIG END
-
 
 # net pendant.program.resume                   whb.halui.program.resume
 # net pendant.program.pause                    whb.halui.program.pause
@@ -75,8 +105,6 @@ net pendant.mode.is-teleop                   whb.halui.mode.is-teleop           
 #reserved whb.button.macro-2
 #net  pendant.lube.on                         whb.halui.lube.on                     halui.lube.on                    
 
-
-
 # needed for both FeedOverride+/- and rotary knob button
 net pendant.feed-override.scale              whb.halui.feed-override.scale         halui.feed-override.scale        
 # needed for Mpg mode : button feed position% * max-velocity = Mpg feedrate
@@ -87,7 +115,6 @@ net pendant.max-velocity.value               whb.halui.max-velocity.value       
 net pendant.feed-override.value              halui.feed-override.value             whb.halui.feed-override.value    
 net pendant.feed-override.increase           whb.halui.feed-override.increase      halui.feed-override.increase
 net pendant.feed-override.decrease           whb.halui.feed-override.decrease      halui.feed-override.decrease
-
 
 #     _    __  _____ ____
 #    / \   \ \/ /_ _/ ___|
@@ -112,21 +139,47 @@ net pendant.axis.x.pos-relative              whb.halui.axis.x.pos-relative      
 net pendant.axis.y.pos-relative              whb.halui.axis.y.pos-relative         halui.axis.y.pos-relative
 net pendant.axis.z.pos-relative              whb.halui.axis.z.pos-relative         halui.axis.z.pos-relative
 
-net pendant.axis.x.jog-scale                 whb.axis.x.jog-scale                  axis.x.jog-scale
-net pendant.axis.y.jog-scale                 whb.axis.y.jog-scale                  axis.y.jog-scale
-net pendant.axis.z.jog-scale                 whb.axis.z.jog-scale                  axis.z.jog-scale
-
-net pendant.axis.x.jog-counts                whb.axis.x.jog-counts                 axis.x.jog-counts
-net pendant.axis.y.jog-counts                whb.axis.y.jog-counts                 axis.y.jog-counts
-net pendant.axis.z.jog-counts                whb.axis.z.jog-counts                 axis.z.jog-counts
+net pendant.axis.x.jog-vel-mode              whb.axis.x.jog-vel-mode               axis.x.jog-vel-mode
+net pendant.axis.y.jog-vel-mode              whb.axis.y.jog-vel-mode               axis.y.jog-vel-mode
+net pendant.axis.z.jog-vel-mode              whb.axis.z.jog-vel-mode               axis.z.jog-vel-mode
 
 net pendant.axis.x.jog-enable                whb.axis.x.jog-enable                 axis.x.jog-enable
 net pendant.axis.y.jog-enable                whb.axis.y.jog-enable                 axis.y.jog-enable
 net pendant.axis.z.jog-enable                whb.axis.z.jog-enable                 axis.z.jog-enable
 
-net pendant.axis.x.jog-vel-mode              whb.axis.x.jog-vel-mode               axis.x.jog-vel-mode
-net pendant.axis.y.jog-vel-mode              whb.axis.y.jog-vel-mode               axis.y.jog-vel-mode
-net pendant.axis.z.jog-vel-mode              whb.axis.z.jog-vel-mode               axis.z.jog-vel-mode
+
+
+
+# Default
+
+# net pendant.axis.x.jog-scale                 whb.axis.x.jog-scale                  axis.x.jog-scale
+# net pendant.axis.y.jog-scale                 whb.axis.y.jog-scale                  axis.y.jog-scale
+# net pendant.axis.z.jog-scale                 whb.axis.z.jog-scale                  axis.z.jog-scale
+
+# net pendant.axis.x.jog-counts                whb.axis.x.jog-counts                 axis.x.jog-counts
+# net pendant.axis.y.jog-counts                whb.axis.y.jog-counts                 axis.y.jog-counts
+# net pendant.axis.z.jog-counts                whb.axis.z.jog-counts                 axis.z.jog-counts
+
+# With filter
+
+net  pendant.axis.x.jog-scale            whb.axis.x.jog-scale               scale.axis.x.in
+net  pendant.axis.y.jog-scale            whb.axis.y.jog-scale               scale.axis.y.in
+net  pendant.axis.z.jog-scale            whb.axis.z.jog-scale               scale.axis.z.in
+
+net  scale.axis.x.jog-scale              scale.axis.x.out                   axis.x.jog-scale
+net  scale.axis.y.jog-scale              scale.axis.y.out                   axis.y.jog-scale
+net  scale.axis.z.jog-scale              scale.axis.z.out                   axis.z.jog-scale
+
+net  pendant.axis.x.jog-counts           whb.axis.x.jog-counts              ilowpass.jog.x.in
+net  pendant.axis.y.jog-counts           whb.axis.y.jog-counts              ilowpass.jog.y.in
+net  pendant.axis.z.jog-counts           whb.axis.z.jog-counts              ilowpass.jog.z.in
+
+net  pendant.ilowpass.jog.x.jog-counts   ilowpass.jog.x.out                 axis.x.jog-counts
+net  pendant.ilowpass.jog.y.jog-counts   ilowpass.jog.y.out                 axis.y.jog-counts
+net  pendant.ilowpass.jog.z.jog-counts   ilowpass.jog.z.out                 axis.z.jog-counts
+
+
+
 
 
 #  ____        _           _ _
