@@ -23,6 +23,9 @@ set ::watchlist {
     sig+not-spindle-on
     sig+tool-change-buttons-pressed
     sig+output-tool-release
+    pin+hm2_7i97.0.encoder.00.count
+    pin+hm2_7i97.0.encoder.01.count
+    pin+hm2_7i97.0.encoder.02.count
 }
 set ::workmode watchhal
 set ::watchInterval 100
