@@ -20,12 +20,8 @@ set ::watchlist {
     pin+spindle.0.on
     sig+sserial-input-10
     sig+sserial-input-11
-    sig+not-spindle-on
-    sig+tool-change-buttons-pressed
-    sig+output-tool-release
-    pin+hm2_7i97.0.encoder.00.count
-    pin+hm2_7i97.0.encoder.01.count
-    pin+hm2_7i97.0.encoder.02.count
+    sig+odometer-distance
+    sig+odometer-velocity
 }
 set ::workmode watchhal
 set ::watchInterval 100
