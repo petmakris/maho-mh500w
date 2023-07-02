@@ -148,35 +148,33 @@ net pendant.axis.y.jog-enable                whb.axis.y.jog-enable              
 net pendant.axis.z.jog-enable                whb.axis.z.jog-enable                 axis.z.jog-enable
 
 
-
-
 # Default
 
-# net pendant.axis.x.jog-scale                 whb.axis.x.jog-scale                  axis.x.jog-scale
-# net pendant.axis.y.jog-scale                 whb.axis.y.jog-scale                  axis.y.jog-scale
-# net pendant.axis.z.jog-scale                 whb.axis.z.jog-scale                  axis.z.jog-scale
+net pendant.axis.x.jog-scale                 whb.axis.x.jog-scale                  axis.x.jog-scale
+net pendant.axis.y.jog-scale                 whb.axis.y.jog-scale                  axis.y.jog-scale
+net pendant.axis.z.jog-scale                 whb.axis.z.jog-scale                  axis.z.jog-scale
 
-# net pendant.axis.x.jog-counts                whb.axis.x.jog-counts                 axis.x.jog-counts
-# net pendant.axis.y.jog-counts                whb.axis.y.jog-counts                 axis.y.jog-counts
-# net pendant.axis.z.jog-counts                whb.axis.z.jog-counts                 axis.z.jog-counts
+net pendant.axis.x.jog-counts                whb.axis.x.jog-counts                 axis.x.jog-counts
+net pendant.axis.y.jog-counts                whb.axis.y.jog-counts                 axis.y.jog-counts
+net pendant.axis.z.jog-counts                whb.axis.z.jog-counts                 axis.z.jog-counts
 
 # With filter
 
-net  pendant.axis.x.jog-scale            whb.axis.x.jog-scale               scale.axis.x.in
-net  pendant.axis.y.jog-scale            whb.axis.y.jog-scale               scale.axis.y.in
-net  pendant.axis.z.jog-scale            whb.axis.z.jog-scale               scale.axis.z.in
+# net  pendant.axis.x.jog-scale            whb.axis.x.jog-scale               scale.axis.x.in
+# net  pendant.axis.y.jog-scale            whb.axis.y.jog-scale               scale.axis.y.in
+# net  pendant.axis.z.jog-scale            whb.axis.z.jog-scale               scale.axis.z.in
 
-net  scale.axis.x.jog-scale              scale.axis.x.out                   axis.x.jog-scale
-net  scale.axis.y.jog-scale              scale.axis.y.out                   axis.y.jog-scale
-net  scale.axis.z.jog-scale              scale.axis.z.out                   axis.z.jog-scale
+# net  scale.axis.x.jog-scale              scale.axis.x.out                   axis.x.jog-scale
+# net  scale.axis.y.jog-scale              scale.axis.y.out                   axis.y.jog-scale
+# net  scale.axis.z.jog-scale              scale.axis.z.out                   axis.z.jog-scale
 
-net  pendant.axis.x.jog-counts           whb.axis.x.jog-counts              ilowpass.jog.x.in
-net  pendant.axis.y.jog-counts           whb.axis.y.jog-counts              ilowpass.jog.y.in
-net  pendant.axis.z.jog-counts           whb.axis.z.jog-counts              ilowpass.jog.z.in
+# net  pendant.axis.x.jog-counts           whb.axis.x.jog-counts              ilowpass.jog.x.in
+# net  pendant.axis.y.jog-counts           whb.axis.y.jog-counts              ilowpass.jog.y.in
+# net  pendant.axis.z.jog-counts           whb.axis.z.jog-counts              ilowpass.jog.z.in
 
-net  pendant.ilowpass.jog.x.jog-counts   ilowpass.jog.x.out                 axis.x.jog-counts
-net  pendant.ilowpass.jog.y.jog-counts   ilowpass.jog.y.out                 axis.y.jog-counts
-net  pendant.ilowpass.jog.z.jog-counts   ilowpass.jog.z.out                 axis.z.jog-counts
+# net  pendant.ilowpass.jog.x.jog-counts   ilowpass.jog.x.out                 axis.x.jog-counts
+# net  pendant.ilowpass.jog.y.jog-counts   ilowpass.jog.y.out                 axis.y.jog-counts
+# net  pendant.ilowpass.jog.z.jog-counts   ilowpass.jog.z.out                 axis.z.jog-counts
 
 
 
