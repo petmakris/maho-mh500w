@@ -173,11 +173,11 @@ SPINDLE_BlockPostfix =
 SPINDLE_ClockwiseRotationCode = M3
 SPINDLE_CClockwiseRotationCode = M4
 SPINDLE_OffCode = M5
-SPINDLE_HighValue = 20000.000000
-SPINDLE_LowValue = 1.000000
+SPINDLE_HighValue = 4000.000000
+SPINDLE_LowValue = 80.000000
 SPINDLE_ScaleFactor = 1.000000
 SPINDLE_NumOfDecimalPlaces = 0
-SPINDLE_Block = [SPINDLE_ARC][DELIMITER][SPINDLE_CODE][SPINDLE_SPD]
+SPINDLE_Block = [SPINDLE_ARC][DELIMITER][SPINDLE_CODE][SPINDLE_SPD] G4 P6.0
 SPINDLE_ShowSpindleTrailingZeros = 0
 SPINDLE_ConstantSurfaceSpeed = 
 SPINDLE_ConstantRotationSpeed = 
@@ -189,8 +189,8 @@ SPINDLE_ConstantRotationSpeed =
 FEEDRATE_BlockPrefix = 
 FEEDRATE_Code = F
 FEEDRATE_BlockPostfix = 
-FEEDRATE_HighValue = 10160.000000
-FEEDRATE_LowValue = 25.400000
+FEEDRATE_HighValue = 2000.000000
+FEEDRATE_LowValue = 1.000000
 FEEDRATE_ScaleFactor = 1.000000
 FEEDRATE_NumOfDecimalPlaces = 1
 FEEDRATE_Block = [FEEDRATE_CODE][FEEDRATE]
@@ -228,9 +228,8 @@ MISCELLANEOUS_WorkOffset = G
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 STARTUP_ProgramCodeStart
 [START_CHAR]
-[SEQ_PRECHAR][SEQNUM][DELIMITER]G0 G17 G49 G80 [OUTPUT_MODE_CODE]
-[SEQ_PRECHAR][SEQNUM][DELIMITER][OUTPUT_UNITS_CODE]
-G4 P3.0
+[SEQ_PRECHAR][SEQNUM][DELIMITER]G0 G17 G80 [OUTPUT_MODE_CODE]
+[SEQ_PRECHAR][SEQNUM][DELIMITER][OUTPUT_UNITS_CODE]
 STARTUP_ProgramCodeEnd
 
 
