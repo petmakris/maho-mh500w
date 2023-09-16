@@ -177,7 +177,7 @@ SPINDLE_HighValue = 4000.000000
 SPINDLE_LowValue = 80.000000
 SPINDLE_ScaleFactor = 1.000000
 SPINDLE_NumOfDecimalPlaces = 0
-SPINDLE_Block = [SPINDLE_ARC][DELIMITER][SPINDLE_CODE][SPINDLE_SPD] M183 P[SPINDLE_SPD]
+SPINDLE_Block = [SPINDLE_ARC][DELIMITER][SPINDLE_CODE][SPINDLE_SPD][DELIMITER] M183 [SPINDLE_SPD]
 SPINDLE_ShowSpindleTrailingZeros = 0
 SPINDLE_ConstantSurfaceSpeed = 
 SPINDLE_ConstantRotationSpeed = 
@@ -238,11 +238,11 @@ STARTUP_ProgramCodeEnd
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 TOOLCHANGE_AdjustRegister = H
 TOOLCHANGE_FirstMacroStart
-[SEQ_PRECHAR][SEQNUM][DELIMITER] G43M6[DELIMITER]T[TOOL_NUM] 
+[SEQ_PRECHAR][SEQNUM][DELIMITER]G43[DELIMITER]M6[DELIMITER]T[TOOL_NUM] 
 [SEQ_PRECHAR][SEQNUM][DELIMITER][SPINDLE_BLK]
 TOOLCHANGE_FirstMacroEnd
 TOOLCHANGE_MacroStart
-[SEQ_PRECHAR][SEQNUM][DELIMITER] G43 M6[DELIMITER]T[TOOL_NUM] G43
+[SEQ_PRECHAR][SEQNUM][DELIMITER]G43[DELIMITER]M6[DELIMITER]T[TOOL_NUM]
 [SEQ_PRECHAR][SEQNUM][DELIMITER][SPINDLE_BLK]
 TOOLCHANGE_MacroEnd
 TOOLCHANGE_CutComLeftStart
