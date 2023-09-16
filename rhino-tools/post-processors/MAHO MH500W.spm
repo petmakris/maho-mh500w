@@ -177,7 +177,7 @@ SPINDLE_HighValue = 4000.000000
 SPINDLE_LowValue = 80.000000
 SPINDLE_ScaleFactor = 1.000000
 SPINDLE_NumOfDecimalPlaces = 0
-SPINDLE_Block = [SPINDLE_ARC][DELIMITER][SPINDLE_CODE][SPINDLE_SPD] G4 P6.0
+SPINDLE_Block = [SPINDLE_ARC][DELIMITER][SPINDLE_CODE][SPINDLE_SPD] M183 P[SPINDLE_SPD]
 SPINDLE_ShowSpindleTrailingZeros = 0
 SPINDLE_ConstantSurfaceSpeed = 
 SPINDLE_ConstantRotationSpeed = 
@@ -238,13 +238,11 @@ STARTUP_ProgramCodeEnd
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 TOOLCHANGE_AdjustRegister = H
 TOOLCHANGE_FirstMacroStart
-[SEQ_PRECHAR][SEQNUM][DELIMITER]M6[DELIMITER]T[TOOL_NUM]
-G43
+[SEQ_PRECHAR][SEQNUM][DELIMITER] G43M6[DELIMITER]T[TOOL_NUM] 
 [SEQ_PRECHAR][SEQNUM][DELIMITER][SPINDLE_BLK]
 TOOLCHANGE_FirstMacroEnd
 TOOLCHANGE_MacroStart
-[SEQ_PRECHAR][SEQNUM][DELIMITER]M6[DELIMITER]T[TOOL_NUM]
-G43
+[SEQ_PRECHAR][SEQNUM][DELIMITER] G43 M6[DELIMITER]T[TOOL_NUM] G43
 [SEQ_PRECHAR][SEQNUM][DELIMITER][SPINDLE_BLK]
 TOOLCHANGE_MacroEnd
 TOOLCHANGE_CutComLeftStart
@@ -460,7 +458,7 @@ END_ProgramCodeEnd
 // CUT MOTION STARTUP DEFINITION SECTION
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 CUTMOTIONSTARTUP_CutMotionCodeStart
-
+M190 P1
 CUTMOTIONSTARTUP_CutMotionCodeEnd
 
 
@@ -468,7 +466,7 @@ CUTMOTIONSTARTUP_CutMotionCodeEnd
 // CUT MOTION END DEFINITION SECTION
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 CUTMOTIONEND_CutMotionCodeStart
-
+M190 P2
 CUTMOTIONEND_CutMotionCodeEnd
 
 
