@@ -1,6 +1,6 @@
-T0 P0 ; NO TOOL
-T1 P1 Z203.812 ; MECHANICAL EDGE FINDER
-T2 P2
-T3 P3 Z125.56 D6 ;[#03] [6mm] spot drill [er20] [hl=70mm] 
-T4 P4 Z92.442 D6 ;[#04] [6mm] flatmill 2f [er20] [hl=70mm] 
-T5 P5 D6 ;[#05] [6mm] flatmill 3f [er20] [hl=70mm] 
+T0 P0 ;empty 
+T1 P1 Z203.812 D3 ;mechanical edge finder 
+T2 P2 
+T3 P3 Z125.56 D6 ;[#03] [6mm] spot drill [er20] [hl=100mm] 
+T4 P4 Z92.406 D6 ;[#04] [6mm] flatmill 2f [er20] [hl=70mm] 
+T5 P5 Z98.726 D6 ;[#05] [6mm] flatmill 3f [er20] [hl=70mm] 

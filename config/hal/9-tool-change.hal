@@ -7,28 +7,25 @@ loadusr -W hal_manualtoolchange
 # hal_manualtoolchange.changed          bit out    Signifies that the tool change is complete.
 # hal_manualtoolchange.change_button    bit in     Pin to allow an external switch to signify that the tool change is complete.
 
-net tool-change             iocontrol.0.tool-change          hal_manualtoolchange.change
-net tool-changed            iocontrol.0.tool-changed         hal_manualtoolchange.changed
-net tool-number             iocontrol.0.tool-prep-number     hal_manualtoolchange.number
-net tool-prepare-loopback   iocontrol.0.tool-prepare         iocontrol.0.tool-prepared
-# net tool-changed-btn hal_manualtoolchange.change_button <= parport.0.pin-15-in
+net tool-change                         iocontrol.0.tool-change          hal_manualtoolchange.change
+net tool-changed                        iocontrol.0.tool-changed         hal_manualtoolchange.changed
+net tool-number                         iocontrol.0.tool-prep-number     hal_manualtoolchange.number
+net tool-prepare-loopback               iocontrol.0.tool-prepare         iocontrol.0.tool-prepared
+net ssi-05-manual-tool-change-complete  hal_manualtoolchange.change_button
 
-	
 loadrt and2 count=2
 addf and2.0 servo-thread
 addf and2.1 servo-thread
 
 
-# inputs to first and
-net sserial-input-10    and2.0.in0
-net sserial-input-11    and2.0.in1
+# inputs to first AND gate
+net ssi-10-manual-tool-change    and2.0.in0
+net ssi-11-manual-tool-change    and2.0.in1
 
+# TODO: I need a different way to do some safety checking here
 net spindle-on          spindle.0.on    not.2.in
 net not-spindle-on      not.2.out       and2.1.in1
 
 # inputs to second and
-net tool-change-buttons-pressed         and2.0.out      and2.1.in0              
-
+net tool-change-buttons-pressed         and2.0.out      and2.1.in0
 net output-tool-release                 and2.1.out
-
-

@@ -1,28 +1,30 @@
 # https://linuxcnc.org/docs/html/man/man9/sserial.9.htm
 
-net sserial-input-00  hm2_7i97.0.7i84.0.0.input-00
-net sserial-input-01  hm2_7i97.0.7i84.0.0.input-01
-net sserial-input-02  hm2_7i97.0.7i84.0.0.input-02
-net sserial-input-03  hm2_7i97.0.7i84.0.0.input-03
-net sserial-input-04  hm2_7i97.0.7i84.0.0.input-04
-net sserial-input-05  hm2_7i97.0.7i84.0.0.input-05
 
+net ssi-00  hm2_7i97.0.7i84.0.0.input-00
+net ssi-01  hm2_7i97.0.7i84.0.0.input-01
+net ssi-02  hm2_7i97.0.7i84.0.0.input-02
+net ssi-03  hm2_7i97.0.7i84.0.0.input-03
+
+# M183 Spindle RPM is set by user, continue program execution
+net ssi-04-rpm-is-set  hm2_7i97.0.7i84.0.0.input-04
+# Tool change Complete
+net ssi-05-manual-tool-change-complete  hm2_7i97.0.7i84.0.0.input-05
 
 
 # G54 set z axis zero
-net sserial-input-06  hm2_7i97.0.7i84.0.0.input-06      halui.mdi-command-07
-
+net ssi-06-set-z-zero  hm2_7i97.0.7i84.0.0.input-06      halui.mdi-command-07
 # G54 set y axis zero
-net sserial-input-07  hm2_7i97.0.7i84.0.0.input-07      halui.mdi-command-06
-
+net ssi-07-set-y-zero  hm2_7i97.0.7i84.0.0.input-07      halui.mdi-command-06
 # G54 set x axis zero
-net sserial-input-08  hm2_7i97.0.7i84.0.0.input-08      halui.mdi-command-05
+net ssi-08-set-x-zero  hm2_7i97.0.7i84.0.0.input-08      halui.mdi-command-05
 
 
-net sserial-input-09  hm2_7i97.0.7i84.0.0.input-09
+net ssi-09  hm2_7i97.0.7i84.0.0.input-09
 
-net sserial-input-10  hm2_7i97.0.7i84.0.0.input-10 # tool change
-net sserial-input-11  hm2_7i97.0.7i84.0.0.input-11 # tool change
+# Both buttons 10 and 11 are a tool change
+net ssi-10-manual-tool-change  hm2_7i97.0.7i84.0.0.input-10
+net ssi-11-manual-tool-change  hm2_7i97.0.7i84.0.0.input-11
 
 
 net sserial-arrow-right     hm2_7i97.0.7i84.0.0.input-12
@@ -30,56 +32,49 @@ net sserial-arrow-down      hm2_7i97.0.7i84.0.0.input-13
 net sserial-arrow-up        hm2_7i97.0.7i84.0.0.input-14
 net sserial-arrow-left      hm2_7i97.0.7i84.0.0.input-15
 
-
-
-# net sserial-input-16
+# net ssi-16
 # net pendant.program.run     hm2_7i97.0.7i84.0.0.input-16
 
-# net sserial-input-17
+# net ssi-17
 # net pendant.program.resume  hm2_7i97.0.7i84.0.0.input-17
 
-# net sserial-input-18
+# net ssi-18
 # net pendant.program.stop    hm2_7i97.0.7i84.0.0.input-18
 
-# net sserial-input-19
+# net ssi-19
 # net pendant.program.pause   hm2_7i97.0.7i84.0.0.input-19
 
-
-
-net sserial-input-20  hm2_7i97.0.7i84.0.0.input-20
-net sserial-input-21  hm2_7i97.0.7i84.0.0.input-21
+net ssi-20  hm2_7i97.0.7i84.0.0.input-20
+net ssi-21  hm2_7i97.0.7i84.0.0.input-21
 
 net sserial-page-up     hm2_7i97.0.7i84.0.0.input-22
 net sserial-page-down   hm2_7i97.0.7i84.0.0.input-23
 
-net sserial-input-24  hm2_7i97.0.7i84.0.0.input-24
-net sserial-input-25  hm2_7i97.0.7i84.0.0.input-25
-net sserial-input-26  hm2_7i97.0.7i84.0.0.input-26
-net sserial-input-27  hm2_7i97.0.7i84.0.0.input-27
-net sserial-input-29  hm2_7i97.0.7i84.0.0.input-29
-net sserial-input-30  hm2_7i97.0.7i84.0.0.input-30
-net sserial-input-31  hm2_7i97.0.7i84.0.0.input-31
+net ssi-24  hm2_7i97.0.7i84.0.0.input-24
+net ssi-25  hm2_7i97.0.7i84.0.0.input-25
+net ssi-26  hm2_7i97.0.7i84.0.0.input-26
+net ssi-27  hm2_7i97.0.7i84.0.0.input-27
+net ssi-29  hm2_7i97.0.7i84.0.0.input-29
+net ssi-30  hm2_7i97.0.7i84.0.0.input-30
+net ssi-31  hm2_7i97.0.7i84.0.0.input-31
 
 
-
-
-
-net sserial-output-00  hm2_7i97.0.7i84.0.0.output-00
-net sserial-output-01  hm2_7i97.0.7i84.0.0.output-01
-net sserial-output-02  hm2_7i97.0.7i84.0.0.output-02
-net sserial-output-03  hm2_7i97.0.7i84.0.0.output-03
-net sserial-output-04  hm2_7i97.0.7i84.0.0.output-04
-net sserial-output-05  hm2_7i97.0.7i84.0.0.output-05
-net sserial-output-06  hm2_7i97.0.7i84.0.0.output-06
-net sserial-output-07  hm2_7i97.0.7i84.0.0.output-07
-net sserial-output-08  hm2_7i97.0.7i84.0.0.output-08
-net sserial-output-09  hm2_7i97.0.7i84.0.0.output-09
-net sserial-output-10  hm2_7i97.0.7i84.0.0.output-10
-net sserial-output-11  hm2_7i97.0.7i84.0.0.output-11
-net sserial-output-12  hm2_7i97.0.7i84.0.0.output-12
-net sserial-output-13  hm2_7i97.0.7i84.0.0.output-13
-net sserial-output-14  hm2_7i97.0.7i84.0.0.output-14
-net sserial-output-15  hm2_7i97.0.7i84.0.0.output-15
+net sso-00  hm2_7i97.0.7i84.0.0.output-00
+net sso-01  hm2_7i97.0.7i84.0.0.output-01
+net sso-02  hm2_7i97.0.7i84.0.0.output-02
+net sso-03  hm2_7i97.0.7i84.0.0.output-03
+net sso-04  hm2_7i97.0.7i84.0.0.output-04
+net sso-05  hm2_7i97.0.7i84.0.0.output-05
+net sso-06  hm2_7i97.0.7i84.0.0.output-06
+net sso-07  hm2_7i97.0.7i84.0.0.output-07
+net sso-08  hm2_7i97.0.7i84.0.0.output-08
+net sso-09  hm2_7i97.0.7i84.0.0.output-09
+net sso-10  hm2_7i97.0.7i84.0.0.output-10
+net sso-11  hm2_7i97.0.7i84.0.0.output-11
+net sso-12  hm2_7i97.0.7i84.0.0.output-12
+net sso-13  hm2_7i97.0.7i84.0.0.output-13
+net sso-14  hm2_7i97.0.7i84.0.0.output-14
+net sso-15  hm2_7i97.0.7i84.0.0.output-15
 
 
 

@@ -1,27 +1,13 @@
 # Halshow settings
 # This file is generated automatically.
-wm geometry . 790x987+1120+27
-placeFrames 0.3025583982202447
-set ::ratio 0.3025583982202447
-set ::old_w_leftf 160
+wm geometry . 1276x723+563+103
+placeFrames 0.303743961352657
+set ::ratio 0.303743961352657
+set ::old_w_leftf 503
 set ::watchlist {
-    sig+input-hd-off
-    sig+input-lubricant
-    sig+input-spindle
-    sig+input-home-min-x
-    sig+input-home-min-y
-    sig+input-home-max-z
-    sig+output-lubricant
-    sig+output-spindle-cw
-    sig+output-spindle-ccw
-    sig+spindle-on
-    pin+spindle.0.forward
-    pin+spindle.0.reverse
-    pin+spindle.0.on
-    sig+sserial-input-10
-    sig+sserial-input-11
-    sig+odometer-distance
-    sig+odometer-velocity
+    pin+iocontrol.0.emc-enable-in
+    pin+hm2_7i97.0.7i84.0.0.input-10
+    pin+hm2_7i97.0.7i84.0.0.input-11
 }
 set ::workmode watchhal
 set ::watchInterval 100
