@@ -1,7 +1,17 @@
 T1 P1 Z0 D1 ;empty 
-T2 P2 Z203.762 D3 ;mechanical edge finder 
+T2 P2 Z203.727 D3 ;mechanical edge finder 
 T3 P3 Z0 D1 ;digital edge finder 
-T4 P4 Z125.507 D6 ;[#04] [6mm] spot drill [er20] [hl=100mm] 
-T5 P5 Z92.427 D6 ;[#05] [6mm] flatmill 2f [er20] [hl=70mm] 
-T6 P6 Z98.216 D6 ;[#06] [6mm] flatmill 3f [er20] [hl=70mm] 
+T4 P4 Z125.467 D6 ;[#04] [6mm] spot drill
+T5 P5 Z92.360 D6 ;[#05] [6mm] 2f
+T6 P6 Z98.157 D6 ;[#06] [6mm] 3f
+T8 P8 Z135.970 D8 ;[#08] [8mm] 4f
+T9 P9 Z112.572 D8 ;[#09] [8mm] 3f
+T11 P11 Z98.675 D4 ;[#11] [4mm] 2f
+T12 P12 Z99.340 D3 ;[#12] [3mm] 2f
+T15 P15 Z159.160 D16 ;[#15] [16mm] 4f
+T16 P16 Z161.368 D20 ;[#16] [20mm] 4f
+T17 P17 Z108.845 D52 ;[#17] [52mm] facemill round
 T18 P18 Z142.757 D32 ;[#18] [32mm] facemill 5p 
+T19 P19 Z125.577 D20 ;[#19] [20mm] 4f roughing
+T20 P20 Z115.574 D10 ;[#20] [10mm] 2f
+T21 P21 Z122.367 D12 ;[#21] [12mm] 4f
