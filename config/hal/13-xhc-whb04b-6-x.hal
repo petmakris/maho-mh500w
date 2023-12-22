@@ -1,0 +1,28 @@
+addf   ilowpass.jog.x       servo-thread
+setp   ilowpass.jog.x.scale 100
+setp   ilowpass.jog.x.gain  0.2
+
+addf   scale.axis.x         servo-thread
+setp   scale.axis.x.gain    0.01 
+setp   scale.axis.x.offset  0
+
+
+# "is-homed" axis signal for allowing pendant when machine is not homed
+net pendant.joint.x.is-homed                 whb.halui.joint.x.is-homed            halui.joint.0.is-homed
+net pendant.axis.x.select                    whb.halui.axis.x.select               halui.axis.x.select
+net pendant.axis.x.pos-feedback              whb.halui.axis.x.pos-feedback         halui.axis.x.pos-feedback
+net pendant.axis.x.pos-relative              whb.halui.axis.x.pos-relative         halui.axis.x.pos-relative
+net pendant.axis.x.jog-vel-mode              whb.axis.x.jog-vel-mode               axis.x.jog-vel-mode
+net pendant.axis.x.jog-enable                whb.axis.x.jog-enable                 axis.x.jog-enable
+
+# Default
+
+net pendant.axis.x.jog-scale                 whb.axis.x.jog-scale                  axis.x.jog-scale
+net pendant.axis.x.jog-counts                whb.axis.x.jog-counts                 axis.x.jog-counts
+
+# With filter
+
+# net  pendant.axis.x.jog-scale            whb.axis.x.jog-scale               scale.axis.x.in
+# net  scale.axis.x.jog-scale              scale.axis.x.out                   axis.x.jog-scale
+# net  pendant.axis.x.jog-counts           whb.axis.x.jog-counts              ilowpass.jog.x.in
+# net  pendant.ilowpass.jog.x.jog-counts   ilowpass.jog.x.out                 axis.x.jog-counts
