@@ -1,9 +1,11 @@
 addf   ilowpass.jog.z       servo-thread
+addf   scale.axis.z         servo-thread
+
 setp   ilowpass.jog.z.scale 100
 setp   ilowpass.jog.z.gain  0.2
 
-addf   scale.axis.z         servo-thread
-setp   scale.axis.z.gain    0.01 
+# out = in * gain + offset
+setp   scale.axis.z.gain    0.01
 setp   scale.axis.z.offset  0
 
 
@@ -17,12 +19,12 @@ net pendant.axis.z.jog-enable                whb.axis.z.jog-enable              
 
 # Default
 
-net pendant.axis.z.jog-scale                 whb.axis.z.jog-scale                  axis.z.jog-scale
-net pendant.axis.z.jog-counts                whb.axis.z.jog-counts                 axis.z.jog-counts
+# net pendant.axis.z.jog-scale                 whb.axis.z.jog-scale                  axis.z.jog-scale
+# net pendant.axis.z.jog-counts                whb.axis.z.jog-counts                 axis.z.jog-counts
 
 # With filter
 
-# net  pendant.axis.z.jog-scale            whb.axis.z.jog-scale               scale.axis.z.in
-# net  scale.axis.z.jog-scale              scale.axis.z.out                   axis.z.jog-scale
-# net  pendant.axis.z.jog-counts           whb.axis.z.jog-counts              ilowpass.jog.z.in
-# net  pendant.ilowpass.jog.z.jog-counts   ilowpass.jog.z.out                 axis.z.jog-counts
+net  pendant.axis.z.jog-scale            whb.axis.z.jog-scale               scale.axis.z.in
+net  scale.axis.z.jog-scale              scale.axis.z.out                   axis.z.jog-scale
+net  pendant.axis.z.jog-counts           whb.axis.z.jog-counts              ilowpass.jog.z.in
+net  pendant.ilowpass.jog.z.jog-counts   ilowpass.jog.z.out                 axis.z.jog-counts
