@@ -10,7 +10,7 @@ setp   scale.axis.y.offset  0
 
 
 # "is-homed" axis signal for allowing pendant when machine is not homed
-net pendant.joint.y.is-homed                 whb.halui.joint.y.is-homed            halui.joint.0.is-homed
+net pendant.joint.y.is-homed                 whb.halui.joint.y.is-homed            halui.joint.1.is-homed
 net pendant.axis.y.select                    whb.halui.axis.y.select               halui.axis.y.select
 net pendant.axis.y.pos-feedback              whb.halui.axis.y.pos-feedback         halui.axis.y.pos-feedback
 net pendant.axis.y.pos-relative              whb.halui.axis.y.pos-relative         halui.axis.y.pos-relative
