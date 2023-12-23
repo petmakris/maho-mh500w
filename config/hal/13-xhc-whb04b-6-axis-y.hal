@@ -1,11 +1,11 @@
 addf   ilowpass.jog.y       servo-thread
 addf   scale.axis.y         servo-thread
 
-setp   ilowpass.jog.y.scale 100
-setp   ilowpass.jog.y.gain  0.2
+setp   ilowpass.jog.y.scale 1000
+setp   ilowpass.jog.y.gain  0.05
 
 # out = in * gain + offset
-setp   scale.axis.y.gain    0.01
+setp   scale.axis.y.gain    0.001
 setp   scale.axis.y.offset  0
 
 

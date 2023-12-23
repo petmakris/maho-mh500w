@@ -8,6 +8,7 @@ set ::watchlist {
     pin+iocontrol.0.emc-enable-in
     pin+hm2_7i97.0.7i84.0.0.input-10
     pin+hm2_7i97.0.7i84.0.0.input-11
+    param+ilowpass.jog.x.gain
 }
 set ::workmode watchhal
 set ::watchInterval 100
