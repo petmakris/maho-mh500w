@@ -46,7 +46,6 @@ FUNCTION(_) {
         }
     } else {
         active = false;
-        cycles = 0;
         time_active_counter = 0;
         current_distance = 0;
     }
