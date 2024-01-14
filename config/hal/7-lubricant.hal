@@ -1,12 +1,21 @@
 loadrt odometer
 addf odometer.0 servo-thread
 
-setp odometer.0.trigger-distance     3000
-setp odometer.0.active-duration     10000
-setp odometer.0.activate-on-boot     true
 
-net odometer-velocity           motion.current-vel      odometer.0.velocity
+
+
+setp odometer.0.trigger-distance   3000
+setp odometer.0.active-duration    10000
+setp odometer.0.active-on-boot     true
+
+
+# only when machine is powered on
+net output-machine-power-on     odometer.0.powered-on
+
+net odometer-velocity           motion.current-vel              odometer.0.velocity
 net odometer-total-distance     odometer.0.total-distance
 net odometer-current-distance   odometer.0.current-distance
 net odometer-cycles             odometer.0.cycles
+
+# Wired to pin to control the lube pump
 net odometer-active             odometer.0.active

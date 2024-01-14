@@ -5,8 +5,6 @@ addf not.1 servo-thread
 # used in tool change
 addf not.2 servo-thread 
 
-
-
 loadrt estop_latch
 addf estop-latch.0 servo-thread
 

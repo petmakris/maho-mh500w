@@ -1,0 +1,45 @@
+component odometer;
+
+pin in float velocity;
+
+pin out float distance;
+pin out bit active;
+pin out unsigned cycles;
+
+param rw float trigger_distance = 3000;
+param rw unsigned active_duration = 15000;
+param rw bit activate_on_boot = true;
+
+function _;
+license "GPL";
+;;
+
+static unsigned time_active_counter;
+static double distance;
+static double current_distance;
+static double dx;
+
+FUNCTION(_) {
+    dx = velocity * (fperiod);
+    distance += dx;
+
+    if (active) {
+        time_active_counter += (period / 1000000);
+        active = time_active_counter > active_duration;
+    } else {
+        if (activate_on_boot) {
+            activate_on_boot = false;
+            active = true;
+            cycles += 1;
+            time_active_counter = 0;
+            current_distance = 0;
+        }
+        current_distance += dx;
+        if (current_distance > trigger_distance) {
+            active = true;
+            cycles += 1;
+            time_active_counter = 0;
+            current_distance = 0;
+        }
+    }
+}

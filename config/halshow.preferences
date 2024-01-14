@@ -1,14 +1,20 @@
 # Halshow settings
 # This file is generated automatically.
-wm geometry . 1276x723+563+103
+wm geometry . 1035x987+804+27
 placeFrames 0.303743961352657
 set ::ratio 0.303743961352657
 set ::old_w_leftf 503
 set ::watchlist {
-    pin+iocontrol.0.emc-enable-in
-    pin+hm2_7i97.0.7i84.0.0.input-10
-    pin+hm2_7i97.0.7i84.0.0.input-11
-    param+ilowpass.jog.x.gain
+    sig+odometer-active
+    sig+odometer-current-distance
+    sig+odometer-cycles
+    sig+odometer-total-distance
+    sig+odometer-velocity
+    param+odometer.0.active-on-boot
+    param+odometer.0.active-duration
+    param+odometer.0.tmax
+    param+odometer.0.tmax-increased
+    param+odometer.0.trigger-distance
 }
 set ::workmode watchhal
 set ::watchInterval 100

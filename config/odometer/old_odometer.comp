@@ -2,6 +2,7 @@ component odometer;
 pin out float distance;
 pin in float velocity;
 pin out bit lube;
+
 param rw float travel = 10000;
 param rw unsigned lube_ms = 8000;
 
