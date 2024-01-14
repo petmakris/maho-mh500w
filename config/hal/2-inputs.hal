@@ -1,5 +1,7 @@
 # LINUXCNC INPUTS - 19X7 
 
+# these are maho inputs
+
 net input-handwheel-x       hm2_7i97.0.inmux.00.input-03
 net input-handwheel-z       hm2_7i97.0.inmux.00.input-04
 net input-handwheel-y       hm2_7i97.0.inmux.00.input-05

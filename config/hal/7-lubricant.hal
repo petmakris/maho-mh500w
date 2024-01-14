@@ -1,7 +1,8 @@
 loadrt odometer
 addf odometer.0 servo-thread
 
-
+loadrt or2
+addf or2.0 servo-thread
 
 
 setp odometer.0.trigger-distance   3000
@@ -17,5 +18,8 @@ net odometer-total-distance     odometer.0.total-distance
 net odometer-current-distance   odometer.0.current-distance
 net odometer-cycles             odometer.0.cycles
 
-# Wired to pin to control the lube pump
-net odometer-active             odometer.0.active
+# either odometer output is active or button 9 will trigger the lube pump
+net odometer_bypass_or_0        or2.0.in0       odometer.0.active
+net odometer_bypass_or_1        or2.0.in1       hm2_7i97.0.7i84.0.0.input-09
+
+net odometer-active             or2.0.out
