@@ -1,2 +1,5 @@
 **/*.bak
 **/*.var
+
+maho.ini.expanded
+
