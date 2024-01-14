@@ -1,34 +1,42 @@
 component odometer;
-pin out float distance;
+
 pin in float velocity;
-pin out bit lube;
-param rw float travel = 10000;
-param rw unsigned lube_ms = 8000;
+pin out bit active;
+pin out unsigned times_active;
+
+param r float trigger_distance = 3000;
+param r unsigned active_duration = 15000;
+param r bit activate_on_boot = true;
 
 function _;
 license "GPL";
 ;;
-static unsigned lube_time;
-static double s_units;
-static bool lube_triggered;
+
+static unsigned time_active_counter;
+static double total_distance;
+static double lube_distance;
 
 FUNCTION(_) {
-    s_units += velocity * (fperiod);
-    
-    if (s_units > travel) {
-        lube_triggered = true;
-        s_units = 0;
-    }
-    if (lube_triggered) {
-        lube_time += (period / 1000000);
-        if (lube_time <= lube_ms) {
-            lube = true;
-        } else {
-            lube_triggered = false;
-        }
+    double dx = velocity * (fperiod);
+    total_distance += dx;
+
+    if (active) {
+        time_active_counter += (period / 1000000);
+        active = time_active_counter > active_duration;
     } else {
-        lube = 0;
-        lube_time = 0;
+        if (activate_on_boot) {
+            activate_on_boot = false;
+            active = true;
+            times_active += 1;
+            time_active_counter = 0;
+            lube_distance = 0;
+        }
+        lube_distance += dx;
+        if (lube_distance > trigger_distance) {
+            active = true;
+            times_active += 1;
+            time_active_counter = 0;
+            lube_distance = 0;
+        }
     }
-    distance = s_units;
 }
