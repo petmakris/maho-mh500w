@@ -1,8 +1,8 @@
 # Halshow settings
 # This file is generated automatically.
 wm geometry . 1035x987+804+27
-placeFrames 0.303743961352657
-set ::ratio 0.303743961352657
+placeFrames 0.3176930596285435
+set ::ratio 0.3176930596285435
 set ::old_w_leftf 503
 set ::watchlist {
     sig+odometer-active
@@ -10,11 +10,9 @@ set ::watchlist {
     sig+odometer-cycles
     sig+odometer-total-distance
     sig+odometer-velocity
-    param+odometer.0.active-on-boot
-    param+odometer.0.active-duration
-    param+odometer.0.tmax
-    param+odometer.0.tmax-increased
-    param+odometer.0.trigger-distance
+    sig+odometer_bypass_or_0
+    sig+odometer_bypass_or_1
+    sig+output-machine-power-on
 }
 set ::workmode watchhal
 set ::watchInterval 100
