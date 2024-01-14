@@ -27,7 +27,7 @@ FUNCTION(_) {
     if (powered_on) {
         if (active) {
             time_active_counter += (period / 1000000);
-            active = time_active_counter > active_duration;
+            active = time_active_counter < active_duration;
         } else {
             if (active_on_boot == true) {
                 active_on_boot = false;
