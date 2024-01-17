@@ -1,9 +1,9 @@
-# halui.program.is-idle bit out   status pin telling that no program is running
-# halui.program.is-paused bit out status pin telling that a program is paused
-# halui.program.is-running bit out    status pin telling that a program is running
+# halui.program.is-idle     bit out status pin telling that no program is running
+# halui.program.is-paused   bit out status pin telling that a program is paused
+# halui.program.is-running  bit out status pin telling that a program is running
 
-# halui.program.optional-stop.is-on bit out   status pin telling that the optional stop is on
-# halui.program.optional-stop.off bit in  pin requesting that the optional stop is off
-# halui.program.optional-stop.on bit in   pin requesting that the optional stop is on
+# halui.program.optional-stop.is-on bit out status pin telling that the optional stop is on
+# halui.program.optional-stop.off   bit in  pin requesting that the optional stop is off
+# halui.program.optional-stop.on    bit in  pin requesting that the optional stop is on
 
 # halui.program.step bit in   pin for stepping in a program
