@@ -5,7 +5,9 @@ net ssi-01                              hm2_7i97.0.7i84.0.0.input-01
 net ssi-02                              hm2_7i97.0.7i84.0.0.input-02
 net ssi-03                              hm2_7i97.0.7i84.0.0.input-03
 net ssi-04                              hm2_7i97.0.7i84.0.0.input-04
+
 net ssi-05-set-x-zero                   hm2_7i97.0.7i84.0.0.input-05    halui.mdi-command-05
+
 net ssi-06                              hm2_7i97.0.7i84.0.0.input-06
 net ssi-07                              hm2_7i97.0.7i84.0.0.input-07
 net ssi-08                              hm2_7i97.0.7i84.0.0.input-08
@@ -14,6 +16,7 @@ net ssi-09-rpm-is-set                   hm2_7i97.0.7i84.0.0.input-09
 
 net ssi-10-set-spindle-off              hm2_7i97.0.7i84.0.0.input-10    halui.mdi-command-02
 net ssi-11-set-spindle-on               hm2_7i97.0.7i84.0.0.input-11    halui.mdi-command-01
+
 net ssi-12-tool-change-button           hm2_7i97.0.7i84.0.0.input-12
 
 net ssi-13-tool-change-complete         hm2_7i97.0.7i84.0.0.input-13

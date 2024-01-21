@@ -7,7 +7,7 @@ net tool-changed                 iocontrol.0.tool-changed         hal_manualtool
 net tool-number                  iocontrol.0.tool-prep-number     hal_manualtoolchange.number
 net tool-prepare-loopback        iocontrol.0.tool-prepare         iocontrol.0.tool-prepared
 
-net ssi-05-tool-change-complete  hal_manualtoolchange.change_button
+net ssi-13-tool-change-complete  hal_manualtoolchange.change_button
 
 net spindle-on                   spindle.0.on    not.2.in
 net not-spindle-on               not.2.out       and2.0.in1
