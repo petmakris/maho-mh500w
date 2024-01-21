@@ -23,7 +23,7 @@ net external-estop-not          not.0.out
 
 net internal-estop-not          iocontrol.0.user-enable-out
 net internal-estop-not          not.1.in
-net internal-estop              not.1.out
+net internal-estop              not.1.out                       hm2_7i97.0.7i84.0.0.output-00
 
 net output-machine-power-on     iocontrol.0.emc-enable-in
 net output-machine-power-on     hm2_7i97.0.ssr.00.out-00

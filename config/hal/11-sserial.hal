@@ -42,7 +42,7 @@ net ssi-31                              hm2_7i97.0.7i84.0.0.input-31
 
 # OUTPUTS
 
-net sso-00-led-red-estop                hm2_7i97.0.7i84.0.0.output-00
+# net sso-00-led-red-estop                hm2_7i97.0.7i84.0.0.output-00
 net sso-01-led-red-stop                 hm2_7i97.0.7i84.0.0.output-01
 net sso-02-led-red-paused               hm2_7i97.0.7i84.0.0.output-02
 net sso-03-led-red                      hm2_7i97.0.7i84.0.0.output-03
