@@ -1,6 +1,3 @@
-loadusr -W hal_manualtoolchange
-loadrt and2 count=1
-addf and2.0 servo-thread
 
 # TODO: to control the LED i propably need a flipflop
 
@@ -11,9 +8,9 @@ net tool-prepare-loopback        iocontrol.0.tool-prepare         iocontrol.0.to
 
 net ssi-13-tool-change-complete  hal_manualtoolchange.change_button
 
-net spindle-on                   spindle.0.on    not.2.in
-net not-spindle-on               not.2.out       and2.0.in1
+net spindle-on                   spindle.0.on    not.tool-change.in
+net not-spindle-on               not.tool-change.out       and.lube.in1
 
-net ssi-12-tool-change-button    and2.0.in0
+net ssi-12-tool-change-button    and.lube.in0
 
-net output-tool-release          and2.0.out      spindle.0.inhibit     motion.feed-inhibit
+net output-tool-release          and.lube.out      spindle.0.inhibit     motion.feed-inhibit

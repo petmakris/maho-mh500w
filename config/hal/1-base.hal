@@ -10,7 +10,7 @@ loadrt pid num_chan=3 debug=1
 # hostmot2 driver
 loadrt hostmot2
 
-loadrt [HM2](DRIVER) board_ip=[HM2](IPADDRESS) config="sserial_port_0=00000000"
+loadrt [HM2](DRIVER) board_ip=[HM2](IPADDRESS) config="sserial_port_0=20000000"
 setp hm2_7i97.0.watchdog.timeout_ns 5000000
 
 
@@ -30,3 +30,19 @@ setp hm2_7i97.0.dpll.01.timer-us -50
 # PWM FREQUENCY
 # setp hm2_7i97.0.pwmgen.pwm_frequency 48000
 
+loadusr -W hal_manualtoolchange
+
+loadrt odometer         names=odometer.lube
+loadrt estop_latch      names=estop-latch
+
+loadrt and2             names=and2.lube
+loadrt or2              names=or2.lube
+loadrt not              names=not.estop.0,not.estop.1,not.tool-change
+
+addf odometer.lube      servo-thread
+addf estop-latch        servo-thread
+addf and2.lube          servo-thread
+addf or2.lube           servo-thread
+addf not.estop.0        servo-thread
+addf not.estop.1        servo-thread
+addf not.tool-change    servo-thread 

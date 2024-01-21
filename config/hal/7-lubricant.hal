@@ -1,22 +1,16 @@
-loadrt odometer
-addf odometer.0 servo-thread
+setp odometer.lube.trigger-distance   3000
+setp odometer.lube.active-duration    10000
+setp odometer.lube.active-on-boot     true
 
-loadrt or2
-addf or2.0 servo-thread
+net output-machine-power-on     odometer.lube.powered-on
 
-setp odometer.0.trigger-distance   3000
-setp odometer.0.active-duration    10000
-setp odometer.0.active-on-boot     true
+net odometer-velocity           motion.current-vel              odometer.lube.velocity
+net odometer-total-distance     odometer.lube.total-distance
+net odometer-current-distance   odometer.lube.current-distance
+net odometer-cycles             odometer.lube.cycles
 
-net output-machine-power-on     odometer.0.powered-on
+net odometer_bypass_or_0        or2.lube.in0       odometer.lube.active
+net ssi-16-force-lubricator     or2.lube.in1       
 
-net odometer-velocity           motion.current-vel              odometer.0.velocity
-net odometer-total-distance     odometer.0.total-distance
-net odometer-current-distance   odometer.0.current-distance
-net odometer-cycles             odometer.0.cycles
-
-net odometer_bypass_or_0        or2.0.in0       odometer.0.active
-net ssi-16-force-lubricator     or2.0.in1       
-
-net output-lube-pump            or2.0.out       hm2_7i97.0.ssr.00.out-05
+net output-lube-pump            or2.lube.out       hm2_7i97.0.ssr.00.out-05
 

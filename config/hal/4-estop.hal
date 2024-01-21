@@ -1,12 +1,3 @@
-loadrt not count=3
-addf not.0 servo-thread
-addf not.1 servo-thread
-
-# used in tool change
-addf not.2 servo-thread 
-
-loadrt estop_latch
-addf estop-latch.0 servo-thread
 
 # iocontrol.0.emc-enable-in         (bit, IN)   Should be driven FALSE when an external E-Stop condition exists.
 # iocontrol.0.user-enable-out       (bit, OUT)  FALSE when an internal E-Stop condition exists.
@@ -17,13 +8,13 @@ net external-estop-not          estop-latch.0.ok-in
 net input-power-on-switch       estop-latch.0.reset
 net output-machine-power-on     estop-latch.0.ok-out
 net internal-estop              estop-latch.0.fault-in
-
-net input-external-estop        not.0.in
-net external-estop-not          not.0.out
+    
+net input-external-estop        not.estop.0.in
+net external-estop-not          not.estop.0.out
 
 net internal-estop-not          iocontrol.0.user-enable-out
-net internal-estop-not          not.1.in
-net internal-estop              not.1.out                       hm2_7i97.0.7i84.0.0.output-00
+net internal-estop-not          not.estop.1.in
+net internal-estop              not.estop.1.out                       hm2_7i97.0.7i84.0.0.output-00
 
 net output-machine-power-on     iocontrol.0.emc-enable-in
 net output-machine-power-on     hm2_7i97.0.ssr.00.out-00        hm2_7i97.0.7i84.0.0.output-06
