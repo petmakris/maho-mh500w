@@ -9,8 +9,8 @@ net odometer-total-distance     odometer.lube.total-distance
 net odometer-current-distance   odometer.lube.current-distance
 net odometer-cycles             odometer.lube.cycles
 
-net odometer_bypass_or_0        or2.lube.in0       odometer.lube.active
-net ssi-16-force-lubricator     or2.lube.in1       
+net odometer_bypass_or_0        or.lube.in0       odometer.lube.active
+net ssi-16-force-lubricator     or.lube.in1       
 
-net output-lube-pump            or2.lube.out       hm2_7i97.0.ssr.00.out-05
+net output-lube-pump            or.lube.out       hm2_7i97.0.ssr.00.out-05
 
