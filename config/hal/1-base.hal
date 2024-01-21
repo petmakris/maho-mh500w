@@ -36,7 +36,7 @@ loadrt odometer         names=odometer.lube
 loadrt estop_latch      names=estop-latch
 
 loadrt and2             names=and.lube
-loadrt or2              names=or.lube,or.btn.resume,or.btn.pause,or.btn.run,or.btn.pause
+loadrt or2              names=or.lube,or.btn.resume,or.btn.pause,or.btn.run,or.btn.stop
 loadrt not              names=not.estop.0,not.estop.1,not.tool-change
 
 addf odometer.lube      servo-thread
