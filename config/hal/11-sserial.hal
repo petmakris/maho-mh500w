@@ -12,8 +12,8 @@ net ssi-08                              hm2_7i97.0.7i84.0.0.input-08
 
 net ssi-09-rpm-is-set                   hm2_7i97.0.7i84.0.0.input-09
 
-net ssi-10-set-spindle-off              hm2_7i97.0.7i84.0.0.input-10
-net ssi-11-set-spindle-on               hm2_7i97.0.7i84.0.0.input-11
+net ssi-10-set-spindle-off              hm2_7i97.0.7i84.0.0.input-10    halui.mdi-command-02
+net ssi-11-set-spindle-on               hm2_7i97.0.7i84.0.0.input-11    halui.mdi-command-01
 net ssi-12-tool-change-button           hm2_7i97.0.7i84.0.0.input-12
 
 net ssi-13-tool-change-complete         hm2_7i97.0.7i84.0.0.input-13

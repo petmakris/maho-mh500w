@@ -14,5 +14,4 @@ net not-spindle-on               not.2.out       and2.0.in1
 
 net ssi-12-tool-change-button    and2.0.in0
 
- #motion.spindle.0.inhibit
 net output-tool-release          and2.0.out      spindle.0.inhibit     motion.feed-inhibit

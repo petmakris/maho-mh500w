@@ -1,10 +1,8 @@
-# MDI_COMMAND = G10 L20 P0 X[#<_x>/2.0]
-# MDI_COMMAND = G10 L20 P0 Y[#<_y>/2.0]
-
+# TODO: once spindle at speed is implemented the M183 will be removed
 
 [HALUI]
-MDI_COMMAND = (DEBUG,<0>)
-MDI_COMMAND = (DEBUG,<1>)
+MDI_COMMAND = M3 S1000 M183 P1000
+MDI_COMMAND = M5
 MDI_COMMAND = (DEBUG,<2>)
 MDI_COMMAND = (DEBUG,<3>)
 MDI_COMMAND = (DEBUG,<4>)
