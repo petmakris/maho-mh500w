@@ -54,7 +54,7 @@ net sso-05-led-red-waiting-tool-change  hm2_7i97.0.7i84.0.0.output-05
 
 # net sso-06-led-green                    hm2_7i97.0.7i84.0.0.output-06
 
-net sso-07-led-green-running            hm2_7i97.0.7i84.0.0.output-07
+# net sso-07-led-green-running            hm2_7i97.0.7i84.0.0.output-07
 net sso-08-led-green                    hm2_7i97.0.7i84.0.0.output-08
 net sso-09-led-green                    hm2_7i97.0.7i84.0.0.output-09
 net sso-10-led-green                    hm2_7i97.0.7i84.0.0.output-10
