@@ -16,11 +16,6 @@ loadusr -W xhc-whb04b-6 -HsfB
 # -f    MPG + jogwheel changes the feed override. Each tick will increment/decrement the feed override.
 # -B    Add 5 mm and 10 mm to Step feedrate output
 
-# pass jog counts through lowpass to prevent jerking and following errors
-loadrt ilowpass names=ilowpass.jog.x,ilowpass.jog.y,ilowpass.jog.z
-
-# re-scale low-passed jog counts
-loadrt scale names=scale.axis.x,scale.axis.y,scale.axis.z
 
 
 # On/Off signals
@@ -34,21 +29,21 @@ net pendant.program.is-paused                whb.halui.program.is-paused        
 net pendant.program-is-running               whb.halui.program.is-running          halui.program.is-running     hm2_7i97.0.7i84.0.0.output-08
 
 
-net action-resume-in0       hm2_7i97.0.7i84.0.0.input-23     => or.btn.resume.in0
-net action-resume-in1       whb.halui.program.resume         => or.btn.resume.in1
-net action-resume-out       or.btn.resume.out                => halui.program.resume
+net action-resume-in0                       hm2_7i97.0.7i84.0.0.input-23           or.btn.resume.in0
+net action-resume-in1                       whb.halui.program.resume               or.btn.resume.in1
+net action-resume-out                       or.btn.resume.out                      halui.program.resume
 
-net action-pause-in0        hm2_7i97.0.7i84.0.0.input-22     => or.btn.pause.in0
-net action-pause-in1        whb.halui.program.pause          => or.btn.pause.in1
-net action-pause-out        or.btn.pause.out                 => halui.program.pause
+net action-pause-in0                        hm2_7i97.0.7i84.0.0.input-22           or.btn.pause.in0
+net action-pause-in1                        whb.halui.program.pause                or.btn.pause.in1
+net action-pause-out                        or.btn.pause.out                       halui.program.pause
 
-net action-run-in0          hm2_7i97.0.7i84.0.0.input-07     => or.btn.run.in0
-net action-run-in1          whb.halui.program.run            => or.btn.run.in1
-net action-run-out          or.btn.run.out                   => halui.program.run
+net action-run-in0                          hm2_7i97.0.7i84.0.0.input-07           or.btn.run.in0
+net action-run-in1                          whb.halui.program.run                  or.btn.run.in1
+net action-run-out                          or.btn.run.out                         halui.program.run
 
-net action-stop-in0         hm2_7i97.0.7i84.0.0.input-06     => or.btn.stop.in0
-net action-stop-in1         whb.halui.program.stop           => or.btn.stop.in1
-net action-stop-out         or.btn.stop.out                  => halui.program.stop
+net action-stop-in0                         hm2_7i97.0.7i84.0.0.input-06           or.btn.stop.in0
+net action-stop-in1                         whb.halui.program.stop                 or.btn.stop.in1
+net action-stop-out                         or.btn.stop.out                        halui.program.stop
 
 # machine mode related signals
 net pendant.mode.auto                        whb.halui.mode.auto                   halui.mode.auto

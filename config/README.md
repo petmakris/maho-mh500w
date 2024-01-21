@@ -17,9 +17,3 @@ Y       Signal      Black       White       lim-y-out   TB4-pin5-IN3
 Z       Signal      Black       White       lim-z-out   TB4-pin7-IN4
         Ground      Blue        Green       lim-z-com   TB4-pin9-COMMON-4,5
 ```
-
-# 7i84
-
-```bash
-loadrt hm2_eth board_ip="10.10.10.10" config=" num_encoders=6 num_pwmgens=6 num_stepgens=0 sserial_port_0=00000000" 
-```

@@ -39,6 +39,10 @@ loadrt and2             names=and.lube
 loadrt or2              names=or.lube,or.btn.resume,or.btn.pause,or.btn.run,or.btn.stop
 loadrt not              names=not.estop.0,not.estop.1,not.tool-change
 
+loadrt ilowpass names=ilowpass.jog.x,ilowpass.jog.y,ilowpass.jog.z
+loadrt scale names=scale.axis.x,scale.axis.y,scale.axis.z,scale.pot.0,scale.pot.1,scale.pot.2
+
+
 addf odometer.lube      servo-thread
 addf estop-latch        servo-thread
 addf and.lube           servo-thread
@@ -51,5 +55,38 @@ addf not.estop.0        servo-thread
 addf not.estop.1        servo-thread
 addf not.tool-change    servo-thread 
 
+addf scale.pot.0        servo-thread
+addf scale.pot.1        servo-thread
+addf scale.pot.2        servo-thread
 
+addf ilowpass.jog.x       servo-thread
+addf scale.axis.x         servo-thread
+addf ilowpass.jog.y       servo-thread
+addf scale.axis.y         servo-thread
+addf ilowpass.jog.z       servo-thread
+addf scale.axis.z         servo-thread
+
+setp ilowpass.jog.x.scale 100
+setp ilowpass.jog.x.gain  0.1
+setp scale.axis.x.gain    0.01
+setp scale.axis.x.offset  0
+
+setp ilowpass.jog.y.scale 100
+setp ilowpass.jog.y.gain  0.1
+setp scale.axis.y.gain    0.01
+setp scale.axis.y.offset  0
+
+setp ilowpass.jog.z.scale 100
+setp ilowpass.jog.z.gain  0.1
+setp scale.axis.z.gain    0.01
+setp scale.axis.z.offset  0
+
+setp scale.pot.0.gain    20
+setp scale.pot.0.offset  0
+
+setp scale.pot.1.gain    20
+setp scale.pot.1.offset  0
+
+setp scale.pot.2.gain    20
+setp scale.pot.2.offset  0
 

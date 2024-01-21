@@ -1,14 +1,3 @@
-addf   ilowpass.jog.y       servo-thread
-addf   scale.axis.y         servo-thread
-
-setp   ilowpass.jog.y.scale 100
-setp   ilowpass.jog.y.gain  0.1
-
-# out = in * gain + offset
-setp   scale.axis.y.gain    0.01
-setp   scale.axis.y.offset  0
-
-
 # "is-homed" axis signal for allowing pendant when machine is not homed
 net pendant.joint.y.is-homed                 whb.halui.joint.y.is-homed            halui.joint.1.is-homed
 net pendant.axis.y.select                    whb.halui.axis.y.select               halui.axis.y.select
