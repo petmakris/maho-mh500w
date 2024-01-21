@@ -33,7 +33,7 @@ net ssi-20                              hm2_7i97.0.7i84.0.0.input-20
 
 net ssi-21-set-y-zero                   hm2_7i97.0.7i84.0.0.input-21    halui.mdi-command-06
 
-net ssi-22                              hm2_7i97.0.7i84.0.0.input-22
+# net ssi-22-pause                        hm2_7i97.0.7i84.0.0.input-22
 net ssi-23                              hm2_7i97.0.7i84.0.0.input-23
 net ssi-24                              hm2_7i97.0.7i84.0.0.input-24
 net ssi-25                              hm2_7i97.0.7i84.0.0.input-25
@@ -54,8 +54,8 @@ net sso-05-led-red-waiting-tool-change  hm2_7i97.0.7i84.0.0.output-05
 
 # net sso-06-led-green                    hm2_7i97.0.7i84.0.0.output-06
 
-# net sso-07-led-green-running            hm2_7i97.0.7i84.0.0.output-07
-net sso-08-led-green                    hm2_7i97.0.7i84.0.0.output-08
+# net sso-07-led-green-is-idle          hm2_7i97.0.7i84.0.0.output-07
+# net sso-08-led-green                    hm2_7i97.0.7i84.0.0.output-08
 net sso-09-led-green                    hm2_7i97.0.7i84.0.0.output-09
 net sso-10-led-green                    hm2_7i97.0.7i84.0.0.output-10
 net sso-11-led-green-lube               hm2_7i97.0.7i84.0.0.output-11
