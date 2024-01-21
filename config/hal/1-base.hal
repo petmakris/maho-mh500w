@@ -50,3 +50,6 @@ addf or.btn.stop        servo-thread
 addf not.estop.0        servo-thread
 addf not.estop.1        servo-thread
 addf not.tool-change    servo-thread 
+
+
+

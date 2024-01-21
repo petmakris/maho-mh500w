@@ -1,9 +1,14 @@
 # INPUTS
 
-net ssi-00                              hm2_7i97.0.7i84.0.0.input-00
-net ssi-01                              hm2_7i97.0.7i84.0.0.input-01
-net ssi-02                              hm2_7i97.0.7i84.0.0.input-02
-net ssi-03                              hm2_7i97.0.7i84.0.0.input-03
+# Add here the analog
+
+# net ssi-00                              hm2_7i97.0.7i84.0.0.input-00
+# net ssi-01                              hm2_7i97.0.7i84.0.0.input-01
+# net ssi-02                              hm2_7i97.0.7i84.0.0.input-02
+# net ssi-03                              hm2_7i97.0.7i84.0.0.input-03
+
+# halui.axis.jog-speed
+
 net ssi-04                              hm2_7i97.0.7i84.0.0.input-04
 
 net ssi-05-set-x-zero                   hm2_7i97.0.7i84.0.0.input-05    halui.mdi-command-05
@@ -26,8 +31,8 @@ net ssi-15                              hm2_7i97.0.7i84.0.0.input-15
 net ssi-16-force-lubricator             hm2_7i97.0.7i84.0.0.input-16
 net ssi-17-set-z-zero                   hm2_7i97.0.7i84.0.0.input-17    halui.mdi-command-07
 
-net ssi-18                              hm2_7i97.0.7i84.0.0.input-18
-net ssi-19                              hm2_7i97.0.7i84.0.0.input-19
+net ssi-18-jog-z-plus                   hm2_7i97.0.7i84.0.0.input-18    halui.axis.z.plus
+net ssi-19-jog-z-minus                  hm2_7i97.0.7i84.0.0.input-19    halui.axis.z.minus
 net ssi-20                              hm2_7i97.0.7i84.0.0.input-20
 
 net ssi-21-set-y-zero                   hm2_7i97.0.7i84.0.0.input-21    halui.mdi-command-06
