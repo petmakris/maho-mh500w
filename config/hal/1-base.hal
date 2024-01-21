@@ -35,14 +35,14 @@ loadusr -W hal_manualtoolchange
 loadrt odometer         names=odometer.lube
 loadrt estop_latch      names=estop-latch
 
-loadrt and2             names=and2.lube
-loadrt or2              names=or2.lube
+loadrt and2             names=and.lube
+loadrt or2              names=or.lube
 loadrt not              names=not.estop.0,not.estop.1,not.tool-change
 
 addf odometer.lube      servo-thread
 addf estop-latch        servo-thread
-addf and2.lube          servo-thread
-addf or2.lube           servo-thread
+addf and.lube          servo-thread
+addf or.lube           servo-thread
 addf not.estop.0        servo-thread
 addf not.estop.1        servo-thread
 addf not.tool-change    servo-thread 
