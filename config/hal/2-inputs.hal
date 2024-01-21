@@ -1,6 +1,4 @@
-# LINUXCNC INPUTS - 19X7 
-
-# these are maho inputs
+# LINUXCNC INPUTS - 19X7 / MAHO OUTPUTS
 
 net input-handwheel-x       hm2_7i97.0.inmux.00.input-03
 net input-handwheel-z       hm2_7i97.0.inmux.00.input-04
@@ -15,6 +13,5 @@ net input-power-on-switch   hm2_7i97.0.inmux.00.input-11
 
 # net input-12              hm2_7i97.0.inmux.00.input-12
 # net input-13              hm2_7i97.0.inmux.00.input-13
-
 # net input-14              hm2_7i97.0.inmux.00.input-14
 # net input-15              hm2_7i97.0.inmux.00.input-15

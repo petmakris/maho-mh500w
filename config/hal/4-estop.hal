@@ -8,9 +8,9 @@ addf not.2 servo-thread
 loadrt estop_latch
 addf estop-latch.0 servo-thread
 
-# iocontrol.0.emc-enable-in - (bit, IN) Should be driven FALSE when an external E-Stop condition exists.
-# iocontrol.0.user-enable-out - (bit, OUT) FALSE when an internal E-Stop condition exists.
-# iocontrol.0.user-request-enable - (bit, OUT) TRUE when the user has requested that E-Stop be cleared.
+# iocontrol.0.emc-enable-in         (bit, IN)   Should be driven FALSE when an external E-Stop condition exists.
+# iocontrol.0.user-enable-out       (bit, OUT)  FALSE when an internal E-Stop condition exists.
+# iocontrol.0.user-request-enable   (bit, OUT)  TRUE when the user has requested that E-Stop be cleared.
 
 
 net external-estop-not          estop-latch.0.ok-in
