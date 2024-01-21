@@ -9,8 +9,9 @@ net ssi-05-set-x-zero                   hm2_7i97.0.7i84.0.0.input-05    halui.md
 net ssi-06                              hm2_7i97.0.7i84.0.0.input-06
 net ssi-07                              hm2_7i97.0.7i84.0.0.input-07
 net ssi-08                              hm2_7i97.0.7i84.0.0.input-08
-net ssi-09                              hm2_7i97.0.7i84.0.0.input-09
+
 net ssi-09-rpm-is-set                   hm2_7i97.0.7i84.0.0.input-09
+
 net ssi-10-set-spindle-off              hm2_7i97.0.7i84.0.0.input-10
 net ssi-11-set-spindle-on               hm2_7i97.0.7i84.0.0.input-11
 net ssi-12-tool-change-button           hm2_7i97.0.7i84.0.0.input-12
