@@ -46,7 +46,7 @@ addf or.lube            servo-thread
 addf or.btn.resume      servo-thread
 addf or.btn.pause       servo-thread
 addf or.btn.run         servo-thread
-addf or.btn.pause       servo-thread
+addf or.btn.stop        servo-thread
 addf not.estop.0        servo-thread
 addf not.estop.1        servo-thread
 addf not.tool-change    servo-thread 
