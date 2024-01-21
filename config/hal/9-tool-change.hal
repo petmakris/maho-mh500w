@@ -2,6 +2,8 @@ loadusr -W hal_manualtoolchange
 loadrt and2 count=1
 addf and2.0 servo-thread
 
+# TODO: to control the LED i propably need a flipflop
+
 net tool-change                  iocontrol.0.tool-change          hal_manualtoolchange.change
 net tool-changed                 iocontrol.0.tool-changed         hal_manualtoolchange.changed
 net tool-number                  iocontrol.0.tool-prep-number     hal_manualtoolchange.number
