@@ -18,5 +18,5 @@ net odometer-cycles             odometer.0.cycles
 net odometer_bypass_or_0        or2.0.in0       odometer.0.active
 net ssi-16-force-lubricator     or2.0.in1       
 
-net output-lube-pump            or2.0.out
-net sso-11-led-green-lube       or2.0.out
+net output-lube-pump            or2.0.out       hm2_7i97.0.ssr.00.out-05
+
