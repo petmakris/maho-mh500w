@@ -4,10 +4,10 @@
 # iocontrol.0.user-request-enable   (bit, OUT)  TRUE when the user has requested that E-Stop be cleared.
 
 
-net external-estop-not          estop-latch.0.ok-in
-net input-power-on-switch       estop-latch.0.reset
-net output-machine-power-on     estop-latch.0.ok-out
-net internal-estop              estop-latch.0.fault-in
+net external-estop-not          estop-latch.ok-in
+net input-power-on-switch       estop-latch.reset
+net output-machine-power-on     estop-latch.ok-out
+net internal-estop              estop-latch.fault-in
     
 net input-external-estop        not.estop.0.in
 net external-estop-not          not.estop.0.out
