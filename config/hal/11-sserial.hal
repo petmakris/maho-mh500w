@@ -6,26 +6,35 @@ net ssi-02  hm2_7i97.0.7i84.0.0.input-02
 net ssi-03  hm2_7i97.0.7i84.0.0.input-03
 
 # M183 Spindle RPM is set by user, continue program execution
-net ssi-04-rpm-is-set  hm2_7i97.0.7i84.0.0.input-04
+# net ssi-04-rpm-is-set  hm2_7i97.0.7i84.0.0.input-04
+net ssi-04  hm2_7i97.0.7i84.0.0.input-04
 
 # Tool change Complete
-net ssi-05-manual-tool-change-complete  hm2_7i97.0.7i84.0.0.input-05
+net ssi-05 hm2_7i97.0.7i84.0.0.input-05
+# net ssi-05-manual-tool-change-complete  hm2_7i97.0.7i84.0.0.input-05
 
 # G54 set z axis zero
-net ssi-06-set-z-zero  hm2_7i97.0.7i84.0.0.input-06      halui.mdi-command-07
+# net ssi-06-set-z-zero  hm2_7i97.0.7i84.0.0.input-06      halui.mdi-command-07
+net ssi-06  hm2_7i97.0.7i84.0.0.input-06
 
 # G54 set y axis zero
-net ssi-07-set-y-zero  hm2_7i97.0.7i84.0.0.input-07      halui.mdi-command-06
+# net ssi-07-set-y-zero  hm2_7i97.0.7i84.0.0.input-07      halui.mdi-command-06
+net ssi-07  hm2_7i97.0.7i84.0.0.input-07
 
 # G54 set x axis zero
-net ssi-08-set-x-zero  hm2_7i97.0.7i84.0.0.input-08      halui.mdi-command-05
+# net ssi-08-set-x-zero  hm2_7i97.0.7i84.0.0.input-08      halui.mdi-command-05
+net ssi-08  hm2_7i97.0.7i84.0.0.input-08
 
 # WIRED TO LUBRICATOR BYPASS
 # net ssi-09-force-lubricator  hm2_7i97.0.7i84.0.0.input-09
+net ssi-09  hm2_7i97.0.7i84.0.0.input-09
 
 # Both buttons 10 and 11 are a tool change
-net ssi-10-manual-tool-change  hm2_7i97.0.7i84.0.0.input-10
-net ssi-11-manual-tool-change  hm2_7i97.0.7i84.0.0.input-11
+# net ssi-10-manual-tool-change  hm2_7i97.0.7i84.0.0.input-10
+# net ssi-11-manual-tool-change  hm2_7i97.0.7i84.0.0.input-11
+
+net ssi-10  hm2_7i97.0.7i84.0.0.input-10
+net ssi-11  hm2_7i97.0.7i84.0.0.input-11
 
 net ssi-12  hm2_7i97.0.7i84.0.0.input-12
 net ssi-13  hm2_7i97.0.7i84.0.0.input-13
@@ -47,7 +56,7 @@ net ssi-29  hm2_7i97.0.7i84.0.0.input-29
 net ssi-30  hm2_7i97.0.7i84.0.0.input-30
 net ssi-31  hm2_7i97.0.7i84.0.0.input-31
 
-# OUTPUTS (here I will configure leds)
+# OUTPUTS
 
 net sso-00  hm2_7i97.0.7i84.0.0.output-00
 net sso-01  hm2_7i97.0.7i84.0.0.output-01
