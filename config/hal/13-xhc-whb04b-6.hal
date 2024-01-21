@@ -33,10 +33,10 @@ net pendant.program.is-idle                  whb.halui.program.is-idle          
 net pendant.program.is-paused                whb.halui.program.is-paused           halui.program.is-paused      hm2_7i97.0.7i84.0.0.output-01
 net pendant.program-is-running               whb.halui.program.is-running          halui.program.is-running     hm2_7i97.0.7i84.0.0.output-08
 
-net pendant.program.resume                   whb.halui.program.resume              halui.program.resume
+net pendant.program.resume                   whb.halui.program.resume              halui.program.resume         hm2_7i97.0.7i84.0.0.input-23
 net pendant.program.pause                    whb.halui.program.pause               halui.program.pause          hm2_7i97.0.7i84.0.0.input-22
-net pendant.program.run                      whb.halui.program.run                 halui.program.run
-net pendant.program.stop                     whb.halui.program.stop                halui.program.stop
+net pendant.program.run                      whb.halui.program.run                 halui.program.run            hm2_7i97.0.7i84.0.0.input-07
+net pendant.program.stop                     whb.halui.program.stop                halui.program.stop           hm2_7i97.0.7i84.0.0.input-06
 
 # machine mode related signals
 net pendant.mode.auto                        whb.halui.mode.auto                   halui.mode.auto
