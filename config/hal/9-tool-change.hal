@@ -8,8 +8,8 @@ net tool-prepare-loopback        iocontrol.0.tool-prepare         iocontrol.0.to
 
 net ssi-13-tool-change-complete  hal_manualtoolchange.change_button
 
-net spindle-on                   spindle.0.on    not.tool-change.in
-net not-spindle-on               not.tool-change.out       and.lube.in1
+net spindle-on                   spindle.0.on               not.tool-change.in      whb.halui.spindle.is-on
+net not-spindle-on               not.tool-change.out        and.lube.in1
 
 net ssi-12-tool-change-button    and.lube.in0
 
