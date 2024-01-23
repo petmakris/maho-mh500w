@@ -26,17 +26,18 @@ net panel.feed-override                 halui.feed-override.value
 # net ssia-01-spindle-speed                hm2_7i97.0.7i84.0.0.analogin1
 
 
-net panel.jog-speed           pyvcp.jog-speed
 
 
 # net pot-0-jog-speed-in                   hm2_7i97.0.7i84.0.0.analogin0   => scale.pot.0.in
 # net pot-0-jog-speed-out                  scale.pot.0.in                  => halui.axis.jog-speed
 
+# net panel.spindle-speed       pyvcp.spindle-speed
+
 # ======================================  
 # JOG SPEED
 # ======================================  
 
-net panel.spindle-speed       pyvcp.spindle-speed
+# net panel.jog-speed           pyvcp.jog-speed
 
 # net ssia-02-jog-speed                    hm2_7i97.0.7i84.0.0.analogin2
 
