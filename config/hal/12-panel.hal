@@ -1,25 +1,43 @@
+# ======================================  
+# FEED OVERRIDE
+# ======================================  
+
+# net ssia-00-feed-override                hm2_7i97.0.7i84.0.0.analogin0
+
+setp halui.feed-override.scale          0.01
+setp halui.feed-override.direct-value   false
+setp halui.feed-override.count-enable   true
+
+# the analog in is 0v to 21V. I will need to scale and limit
+
+net panel.feed-override.analog-in       hm2_7i97.0.7i84.0.0.analogin0   =>  fto32.pot.feed.in
+net panel.feed-override.counts          fto32.pot.feed.out              =>  halui.feed-override.counts
+
+#        =>  pyvcp.feed-override
+net panel.feed-override                 halui.feed-override.value
+
+# Let's do first the feed override
+# We get the values from the pot, scale them, limit them and feed them to the halui component
+
+# ======================================  
+# SPINDLE SPEED
+# ======================================  
+
+# net ssia-01-spindle-speed                hm2_7i97.0.7i84.0.0.analogin1
 
 
-## When TRUE, modify feed override when counts changes.
-# halui.feed-override.count-enable bit in (default: TRUE)
+net panel.jog-speed           pyvcp.jog-speed
 
-## counts X scale = feed override percentage
-# halui.feed-override.counts s32 in
 
-## pin for decreasing the FO (-=scale)
-# halui.feed-override.decrease bit in
+# net pot-0-jog-speed-in                   hm2_7i97.0.7i84.0.0.analogin0   => scale.pot.0.in
+# net pot-0-jog-speed-out                  scale.pot.0.in                  => halui.axis.jog-speed
 
-## pin to enable direct value feed override input
-# halui.feed-override.direct-value bit in
+# ======================================  
+# JOG SPEED
+# ======================================  
 
-## pin for increasing the FO (+=scale)
-# halui.feed-override.increase bit in
+net panel.spindle-speed       pyvcp.spindle-speed
 
-## pin for resetting the FO (scale=1.0)
-# halui.feed-override.reset bit in
+# net ssia-02-jog-speed                    hm2_7i97.0.7i84.0.0.analogin2
 
-## pin for setting the scale on changing the FO
-# halui.feed-override.scale float in
 
-## current feed override value
-# halui.feed-override.value float out
