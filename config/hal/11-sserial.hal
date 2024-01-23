@@ -1,17 +1,14 @@
-net ssia-00-feed-override                hm2_7i97.0.7i84.0.0.analogin0
-net ssia-01-spindle-speed                hm2_7i97.0.7i84.0.0.analogin1
-net ssia-02-jog-speed                    hm2_7i97.0.7i84.0.0.analogin2
+# net ssia-00-feed-override                hm2_7i97.0.7i84.0.0.analogin0
+# net ssia-01-spindle-speed                hm2_7i97.0.7i84.0.0.analogin1
+# net ssia-02-jog-speed                    hm2_7i97.0.7i84.0.0.analogin2
 net ssia-03                              hm2_7i97.0.7i84.0.0.analogin3
-
-# net pot-0-jog-speed-in                   hm2_7i97.0.7i84.0.0.analogin0   => scale.pot.0.in
-# net pot-0-jog-speed-out                  scale.pot.0.in                  => halui.axis.jog-speed
 
 net ssi-04                              hm2_7i97.0.7i84.0.0.input-04
 
 net ssi-05-set-x-zero                   hm2_7i97.0.7i84.0.0.input-05   halui.mdi-command-05
 
-# net ssi-06-stop-button                hm2_7i97.0.7i84.0.0.input-06   halui.program.pause
-# net ssi-07-run-button                 hm2_7i97.0.7i84.0.0.input-07
+# net ssi-06-stop-button                hm2_7i97.0.7i84.0.0.input-06   [halui.program.pause]
+# net ssi-07-run-button                 hm2_7i97.0.7i84.0.0.input-07   [halui.program.run]
 net ssi-08                              hm2_7i97.0.7i84.0.0.input-08
 
 net ssi-09-rpm-is-set                   hm2_7i97.0.7i84.0.0.input-09

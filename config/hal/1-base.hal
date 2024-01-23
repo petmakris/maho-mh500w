@@ -40,8 +40,9 @@ loadrt or2              names=or.lube,or.btn.resume,or.btn.pause,or.btn.run,or.b
 loadrt not              names=not.estop.0,not.estop.1,not.tool-change
 
 loadrt ilowpass names=ilowpass.jog.x,ilowpass.jog.y,ilowpass.jog.z
-loadrt scale names=scale.axis.x,scale.axis.y,scale.axis.z,scale.pot.0,scale.pot.1,scale.pot.2
+loadrt scale names=scale.axis.x,scale.axis.y,scale.axis.z,scale.pot.feed,scale.pot.spindle,scale.pot.jog
 
+# TODO: rename components so that component comes first. e.g `lube.and` instead of `and.lube`
 
 addf odometer.lube      servo-thread
 addf estop-latch        servo-thread
@@ -55,16 +56,16 @@ addf not.estop.0        servo-thread
 addf not.estop.1        servo-thread
 addf not.tool-change    servo-thread 
 
-addf scale.pot.0        servo-thread
-addf scale.pot.1        servo-thread
-addf scale.pot.2        servo-thread
+addf scale.pot.feed     servo-thread
+addf scale.pot.spindle  servo-thread
+addf scale.pot.jog      servo-thread
 
-addf ilowpass.jog.x       servo-thread
-addf scale.axis.x         servo-thread
-addf ilowpass.jog.y       servo-thread
-addf scale.axis.y         servo-thread
-addf ilowpass.jog.z       servo-thread
-addf scale.axis.z         servo-thread
+addf ilowpass.jog.x     servo-thread
+addf scale.axis.x       servo-thread
+addf ilowpass.jog.y     servo-thread
+addf scale.axis.y       servo-thread
+addf ilowpass.jog.z     servo-thread
+addf scale.axis.z       servo-thread
 
 setp ilowpass.jog.x.scale 100
 setp ilowpass.jog.x.gain  0.1
@@ -81,11 +82,17 @@ setp ilowpass.jog.z.gain  0.1
 setp scale.axis.z.gain    0.01
 setp scale.axis.z.offset  0
 
-setp scale.pot.0.gain    20
-setp scale.pot.0.offset  0
+# Panel Feed Override
+loadrt conv_float_s32           names=fto32.pot.feed
+addf fto32.pot.feed             servo-thread
 
-setp scale.pot.1.gain    20
-setp scale.pot.1.offset  0
+setp scale.pot.feed.gain        20
+setp scale.pot.feed.offset      0
 
-setp scale.pot.2.gain    20
-setp scale.pot.2.offset  0
+# Panel Spindle Speed
+setp scale.pot.spindle.gain    20
+setp scale.pot.spindle.offset  0
+
+# Panel Jog Speed
+setp scale.pot.jog.gain         20
+setp scale.pot.jog.offset       0
