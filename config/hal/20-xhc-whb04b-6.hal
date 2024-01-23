@@ -1,23 +1,3 @@
-# __  __  _   _    ____          __        __  _   _   ____     ___    _  _     ____             __
-# \ \/ / | | | |  / ___|         \ \      / / | | | | | __ )   / _ \  | || |   | __ )           / /_
-#  \  /  | |_| | | |      _____   \ \ /\ / /  | |_| | |  _ \  | | | | | || |_  |  _ \   _____  | '_ \
-#  /  \  |  _  | | |___  |_____|   \ V  V /   |  _  | | |_) | | |_| | |__   _| | |_) | |_____| | (_) |
-# /_/\_\ |_| |_|  \____|            \_/\_/    |_| |_| |____/   \___/     |_|   |____/           \___/
-
-# https://linuxcnc.org/docs/2.9/html/man/man1/xhc-whb04b-6.1.html
-
-loadusr -W xhc-whb04b-6 -HsfB
-
-# -H    Run xhc-whb04b-6 in HAL-mode instead of interactive mode.
-#       When in HAL mode commands from device will be exposed to HAL’s shred memory.
-#       Interactive mode is useful for testing device connectivity and debugging.
-
-# -s    Lead + jogwheel changes the spindle override speed. Each tick will increase/decrease the spindle override.
-# -f    MPG + jogwheel changes the feed override. Each tick will increment/decrement the feed override.
-# -B    Add 5 mm and 10 mm to Step feedrate output
-
-
-
 net pendant.machine.machine-is-on            whb.halui.machine.is-on               halui.machine.is-on
 net pendant.machine.on                       whb.halui.machine.on                  halui.machine.on
 net pendant.machine.off                      whb.halui.machine.off                 halui.machine.off

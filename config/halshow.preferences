@@ -1,18 +1,23 @@
 # Halshow settings
 # This file is generated automatically.
-wm geometry . 1035x987+804+27
-placeFrames 0.3176930596285435
-set ::ratio 0.3176930596285435
+wm geometry . 1125x734+1297+607
+placeFrames 0.272145144076841
+set ::ratio 0.272145144076841
 set ::old_w_leftf 503
 set ::watchlist {
-    sig+odometer-active
     sig+odometer-current-distance
     sig+odometer-cycles
     sig+odometer-total-distance
     sig+odometer-velocity
-    sig+odometer_bypass_or_0
-    sig+odometer_bypass_or_1
     sig+output-machine-power-on
+    pin+hm2_7i97.0.7i84.0.0.analogin0
+    pin+hm2_7i97.0.7i84.0.0.analogin1
+    pin+hm2_7i97.0.7i84.0.0.analogin2
+    pin+hm2_7i97.0.7i84.0.0.analogin3
+    pin+fto32.pot.feed.in
+    pin+fto32.pot.feed.out
+    pin+fto32.pot.feed.time
+    pin+fto32.pot.feed.out-of-range
 }
 set ::workmode watchhal
 set ::watchInterval 100

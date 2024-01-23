@@ -1,4 +1,6 @@
-net pendant.spindle.is-on                    whb.halui.spindle.is-on               spindle.0.on
+
+# net pendant.spindle.is-on                    whb.halui.spindle.is-on               spindle.0.on
+
 net pendant.spindle.start                    whb.halui.spindle.start               halui.spindle.0.start
 net pendant.spindle.stop                     whb.halui.spindle.stop                halui.spindle.0.stop
 net pendant.spindle.forward                  whb.halui.spindle.forward             halui.spindle.0.forward
