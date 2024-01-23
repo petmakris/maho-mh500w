@@ -1,71 +1,23 @@
-# INPUTS
+net ssia-00-feed-override                hm2_7i97.0.7i84.0.0.analogin0
+net ssia-01-spindle-speed                hm2_7i97.0.7i84.0.0.analogin1
+net ssia-02-jog-speed                    hm2_7i97.0.7i84.0.0.analogin2
+net ssia-03                              hm2_7i97.0.7i84.0.0.analogin3
 
-net ssia-00                              hm2_7i97.0.7i84.0.0.analogin0
-net ssia-00                              hm2_7i97.0.7i84.0.0.analogin0
-net ssia-00                              hm2_7i97.0.7i84.0.0.analogin0
-net ssia-00                              hm2_7i97.0.7i84.0.0.analogin0
+# net pot-0-jog-speed-in                   hm2_7i97.0.7i84.0.0.analogin0   => scale.pot.0.in
+# net pot-0-jog-speed-out                  scale.pot.0.in                  => halui.axis.jog-speed
 
+net ssi-04                              hm2_7i97.0.7i84.0.0.input-04
 
-# This will certainly need a single turn pot
-net pot-0-jog-speed-in                   hm2_7i97.0.7i84.0.0.analogin0   => scale.pot.0.in
-net pot-0-jog-speed-out                  scale.pot.0.in                  => halui.axis.jog-speed
+net ssi-05-set-x-zero                   hm2_7i97.0.7i84.0.0.input-05   halui.mdi-command-05
 
-net ___               hm2_7i97.0.7i84.0.0.analogin0   => scale.pot.1.in
-# => halui.axis.jog-speed
-net __              scale.pot.0.in                  
-
-
-## When TRUE, modify feed override when counts changes.
-# halui.feed-override.count-enable bit in (default: TRUE)
-
-## counts X scale = feed override percentage
-# halui.feed-override.counts s32 in
-
-## pin for decreasing the FO (-=scale)
-# halui.feed-override.decrease bit in
-
-## pin to enable direct value feed override input
-# halui.feed-override.direct-value bit in
-
-## pin for increasing the FO (+=scale)
-# halui.feed-override.increase bit in
-
-## pin for resetting the FO (scale=1.0)
-# halui.feed-override.reset bit in
-
-## pin for setting the scale on changing the FO
-# halui.feed-override.scale float in
-
-## current feed override value
-# halui.feed-override.value float out
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-net ssi-05-set-x-zero                   hm2_7i97.0.7i84.0.0.input-05    halui.mdi-command-05
-
-# net ssi-06-stop-button                hm2_7i97.0.7i84.0.0.input-06
+# net ssi-06-stop-button                hm2_7i97.0.7i84.0.0.input-06   halui.program.pause
 # net ssi-07-run-button                 hm2_7i97.0.7i84.0.0.input-07
 net ssi-08                              hm2_7i97.0.7i84.0.0.input-08
 
 net ssi-09-rpm-is-set                   hm2_7i97.0.7i84.0.0.input-09
 
-net ssi-10-set-spindle-off              hm2_7i97.0.7i84.0.0.input-10    halui.mdi-command-02
-net ssi-11-set-spindle-on               hm2_7i97.0.7i84.0.0.input-11    halui.mdi-command-01
+net ssi-10-set-spindle-off              hm2_7i97.0.7i84.0.0.input-10   halui.mdi-command-02
+net ssi-11-set-spindle-on               hm2_7i97.0.7i84.0.0.input-11   halui.mdi-command-01
 
 net ssi-12-tool-change-button           hm2_7i97.0.7i84.0.0.input-12
 net ssi-13-tool-change-complete         hm2_7i97.0.7i84.0.0.input-13
@@ -74,13 +26,14 @@ net ssi-14                              hm2_7i97.0.7i84.0.0.input-14
 net ssi-15                              hm2_7i97.0.7i84.0.0.input-15
 
 net ssi-16-force-lubricator             hm2_7i97.0.7i84.0.0.input-16
-net ssi-17-set-z-zero                   hm2_7i97.0.7i84.0.0.input-17    halui.mdi-command-07
+net ssi-17-set-z-zero                   hm2_7i97.0.7i84.0.0.input-17   halui.mdi-command-07
 
-net ssi-18-jog-z-plus                   hm2_7i97.0.7i84.0.0.input-18    halui.axis.z.plus
-net ssi-19-jog-z-minus                  hm2_7i97.0.7i84.0.0.input-19    halui.axis.z.minus
+# halui.axis.z.minus / halui.axis.z.plus
+net ssi-18                              hm2_7i97.0.7i84.0.0.input-18    
+net ssi-19-program-step                 hm2_7i97.0.7i84.0.0.input-19   halui.program.step 
 net ssi-20                              hm2_7i97.0.7i84.0.0.input-20
 
-net ssi-21-set-y-zero                   hm2_7i97.0.7i84.0.0.input-21    halui.mdi-command-06
+net ssi-21-set-y-zero                   hm2_7i97.0.7i84.0.0.input-21   halui.mdi-command-06
 
 # net ssi-22-pause-button               hm2_7i97.0.7i84.0.0.input-22
 # net ssi-23-resume-button              hm2_7i97.0.7i84.0.0.input-23
@@ -93,25 +46,23 @@ net ssi-29                              hm2_7i97.0.7i84.0.0.input-29
 net ssi-30                              hm2_7i97.0.7i84.0.0.input-30
 net ssi-31                              hm2_7i97.0.7i84.0.0.input-31
 
-# OUTPUTS
 
-# net sso-00-led-red-estop                hm2_7i97.0.7i84.0.0.output-00
-# net sso-01-led-red-stop                 hm2_7i97.0.7i84.0.0.output-01
-# net sso-02-led-red-paused               hm2_7i97.0.7i84.0.0.output-02
+
+# net sso-00-led-red-internal-estop       hm2_7i97.0.7i84.0.0.output-00
+# net sso-01-led-red-paused               hm2_7i97.0.7i84.0.0.output-01
+# net sso-02-led-red                      hm2_7i97.0.7i84.0.0.output-02
 # net sso-03-led-red                      hm2_7i97.0.7i84.0.0.output-03
-# net sso-04-led-red-spdl-at-speed        hm2_7i97.0.7i84.0.0.output-04
-# net sso-05-led-red-waiting-tool-change  hm2_7i97.0.7i84.0.0.output-05
+# net sso-04-led-red-wait-spdl-at-speed   hm2_7i97.0.7i84.0.0.output-04     TODO
+# net sso-05-led-red-waiting-tool-change  hm2_7i97.0.7i84.0.0.output-05     TODO
 
 # net sso-06-led-green                    hm2_7i97.0.7i84.0.0.output-06
-# net sso-07-led-green-is-idle          hm2_7i97.0.7i84.0.0.output-07
-# net sso-08-led-green                    hm2_7i97.0.7i84.0.0.output-08
+# net sso-07-led-green-is-idle            hm2_7i97.0.7i84.0.0.output-07
+# net sso-08-led-green-is-running         hm2_7i97.0.7i84.0.0.output-08
 # net sso-09-led-green                    hm2_7i97.0.7i84.0.0.output-09
 # net sso-10-led-green                    hm2_7i97.0.7i84.0.0.output-10
 # net sso-11-led-green-lube               hm2_7i97.0.7i84.0.0.output-11
 
-
-
-# net sso-12                              hm2_7i97.0.7i84.0.0.output-12
-# net sso-13                              hm2_7i97.0.7i84.0.0.output-13
-# net sso-14                              hm2_7i97.0.7i84.0.0.output-14
-# net sso-15                              hm2_7i97.0.7i84.0.0.output-15
+net sso-12                              hm2_7i97.0.7i84.0.0.output-12
+net sso-13                              hm2_7i97.0.7i84.0.0.output-13
+net sso-14                              hm2_7i97.0.7i84.0.0.output-14
+net sso-15                              hm2_7i97.0.7i84.0.0.output-15

@@ -1,0 +1,25 @@
+
+
+## When TRUE, modify feed override when counts changes.
+# halui.feed-override.count-enable bit in (default: TRUE)
+
+## counts X scale = feed override percentage
+# halui.feed-override.counts s32 in
+
+## pin for decreasing the FO (-=scale)
+# halui.feed-override.decrease bit in
+
+## pin to enable direct value feed override input
+# halui.feed-override.direct-value bit in
+
+## pin for increasing the FO (+=scale)
+# halui.feed-override.increase bit in
+
+## pin for resetting the FO (scale=1.0)
+# halui.feed-override.reset bit in
+
+## pin for setting the scale on changing the FO
+# halui.feed-override.scale float in
+
+## current feed override value
+# halui.feed-override.value float out
