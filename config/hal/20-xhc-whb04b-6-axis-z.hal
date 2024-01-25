@@ -1,20 +1,19 @@
+addf jog.lowpass.z                  servo-thread
+addf jog.scale.z                    servo-thread
 
-# "is-homed" axis signal for allowing pendant when machine is not homed
-net pendant.joint.z.is-homed                 whb.halui.joint.z.is-homed            halui.joint.2.is-homed
-net pendant.axis.z.select                    whb.halui.axis.z.select               halui.axis.z.select
-net pendant.axis.z.pos-feedback              whb.halui.axis.z.pos-feedback         halui.axis.z.pos-feedback
-net pendant.axis.z.pos-relative              whb.halui.axis.z.pos-relative         halui.axis.z.pos-relative
-net pendant.axis.z.jog-vel-mode              whb.axis.z.jog-vel-mode               axis.z.jog-vel-mode
-net pendant.axis.z.jog-enable                whb.axis.z.jog-enable                 axis.z.jog-enable
+setp jog.lowpass.z.scale            100
+setp jog.lowpass.z.gain             0.1
+setp jog.scale.z.gain               0.01
+setp jog.scale.z.offset             0
 
-# Default
+net pendant.z.is-homed              <= halui.joint.0.is-homed          => whb.halui.joint.z.is-homed      
+net pendant.z.select                <= whb.halui.axis.z.select         => halui.axis.z.select
+net pendant.z.pos-feedback          <= halui.axis.z.pos-feedback       => whb.halui.axis.z.pos-feedback   
+net pendant.z.pos-relative          <= halui.axis.z.pos-relative       => whb.halui.axis.z.pos-relative   
+net pendant.z.jog-vel-mode          <= whb.axis.z.jog-vel-mode         => axis.z.jog-vel-mode
+net pendant.z.jog-enable            <= whb.axis.z.jog-enable           => axis.z.jog-enable
 
-# net pendant.axis.z.jog-scale                 whb.axis.z.jog-scale                  axis.z.jog-scale
-# net pendant.axis.z.jog-counts                whb.axis.z.jog-counts                 axis.z.jog-counts
-
-# With filter
-
-net  pendant.axis.z.jog-scale            whb.axis.z.jog-scale               scale.axis.z.in
-net  scale.axis.z.jog-scale              scale.axis.z.out                   axis.z.jog-scale
-net  pendant.axis.z.jog-counts           whb.axis.z.jog-counts              ilowpass.jog.z.in
-net  pendant.ilowpass.jog.z.jog-counts   ilowpass.jog.z.out                 axis.z.jog-counts
+net pendant.z.jog-scale             <= whb.axis.z.jog-scale            => jog.scale.z.in
+net pendant.z.jog-scaled            <= jog.scale.z.out                 => axis.z.jog-scale
+net pendant.z.jog-counts            <= whb.axis.z.jog-counts           => jog.lowpass.z.in
+net pendant.z.jog-counts-filtered   <= jog.lowpass.z.out               => axis.z.jog-counts

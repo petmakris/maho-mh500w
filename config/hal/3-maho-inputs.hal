@@ -1,0 +1,12 @@
+# LINUXCNC OUTPUTS - 19X6 / MAHO INPUTS
+
+net maho-inputs.power-on        => hm2_7i97.0.ssr.00.out-00
+net maho-inputs.spindle-cw      => hm2_7i97.0.ssr.00.out-01
+net maho-inputs.spindle-ccw     => hm2_7i97.0.ssr.00.out-02
+net maho-inputs.coolant-pump    => hm2_7i97.0.ssr.00.out-03
+net maho-inputs.tool-release    => hm2_7i97.0.ssr.00.out-04
+net maho-inputs.lube-pump       => hm2_7i97.0.ssr.00.out-05
+
+# net maho-inputs.handwheel-x        hm2_7i97.0.ssr.00.out-XX
+# net maho-inputs.handwheel-z        hm2_7i97.0.ssr.00.out-XX
+# net maho-inputs.handwheel-y        hm2_7i97.0.ssr.00.out-XX

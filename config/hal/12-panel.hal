@@ -1,23 +1,31 @@
+
+addf feed-pot.scale             servo-thread
+addf spindle-pot.scale          servo-thread
+addf jog-pot.scale              servo-thread
+addf feed-pot.conv              servo-thread
+
+
+setp feed-pot.scale.gain        20
+setp feed-pot.scale.offset      0
+
+setp spindle-pot.scale.gain     20
+setp spindle-pot.scale.offset   0
+
+setp jog-pot.scale.gain         20
+setp jog-pot.scale.offset       0
+
+
 # ======================================  
 # FEED OVERRIDE
 # ======================================  
-
-# net ssia-00-feed-override                hm2_7i97.0.7i84.0.0.analogin0
 
 setp halui.feed-override.scale          0.01
 setp halui.feed-override.direct-value   false
 setp halui.feed-override.count-enable   true
 
-# the analog in is 0v to 21V. I will need to scale and limit
-
-net panel.feed-override.analog-in       hm2_7i97.0.7i84.0.0.analogin0   =>  fto32.pot.feed.in
-net panel.feed-override.counts          fto32.pot.feed.out              =>  halui.feed-override.counts
-
-#        =>  pyvcp.feed-override
-net panel.feed-override                 halui.feed-override.value
-
-# Let's do first the feed override
-# We get the values from the pot, scale them, limit them and feed them to the halui component
+net panel.feed-override.analog-in       <= hm2_7i97.0.7i84.0.0.analogin0        => feed-pot.conv.in
+net panel.feed-override.counts          <= feed-pot.conv.out                    => halui.feed-override.counts
+net panel.feed-override.value           <= halui.feed-override.value
 
 # ======================================  
 # SPINDLE SPEED

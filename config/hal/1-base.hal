@@ -1,102 +1,34 @@
-# kinematics
-loadrt [KINS](KINEMATICS)
-
-# motion controller
-loadrt [EMCMOT](EMCMOT) servo_period_nsec=[EMCMOT](SERVO_PERIOD) num_joints=[KINS](JOINTS)
-
-# standard components
-loadrt pid num_chan=3 debug=1
-
-# hostmot2 driver
-loadrt hostmot2
-
-loadrt [HM2](DRIVER) board_ip=[HM2](IPADDRESS) config="sserial_port_0=20000000"
-setp hm2_7i97.0.watchdog.timeout_ns 5000000
-
-
-# THREADS
-addf hm2_7i97.0.read servo-thread
-addf motion-command-handler servo-thread
-addf motion-controller servo-thread
-addf pid.0.do-pid-calcs servo-thread
-addf pid.1.do-pid-calcs servo-thread
-addf pid.2.do-pid-calcs servo-thread
-
-addf hm2_7i97.0.write servo-thread
-
-# DPLL TIMER
-setp hm2_7i97.0.dpll.01.timer-us -50
-
-# PWM FREQUENCY
-# setp hm2_7i97.0.pwmgen.pwm_frequency 48000
-
+loadusr -W xhc-whb04b-6 -HsfB
 loadusr -W hal_manualtoolchange
 
-loadrt odometer         names=odometer.lube
-loadrt estop_latch      names=estop-latch
+loadrt [KINS](KINEMATICS)
+loadrt [EMCMOT](EMCMOT) servo_period_nsec=[EMCMOT](SERVO_PERIOD) num_joints=[KINS](JOINTS)
+loadrt pid num_chan=3 debug=1
+loadrt hostmot2
+loadrt [HM2](DRIVER) board_ip=[HM2](IPADDRESS) config="sserial_port_0=20000000"
 
-loadrt and2             names=and.lube
-loadrt or2              names=or.lube,or.btn.resume,or.btn.pause,or.btn.run,or.btn.stop
-loadrt not              names=not.estop.0,not.estop.1,not.tool-change
+setp hm2_7i97.0.dpll.01.timer-us -50
+setp hm2_7i97.0.watchdog.timeout_ns 5000000
 
-loadrt ilowpass names=ilowpass.jog.x,ilowpass.jog.y,ilowpass.jog.z
-loadrt scale names=scale.axis.x,scale.axis.y,scale.axis.z,scale.pot.feed,scale.pot.spindle,scale.pot.jog
+addf hm2_7i97.0.read        servo-thread
+addf motion-command-handler servo-thread
+addf motion-controller      servo-thread
+addf pid.0.do-pid-calcs     servo-thread
+addf pid.1.do-pid-calcs     servo-thread
+addf pid.2.do-pid-calcs     servo-thread
+addf hm2_7i97.0.write       servo-thread
 
-loadrt conv_float_s32           names=fto32.pot.feed
+loadrt odometer         names=lube.odometer
+loadrt estop_latch      names=estop.latch
 
+loadrt and2             names=tool-change.and
+loadrt or2              names=lube.or,or.btn.resume,or.btn.pause,or.btn.run,or.btn.stop,spindle.button-on.or,spindle.button-off.or
+loadrt not              names=estop.not.0,estop.not.1,tool-change.not
 
-# TODO: rename components so that component comes first. e.g `lube.and` instead of `and.lube`
+loadrt ilowpass         names=jog.lowpass.x,jog.lowpass.y,jog.lowpass.z
+loadrt scale            names=jog.scale.x,jog.scale.y,jog.scale.z,feed-pot.scale,spindle-pot.scale,jog-pot.scale
 
-addf odometer.lube      servo-thread
-addf estop-latch        servo-thread
-addf and.lube           servo-thread
-addf or.lube            servo-thread
-addf or.btn.resume      servo-thread
-addf or.btn.pause       servo-thread
-addf or.btn.run         servo-thread
-addf or.btn.stop        servo-thread
-addf not.estop.0        servo-thread
-addf not.estop.1        servo-thread
-addf not.tool-change    servo-thread 
+loadrt spdl.encoder     names=spdl.encoder      num_chan=4
+loadrt near             names=spdl.near
 
-addf scale.pot.feed     servo-thread
-addf scale.pot.spindle  servo-thread
-addf scale.pot.jog      servo-thread
-
-addf ilowpass.jog.x     servo-thread
-addf scale.axis.x       servo-thread
-addf ilowpass.jog.y     servo-thread
-addf scale.axis.y       servo-thread
-addf ilowpass.jog.z     servo-thread
-addf scale.axis.z       servo-thread
-
-loadusr -W xhc-whb04b-6 -HsfB
-
-setp ilowpass.jog.x.scale 100
-setp ilowpass.jog.x.gain  0.1
-setp scale.axis.x.gain    0.01
-setp scale.axis.x.offset  0
-
-setp ilowpass.jog.y.scale 100
-setp ilowpass.jog.y.gain  0.1
-setp scale.axis.y.gain    0.01
-setp scale.axis.y.offset  0
-
-setp ilowpass.jog.z.scale 100
-setp ilowpass.jog.z.gain  0.1
-setp scale.axis.z.gain    0.01
-setp scale.axis.z.offset  0
-
-# Panel Feed Override
-addf fto32.pot.feed             servo-thread
-
-setp scale.pot.feed.gain        20
-setp scale.pot.feed.offset      0
-
-# Panel Spindle Speed
-setp scale.pot.spindle.gain    20
-setp scale.pot.spindle.offset  0
-
-# Panel Jog Speed
-setp scale.pot.jog.gain         20
-setp scale.pot.jog.offset       0
+loadrt conv_float_s32   names=feed-pot.conv

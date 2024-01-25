@@ -1,0 +1,17 @@
+# LINUXCNC INPUTS - 19X7 / MAHO OUTPUTS
+
+net maho-outputs.handwheel-x               <= hm2_7i97.0.inmux.00.input-03
+net maho-outputs.handwheel-z               <= hm2_7i97.0.inmux.00.input-04
+net maho-outputs.handwheel-y               <= hm2_7i97.0.inmux.00.input-05
+
+net maho-outputs.pwr-ok                    <= hm2_7i97.0.inmux.00.input-06
+net maho-outputs.hd-off                    <= hm2_7i97.0.inmux.00.input-07
+net maho-outputs.spindle                   <= hm2_7i97.0.inmux.00.input-08
+net maho-outputs.lubricant                 <= hm2_7i97.0.inmux.00.input-09
+net maho-outputs.external-estop            <= hm2_7i97.0.inmux.00.input-10
+net maho-outputs.power-on-switch           <= hm2_7i97.0.inmux.00.input-11
+
+# hm2_7i97.0.inmux.00.input-12
+# hm2_7i97.0.inmux.00.input-13
+# hm2_7i97.0.inmux.00.input-14
+# hm2_7i97.0.inmux.00.input-15

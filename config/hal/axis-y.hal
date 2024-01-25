@@ -23,21 +23,17 @@ setp hm2_7i97.0.encoder.01.index-mask 0
 setp hm2_7i97.0.encoder.01.index-mask-invert 0
 setp hm2_7i97.0.encoder.01.scale  [JOINT_1](ENCODER_SCALE)
 
-net joint-1-enable  => pid.1.enable
-net joint-1-enable  => joint.1.amp-enable-out
-net joint-1-enable  => hm2_7i97.0.pwmgen.01.enable
+net joint.1.enable  => pid.1.enable
+net joint.1.enable  => joint.1.amp-enable-out
+net joint.1.enable  => hm2_7i97.0.pwmgen.01.enable
 
-# position command and feedback
-net joint-1-pos-cmd => pid.1.command
-net joint-1-pos-cmd => joint.1.motor-pos-cmd
+net joint.1.pos-cmd => pid.1.command
+net joint.1.pos-cmd => joint.1.motor-pos-cmd
 
-net joint-1-pos-fb => pid.1.feedback
-net joint-1-pos-fb => joint.1.motor-pos-fb
-net joint-1-pos-fb => hm2_7i97.0.encoder.01.position
+net joint.1.pos-fb => pid.1.feedback
+net joint.1.pos-fb => joint.1.motor-pos-fb
+net joint.1.pos-fb => hm2_7i97.0.encoder.01.position
 
-net joint-1-output => pid.1.output
-net joint-1-output => hm2_7i97.0.pwmgen.01.value
+net joint.1.output => pid.1.output
+net joint.1.output => hm2_7i97.0.pwmgen.01.value
 
-# net joint-1-index-enable  => pid.1.index-enable
-# net joint-1-index-enable  => joint.1.index-enable  
-# net joint-1-index-enable  => hm2_7i97.0.encoder.01.index-enable

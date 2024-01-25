@@ -1,16 +1,21 @@
+addf tool-change.not    servo-thread 
+addf tool-change.and    servo-thread
+
+net buttons.tool-change-completed   => hal_manualtoolchange.change_button
+
+net tool-change.tool-change         <= iocontrol.0.tool-change          => hal_manualtoolchange.change
+net tool-change.tool-changed        <= hal_manualtoolchange.changed     => iocontrol.0.tool-changed
+net tool-change.tool-number         <= iocontrol.0.tool-prep-number     => hal_manualtoolchange.number
+net tool-change.tool-prepare-loop   <= iocontrol.0.tool-prepare         => iocontrol.0.tool-prepared
+
+net spindle-on                      <= spindle.0.on               
+net spindle-on                      => tool-change.not.in               => whb.halui.spindle.is-on
+
+net spindle-off                     <= tool-change.not.out              => tool-change.and.in1
+
+net buttons.tool-change             => tool-change.and.in0
+
+net maho-inputs.tool-release        <= tool-change.and.out      
+net maho-inputs.tool-release        => spindle.0.inhibit                => motion.feed-inhibit
 
 # TODO: to control the LED i propably need a flipflop
-
-net tool-change                  iocontrol.0.tool-change          hal_manualtoolchange.change
-net tool-changed                 iocontrol.0.tool-changed         hal_manualtoolchange.changed
-net tool-number                  iocontrol.0.tool-prep-number     hal_manualtoolchange.number
-net tool-prepare-loopback        iocontrol.0.tool-prepare         iocontrol.0.tool-prepared
-
-net ssi-13-tool-change-complete  hal_manualtoolchange.change_button
-
-net spindle-on                   spindle.0.on               not.tool-change.in      whb.halui.spindle.is-on
-net not-spindle-on               not.tool-change.out        and.lube.in1
-
-net ssi-12-tool-change-button    and.lube.in0
-
-net output-tool-release          and.lube.out      spindle.0.inhibit     motion.feed-inhibit

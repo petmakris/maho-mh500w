@@ -1,3 +1,3 @@
-net panel.feed-override       pyvcp.feed-override
-net panel.spindle-speed       pyvcp.spindle-speed
-net panel.jog-speed           pyvcp.jog-speed
+net panel.feed-override.value => pyvcp.feed-override
+net panel.spindle-speed       => pyvcp.spindle-speed
+net panel.jog-speed           => pyvcp.jog-speed
