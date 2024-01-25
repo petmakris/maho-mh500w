@@ -1,43 +1,25 @@
-#  __  __ ____ ___                                                 _
-# |  \/  |  _ \_ _|   ___ ___  _ __ ___  _ __ ___   __ _ _ __   __| |___
-# | |\/| | | | | |   / __/ _ \| '_ ` _ \| '_ ` _ \ / _` | '_ \ / _` / __|
-# | |  | | |_| | |  | (_| (_) | | | | | | | | | | | (_| | | | | (_| \__ \
-# |_|  |_|____/___|  \___\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|\__,_|___/
+# net pendant.macros.macro-0      <= whb.button.macro-0
+# net pendant.macros.macro-1      <= whb.button.macro-1
+# net pendant.macros.macro-2      <= whb.button.macro-2
+# net pendant.macros.macro-3      <= whb.button.macro-3
+# net pendant.macros.macro-4      <= whb.button.macro-4
+# net pendant.macros.macro-5      <= whb.button.macro-5
+# net pendant.macros.macro-6      <= whb.button.macro-6
+# net pendant.macros.macro-7      <= whb.button.macro-7
+# net pendant.macros.macro-8      <= whb.button.macro-8
+# net pendant.macros.macro-9      <= whb.button.macro-9
+# net pendant.macros.macro-10     <= whb.button.macro-10
 
-# net pendant.macros.macro-1                   whb.button.macro-1     halui.mdi-command-01
-# net pendant.macros.macro-2                   whb.button.macro-2     halui.mdi-command-02
 
-# Hardcoded for spindle+ whb.halui.spindle.increase
-# net pendant.macros.reserved.for.spindle+     whb.button.macro-3
+# net pendant.macros.macro-11     <= whb.button.macro-11
+# net pendant.macros.macro-12     <= whb.button.macro-12
+# net pendant.macros.macro-13     <= whb.button.macro-13
+# net pendant.macros.macro-14     <= whb.button.macro-14
+# net pendant.macros.macro-15     <= whb.button.macro-15
 
-# Hardcoded for spindle- whb.halui.spindle.decrease
-# net pendant.macros.reserved.for.spindle-     whb.button.macro-4
+# net pendant.button.safe-z       <= whb.button.safe-z
+# net pendant.button.w-home       <= whb.button.w-home
 
-# net pendant.macros.macro-5                   whb.button.macro-5     halui.mdi-command-05
-# net pendant.macros.macro-6                   whb.button.macro-6     halui.mdi-command-06
-# net pendant.macros.macro-7                   whb.button.macro-7     halui.mdi-command-07
+# net pendant.button.m-home       <= whb.button.m-home       => halui.home-all
 
-# Hardcoded for spindle direction inside pendant
-# net pendant.macros.reserved.for.spindle.dir  whb.button.macro-8
-
-# net pendant.macros.macro-9                   whb.button.macro-9     halui.mdi-command-09
-
-# Hardcoded for swap Dro  Relative/Absolue
-# net pendant.macros.reserved.for.ABS-REL      whb.button.macro-10
-# net pendant.macros.macro-14                  whb.button.macro-14    halui.mdi-command-14
-
-# Hardcoded for halui.flood on/off
-# net pendant.macros.reserved.for.flood        whb.button.macro-15
-
-# Hardcoded for halui.mist on/off
-# net pendant.macros.reserved.for.mist         whb.button.macro-16
-
-# net pendant.macros.macro-11                  whb.button.macro-11    halui.mdi-command-11
-# net pendant.macros.macro-12                  whb.button.macro-12    halui.mdi-command-12
-# net pendant.macros.macro-13                  whb.button.macro-13    halui.mdi-command-13
-
-# net pendant.button.safe-z                    whb.button.safe-z      halui.mdi-command-03
-# net pendant.button.w-home                    whb.button.w-home      halui.mdi-command-04
-# net pendant.button.probe-z                   whb.button.probe-z     halui.mdi-command-08
-
-# net pendant.button.m-home                    whb.button.m-home      halui.home-all
+# net pendant.button.probe-z      <= whb.button.probe-z

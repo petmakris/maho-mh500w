@@ -25,13 +25,11 @@ net buttons.program-step            <= hm2_7i97.0.7i84.0.0.input-19   => halui.p
 
 net estop.internal-estop            => hm2_7i97.0.7i84.0.0.output-00
 net pendant.program.is-paused       => hm2_7i97.0.7i84.0.0.output-01
+net tool-change.tool-change         => hm2_7i97.0.7i84.0.0.output-05
 
 net maho-inputs.power-on            => hm2_7i97.0.7i84.0.0.output-06
-
 net program.is-idle                 => hm2_7i97.0.7i84.0.0.output-07
 net program.is-running              => hm2_7i97.0.7i84.0.0.output-08
-
 net maho-inputs.lube-pump           => hm2_7i97.0.7i84.0.0.output-11
 
-# hm2_7i97.0.7i84.0.0.output-04     TODO: wait-spdl-at-speed
-# hm2_7i97.0.7i84.0.0.output-05     TODO: red-waiting-tool-change
+

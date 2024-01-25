@@ -1,7 +1,7 @@
-addf or.btn.resume      servo-thread
-addf or.btn.pause       servo-thread
-addf or.btn.run         servo-thread
-addf or.btn.stop        servo-thread
+addf or.btn.resume              servo-thread
+addf or.btn.pause               servo-thread
+addf or.btn.run                 servo-thread
+addf or.btn.stop                servo-thread
 
 
 net machine.machine-is-on       <= halui.machine.is-on              => whb.halui.machine.is-on
@@ -40,6 +40,17 @@ net pendant.mode.is-mdi         <= halui.mode.is-mdi                => whb.halui
 net pendant.mode.is-joint       <= halui.mode.is-joint              => whb.halui.mode.is-joint
 net pendant.mode.is-teleop      <= halui.mode.is-teleop             => whb.halui.mode.is-teleop
 
+net pendant.flood.is-on         <= halui.flood.is-on                => whb.halui.flood.is-on                 
+net pendant.flood.off           <= whb.halui.flood.off              => halui.flood.off
+net pendant.flood.on            <= whb.halui.flood.on               => halui.flood.on
+
+net pendant.mist.is-on          <= halui.mist.is-on                 => whb.halui.mist.is-on      
+net pendant.mist.off            <= whb.halui.mist.off               => halui.mist.off
+net pendant.mist.on             <= whb.halui.mist.on                => halui.mist.on
+
+net pendant.lube.is-on          <= halui.lube.is-on                 => whb.halui.lube.is-on
+net pendant.lube.off            <= whb.halui.lube.off               => halui.lube.off
+net pendant.lube.on             <= whb.halui.lube.on                => halui.lube.on
 
 # net pendant.feed-override.value              halui.feed-override.value             whb.halui.feed-override.value
 # net pendant.feed-override.increase           whb.halui.feed-override.increase      halui.feed-override.increase
@@ -50,33 +61,3 @@ net pendant.mode.is-teleop      <= halui.mode.is-teleop             => whb.halui
 
 # needed for Mpg mode : button feed position% * max-velocity = Mpg feedrate
 # net pendant.max-velocity.value               whb.halui.max-velocity.value          halui.max-velocity.value
-
-
-
-
-#return signal is on or off
-# net  pendant.flood.is-on                     whb.halui.flood.is-on                 halui.flood.is-on
-
-#reserved whb.button.macro-15
-# net  pendant.flood.off                       whb.halui.flood.off                   halui.flood.off
-
-#reserved whb.button.macro-15
-# net  pendant.flood.on                        whb.halui.flood.on                    halui.flood.on
-
-#return signal is on or off
-# net  pendant.mist.is-on                      whb.halui.mist.is-on                  halui.mist.is-on
-
-#reserved whb.button.macro-16
-# net  pendant.mist.off                        whb.halui.mist.off                    halui.mist.off
-
-#reserved whb.button.macro-16
-# net  pendant.mist.on                         whb.halui.mist.on                     halui.mist.on
-
-#return signal is on or off
-#net  pendant.lube.is-on                      whb.halui.lube.is-on                  halui.lube.is-on
-
-#reserved whb.button.macro-2
-#net  pendant.lube.off                        whb.halui.lube.off                    halui.lube.off
-
-#reserved whb.button.macro-2
-#net  pendant.lube.on                         whb.halui.lube.on                     halui.lube.on

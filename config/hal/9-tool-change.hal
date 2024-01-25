@@ -4,6 +4,8 @@ addf tool-change.and    servo-thread
 net buttons.tool-change-completed   => hal_manualtoolchange.change_button
 
 net tool-change.tool-change         <= iocontrol.0.tool-change          => hal_manualtoolchange.change
+
+
 net tool-change.tool-changed        <= hal_manualtoolchange.changed     => iocontrol.0.tool-changed
 net tool-change.tool-number         <= iocontrol.0.tool-prep-number     => hal_manualtoolchange.number
 net tool-change.tool-prepare-loop   <= iocontrol.0.tool-prepare         => iocontrol.0.tool-prepared
@@ -16,6 +18,7 @@ net spindle-off                     <= tool-change.not.out              => tool-
 net buttons.tool-change             => tool-change.and.in0
 
 net maho-inputs.tool-release        <= tool-change.and.out      
-net maho-inputs.tool-release        => spindle.0.inhibit                => motion.feed-inhibit
+net maho-inputs.tool-release        => spindle.0.inhibit                
+net maho-inputs.tool-release        => motion.feed-inhibit
 
 # TODO: to control the LED i propably need a flipflop
