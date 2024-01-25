@@ -1,0 +1,31 @@
+<pyvcp>
+    <!-- Spindle -->
+    <label>
+        <text>"Spindle speed:"</text>
+    </label>
+    <bar>
+        <halpin>"spindle-speed"</halpin>
+        <max_>4000</max_>
+    </bar>
+
+    <!-- Feed override -->
+    <label>
+        <text>"Feed Override:"</text>
+    </label>
+    <bar>
+        <halpin>"feed-override"</halpin>
+        <min_>0</min_>
+        <max_>1.2</max_>
+    </bar>
+
+    <!-- Jog Speed -->
+    <label>
+        <text>"Jog Speed:"</text>
+    </label>
+    <bar>
+        <halpin>"jog-speed"</halpin>
+        <min_>0</min_>
+        <max_>1000</max_>
+    </bar>
+
+</pyvcp>

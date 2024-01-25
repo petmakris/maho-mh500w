@@ -1,29 +1,18 @@
-loadrt not count=3
-addf not.0 servo-thread
-addf not.1 servo-thread
+addf estop.latch    servo-thread
+addf estop.not.0    servo-thread
+addf estop.not.1    servo-thread
 
-# used in tool change
-addf not.2 servo-thread 
+net estop.external-estop-not        => estop.latch.ok-in
+net maho-outputs.power-on-switch    => estop.latch.reset
+net maho-inputs.power-on            <= estop.latch.ok-out
+net estop.internal-estop            => estop.latch.fault-in
+    
+net maho-outputs.external-estop     => estop.not.0.in
+net estop.external-estop-not        <= estop.not.0.out
 
-loadrt estop_latch
-addf estop-latch.0 servo-thread
+net estop.internal-estop-not        <= iocontrol.0.user-enable-out
+net estop.internal-estop-not        => estop.not.1.in
+net estop.internal-estop            <= estop.not.1.out
 
-# iocontrol.0.emc-enable-in - (bit, IN) Should be driven FALSE when an external E-Stop condition exists.
-# iocontrol.0.user-enable-out - (bit, OUT) FALSE when an internal E-Stop condition exists.
-# iocontrol.0.user-request-enable - (bit, OUT) TRUE when the user has requested that E-Stop be cleared.
-
-
-net external-estop-not          estop-latch.0.ok-in
-net input-power-on-switch       estop-latch.0.reset
-net output-machine-power-on     estop-latch.0.ok-out
-net internal-estop              estop-latch.0.fault-in
-
-net input-external-estop        not.0.in
-net external-estop-not          not.0.out
-
-net internal-estop-not          iocontrol.0.user-enable-out
-net internal-estop-not          not.1.in
-net internal-estop              not.1.out
-
-net output-machine-power-on     iocontrol.0.emc-enable-in
-net output-machine-power-on     hm2_7i97.0.ssr.00.out-00
+net maho-inputs.power-on            => iocontrol.0.emc-enable-in
+net maho-inputs.power-on            => hm2_7i97.0.ssr.00.out-00       

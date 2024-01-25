@@ -1,0 +1,39 @@
+setp pid.y.Pgain [JOINT_1](P)
+setp pid.y.Igain [JOINT_1](I)
+setp pid.y.Dgain [JOINT_1](D)
+setp pid.y.bias [JOINT_1](BIAS)
+setp pid.y.FF0 [JOINT_1](FF0)
+setp pid.y.FF1 [JOINT_1](FF1)
+setp pid.y.FF2 [JOINT_1](FF2)
+setp pid.y.deadband [JOINT_1](DEADBAND)
+setp pid.y.maxoutput [JOINT_1](MAX_OUTPUT)
+# setp pid.y.maxerror [JOINT_1](MAX_ERROR)
+setp pid.y.error-previous-target true
+
+# PWM pin0
+setp hm2_7i97.0.pwmgen.01.output-type 1        
+# offset mode so 50% = 0
+setp hm2_7i97.0.pwmgen.01.offset-mode 1
+setp hm2_7i97.0.pwmgen.01.scale [JOINT_1](OUTPUT_SCALE)
+
+setp hm2_7i97.0.encoder.01.counter-mode 0
+setp hm2_7i97.0.encoder.01.filter 1
+setp hm2_7i97.0.encoder.01.index-invert 0
+setp hm2_7i97.0.encoder.01.index-mask 0
+setp hm2_7i97.0.encoder.01.index-mask-invert 0
+setp hm2_7i97.0.encoder.01.scale  [JOINT_1](ENCODER_SCALE)
+
+net joint.1.enable  => pid.y.enable
+net joint.1.enable  => joint.1.amp-enable-out
+net joint.1.enable  => hm2_7i97.0.pwmgen.01.enable
+
+net joint.1.pos-cmd => pid.y.command
+net joint.1.pos-cmd => joint.1.motor-pos-cmd
+
+net joint.1.pos-fb => pid.y.feedback
+net joint.1.pos-fb => joint.1.motor-pos-fb
+net joint.1.pos-fb => hm2_7i97.0.encoder.01.position
+
+net joint.1.output => pid.y.output
+net joint.1.output => hm2_7i97.0.pwmgen.01.value
+

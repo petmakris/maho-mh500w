@@ -1,0 +1,62 @@
+addf buttons.or.resume              servo-thread
+addf buttons.or.pause               servo-thread
+addf buttons.or.run                 servo-thread
+addf buttons.or.stop                servo-thread
+
+net machine.machine-is-on       <= halui.machine.is-on              => whb.halui.machine.is-on
+net machine.on                  <= whb.halui.machine.on             => halui.machine.on
+net machine.off                 <= whb.halui.machine.off            => halui.machine.off
+
+net program.is-idle             <= halui.program.is-idle            => whb.halui.program.is-idle                  
+net program.is-paused           <= halui.program.is-paused          => whb.halui.program.is-paused           
+net program.is-running          <= halui.program.is-running         => whb.halui.program.is-running               
+
+net buttons.resume              => buttons.or.resume.in0
+net pendant.resume.in1          <= whb.halui.program.resume         => buttons.or.resume.in1
+net pendant.resume.out          <= buttons.or.resume.out            => halui.program.resume
+
+net buttons.pause               => buttons.or.pause.in0
+net pendant.pause.in1           <= whb.halui.program.pause          => buttons.or.pause.in1
+net pendant.pause.out           <= buttons.or.pause.out             => halui.program.pause
+
+net buttons.run                 => buttons.or.run.in0
+net pendant.run.in1             <= whb.halui.program.run            => buttons.or.run.in1
+net pendant.run.out             <= buttons.or.run.out               => halui.program.run
+
+net buttons.stop                => buttons.or.stop.in0
+net pendant.stop.in1            <= whb.halui.program.stop           => buttons.or.stop.in1
+net pendant.stop.out            <= buttons.or.stop.out              => halui.program.stop
+
+net pendant.mode.auto           <= whb.halui.mode.auto              => halui.mode.auto
+net pendant.mode.manual         <= whb.halui.mode.manual            => halui.mode.manual
+net pendant.mode.mdi            <= whb.halui.mode.mdi               => halui.mode.mdi
+net pendant.mode.joint          <= whb.halui.mode.joint             => halui.mode.joint
+net pendant.mode.teleop         <= whb.halui.mode.teleop            => halui.mode.teleop
+
+net pendant.mode.is-auto        <= halui.mode.is-auto               => whb.halui.mode.is-auto
+net pendant.mode.is-manual      <= halui.mode.is-manual             => whb.halui.mode.is-manual
+net pendant.mode.is-mdi         <= halui.mode.is-mdi                => whb.halui.mode.is-mdi
+net pendant.mode.is-joint       <= halui.mode.is-joint              => whb.halui.mode.is-joint
+net pendant.mode.is-teleop      <= halui.mode.is-teleop             => whb.halui.mode.is-teleop
+
+net pendant.flood.is-on         <= halui.flood.is-on                => whb.halui.flood.is-on                 
+net pendant.flood.off           <= whb.halui.flood.off              => halui.flood.off
+net pendant.flood.on            <= whb.halui.flood.on               => halui.flood.on
+
+net pendant.mist.is-on          <= halui.mist.is-on                 => whb.halui.mist.is-on      
+net pendant.mist.off            <= whb.halui.mist.off               => halui.mist.off
+net pendant.mist.on             <= whb.halui.mist.on                => halui.mist.on
+
+net pendant.lube.is-on          <= halui.lube.is-on                 => whb.halui.lube.is-on
+net pendant.lube.off            <= whb.halui.lube.off               => halui.lube.off
+net pendant.lube.on             <= whb.halui.lube.on                => halui.lube.on
+
+# net pendant.feed-override.value              halui.feed-override.value             whb.halui.feed-override.value
+# net pendant.feed-override.increase           whb.halui.feed-override.increase      halui.feed-override.increase
+# net pendant.feed-override.decrease           whb.halui.feed-override.decrease      halui.feed-override.decrease
+
+# needed for both FeedOverride+/- and rotary knob button
+# net pendant.feed-override.scale              whb.halui.feed-override.scale         halui.feed-override.scale
+
+# needed for Mpg mode : button feed position% * max-velocity = Mpg feedrate
+# net pendant.max-velocity.value               whb.halui.max-velocity.value          halui.max-velocity.value

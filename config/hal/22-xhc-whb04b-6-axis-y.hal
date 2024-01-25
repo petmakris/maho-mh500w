@@ -1,0 +1,19 @@
+addf jog.lowpass.y                  servo-thread
+addf jog.scale.y                    servo-thread
+
+setp jog.lowpass.y.scale            100
+setp jog.lowpass.y.gain             0.1
+setp jog.scale.y.gain               0.01
+setp jog.scale.y.offset             0
+
+net pendant.y.is-homed              <= halui.joint.0.is-homed          => whb.halui.joint.y.is-homed      
+net pendant.y.select                <= whb.halui.axis.y.select         => halui.axis.y.select
+net pendant.y.pos-feedback          <= halui.axis.y.pos-feedback       => whb.halui.axis.y.pos-feedback   
+net pendant.y.pos-relative          <= halui.axis.y.pos-relative       => whb.halui.axis.y.pos-relative   
+net pendant.y.jog-vel-mode          <= whb.axis.y.jog-vel-mode         => axis.y.jog-vel-mode
+net pendant.y.jog-enable            <= whb.axis.y.jog-enable           => axis.y.jog-enable
+
+net pendant.y.jog-scale             <= whb.axis.y.jog-scale            => jog.scale.y.in
+net pendant.y.jog-scaled            <= jog.scale.y.out                 => axis.y.jog-scale
+net pendant.y.jog-counts            <= whb.axis.y.jog-counts           => jog.lowpass.y.in
+net pendant.y.jog-counts-filtered   <= jog.lowpass.y.out               => axis.y.jog-counts

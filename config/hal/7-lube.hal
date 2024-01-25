@@ -1,0 +1,22 @@
+addf lube.odometer      servo-thread
+addf lube.or            servo-thread
+
+setp lube.odometer.trigger-distance   3000
+setp lube.odometer.active-duration    10000
+setp lube.odometer.active-on-boot     true
+
+
+net maho-inputs.power-on        => lube.odometer.powered-on
+
+net lube.velocity               <= motion.current-vel           => lube.odometer.velocity
+
+net lube.total-distance         <= lube.odometer.total-distance
+net lube.current-distance       <= lube.odometer.current-distance
+net lube.cycles                 <= lube.odometer.cycles
+
+net lube.bypass_or_0            <= lube.odometer.active         
+net lube.bypass_or_0            => lube.or.in0
+
+net buttons.force-lubricator    => lube.or.in1       
+
+net maho-inputs.lube-pump       <= lube.or.out

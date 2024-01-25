@@ -1,0 +1,25 @@
+# net pendant.macros.macro-0      <= whb.button.macro-0
+# net pendant.macros.macro-1      <= whb.button.macro-1
+# net pendant.macros.macro-2      <= whb.button.macro-2
+# net pendant.macros.macro-3      <= whb.button.macro-3
+# net pendant.macros.macro-4      <= whb.button.macro-4
+# net pendant.macros.macro-5      <= whb.button.macro-5
+# net pendant.macros.macro-6      <= whb.button.macro-6
+# net pendant.macros.macro-7      <= whb.button.macro-7
+# net pendant.macros.macro-8      <= whb.button.macro-8
+# net pendant.macros.macro-9      <= whb.button.macro-9
+# net pendant.macros.macro-10     <= whb.button.macro-10
+
+
+# net pendant.macros.macro-11     <= whb.button.macro-11
+# net pendant.macros.macro-12     <= whb.button.macro-12
+# net pendant.macros.macro-13     <= whb.button.macro-13
+# net pendant.macros.macro-14     <= whb.button.macro-14
+# net pendant.macros.macro-15     <= whb.button.macro-15
+
+# net pendant.button.safe-z       <= whb.button.safe-z
+# net pendant.button.w-home       <= whb.button.w-home
+
+# net pendant.button.m-home       <= whb.button.m-home       => halui.home-all
+
+# net pendant.button.probe-z      <= whb.button.probe-z
