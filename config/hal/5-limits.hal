@@ -1,4 +1,3 @@
 net home-switches.min-x    <= hm2_7i97.0.inmux.00.input-00-not    => joint.0.home-sw-in
 net home-switches.min-y    <= hm2_7i97.0.inmux.00.input-01-not    => joint.1.home-sw-in
 net home-switches.max-z    <= hm2_7i97.0.inmux.00.input-02-not    => joint.2.home-sw-in
-

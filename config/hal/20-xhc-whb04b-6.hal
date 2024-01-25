@@ -1,8 +1,7 @@
-addf or.btn.resume              servo-thread
-addf or.btn.pause               servo-thread
-addf or.btn.run                 servo-thread
-addf or.btn.stop                servo-thread
-
+addf buttons.or.resume              servo-thread
+addf buttons.or.pause               servo-thread
+addf buttons.or.run                 servo-thread
+addf buttons.or.stop                servo-thread
 
 net machine.machine-is-on       <= halui.machine.is-on              => whb.halui.machine.is-on
 net machine.on                  <= whb.halui.machine.on             => halui.machine.on
@@ -12,21 +11,21 @@ net program.is-idle             <= halui.program.is-idle            => whb.halui
 net program.is-paused           <= halui.program.is-paused          => whb.halui.program.is-paused           
 net program.is-running          <= halui.program.is-running         => whb.halui.program.is-running               
 
-net buttons.resume              => or.btn.resume.in0
-net pendant.resume.in1          <= whb.halui.program.resume         => or.btn.resume.in1
-net pendant.resume.out          <= or.btn.resume.out                => halui.program.resume
+net buttons.resume              => buttons.or.resume.in0
+net pendant.resume.in1          <= whb.halui.program.resume         => buttons.or.resume.in1
+net pendant.resume.out          <= buttons.or.resume.out            => halui.program.resume
 
-net buttons.pause               => or.btn.pause.in0
-net pendant.pause.in1           <= whb.halui.program.pause          => or.btn.pause.in1
-net pendant.pause.out           <= or.btn.pause.out                 => halui.program.pause
+net buttons.pause               => buttons.or.pause.in0
+net pendant.pause.in1           <= whb.halui.program.pause          => buttons.or.pause.in1
+net pendant.pause.out           <= buttons.or.pause.out             => halui.program.pause
 
-net buttons.run                 => or.btn.run.in0
-net pendant.run.in1             <= whb.halui.program.run            => or.btn.run.in1
-net pendant.run.out             <= or.btn.run.out                   => halui.program.run
+net buttons.run                 => buttons.or.run.in0
+net pendant.run.in1             <= whb.halui.program.run            => buttons.or.run.in1
+net pendant.run.out             <= buttons.or.run.out               => halui.program.run
 
-net buttons.stop                => or.btn.stop.in0
-net pendant.stop.in1            <= whb.halui.program.stop           => or.btn.stop.in1
-net pendant.stop.out            <= or.btn.stop.out                  => halui.program.stop
+net buttons.stop                => buttons.or.stop.in0
+net pendant.stop.in1            <= whb.halui.program.stop           => buttons.or.stop.in1
+net pendant.stop.out            <= buttons.or.stop.out              => halui.program.stop
 
 net pendant.mode.auto           <= whb.halui.mode.auto              => halui.mode.auto
 net pendant.mode.manual         <= whb.halui.mode.manual            => halui.mode.manual

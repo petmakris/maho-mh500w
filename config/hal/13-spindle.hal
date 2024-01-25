@@ -24,13 +24,11 @@ net spindle.at-speed            <= near.0.out                       => spindle.0
 net spindle-on                  => whb.halui.spindle.is-on
 
 net buttons.set-spindle-on      => spindle.button-on.or.in0
-net buttons.set-spindle-off     => spindle.button-off.or.in0
-
-
 net pendant.spindle.on          <= whb.halui.spindle.start          => spindle.button-on.or.in1     
-net pendant.spindle.off         <= whb.halui.spindle.stop           => spindle.button-off.or.in1
-
 net spindle.set-on              <= spindle.button-on.out            => halui.spindle.0.start
+
+net buttons.set-spindle-off     => spindle.button-off.or.in0
+net pendant.spindle.off         <= whb.halui.spindle.stop           => spindle.button-off.or.in1
 net spindle.set-off             <= spindle.button-on.out            => halui.spindle.0.stop
 
 net pendant.spindle.forward     <= whb.halui.spindle.forward        => halui.spindle.0.forward
