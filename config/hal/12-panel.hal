@@ -4,7 +4,6 @@ addf spindle-pot.scale          servo-thread
 addf jog-pot.scale              servo-thread
 addf feed-pot.conv              servo-thread
 
-
 setp feed-pot.scale.gain        20
 setp feed-pot.scale.offset      0
 
@@ -23,9 +22,11 @@ setp halui.feed-override.scale          0.01
 setp halui.feed-override.direct-value   false
 setp halui.feed-override.count-enable   true
 
-net panel.feed-override.analog-in       <= hm2_7i97.0.7i84.0.0.analogin0        => feed-pot.conv.in
-net panel.feed-override.counts          <= feed-pot.conv.out                    => halui.feed-override.counts
-net panel.feed-override.value           <= halui.feed-override.value
+net panel.feed-override.analog-in           <= hm2_7i97.0.7i84.0.0.analogin0        => feed-pot.scale.in
+net panel.feed-override.scale-out-conv-in   <= feed-pot.scale.out                   => feed-pot.conv.in
+
+net panel.feed-override.counts              <= feed-pot.conv.out                    => halui.feed-override.counts
+net panel.feed-override.value               <= halui.feed-override.value
 
 # ======================================  
 # SPINDLE SPEED
@@ -46,7 +47,6 @@ net panel.feed-override.value           <= halui.feed-override.value
 # ======================================  
 
 # net panel.jog-speed           pyvcp.jog-speed
-
 # net ssia-02-jog-speed                    hm2_7i97.0.7i84.0.0.analogin2
 
 
