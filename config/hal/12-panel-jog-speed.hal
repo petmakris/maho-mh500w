@@ -1,0 +1,7 @@
+addf jog-pot.scale                  servo-thread
+
+# setp jog-pot.scale.gain           20
+# setp jog-pot.scale.offset         0
+
+# net panel.jog-speed               pyvcp.jog-speed
+# net ssia-02-jog-speed             hm2_7i97.0.7i84.0.0.analogin2
