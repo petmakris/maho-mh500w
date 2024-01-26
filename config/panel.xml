@@ -15,7 +15,7 @@
     <bar>
         <halpin>"feed-override"</halpin>
         <min_>0</min_>
-        <max_>1.2</max_>
+        <max_>2.0</max_>
     </bar>
 
     <!-- Jog Speed -->

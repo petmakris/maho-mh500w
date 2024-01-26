@@ -3,7 +3,7 @@ loadusr -W hal_manualtoolchange
 
 loadrt [KINS](KINEMATICS)
 loadrt [EMCMOT](EMCMOT) servo_period_nsec=[EMCMOT](SERVO_PERIOD) num_joints=[KINS](JOINTS)
-loadrt pid names=pid.x,pid.y,pid.z num_chan=3 debug=1
+loadrt pid names=pid.x,pid.y,pid.z debug=1
 loadrt hostmot2
 loadrt [HM2](DRIVER) board_ip=[HM2](IPADDRESS) config="sserial_port_0=20000000"
 
@@ -22,9 +22,10 @@ loadrt odometer             names=lube.odometer
 loadrt estop_latch          names=estop.latch
 
 loadrt and2                 names=tool-change.and
-loadrt or2                  names=lube.or,buttons.or.resume,buttons.or.pause,buttons.or.run,buttons.or.stop,spindle.button-on.or,spindle.button-off.or
+loadrt or2                  names=lube.or,buttons.or.resume,buttons.or.pause,buttons.or.run,buttons.or.stop,spindle.on.or,spindle.off.or
 loadrt not                  names=estop.not.0,estop.not.1,tool-change.not
 
+loadrt lowpass              names=feed-pot.lowpass
 loadrt ilowpass             names=jog.lowpass.x,jog.lowpass.y,jog.lowpass.z
 loadrt scale                names=jog.scale.x,jog.scale.y,jog.scale.z,feed-pot.scale,spindle-pot.scale,jog-pot.scale
 

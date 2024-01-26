@@ -5,20 +5,23 @@ net buttons.rpm-is-set              <= hm2_7i97.0.7i84.0.0.input-09
 net buttons.set-spindle-off         <= hm2_7i97.0.7i84.0.0.input-10
 net buttons.set-spindle-on          <= hm2_7i97.0.7i84.0.0.input-11
 
-net bootons.tool-change             <= hm2_7i97.0.7i84.0.0.input-12
+net buttons.tool-change             <= hm2_7i97.0.7i84.0.0.input-12
 net buttons.tool-change-completed   <= hm2_7i97.0.7i84.0.0.input-13
 
 net buttons.force-lubricator        <= hm2_7i97.0.7i84.0.0.input-16
 
-net buttons.set-x-zero              <= hm2_7i97.0.7i84.0.0.input-05   => halui.mdi-command-05
-net buttons.set-z-zero              <= hm2_7i97.0.7i84.0.0.input-17   => halui.mdi-command-07
-net buttons.set-y-zero              <= hm2_7i97.0.7i84.0.0.input-21   => halui.mdi-command-06
+net buttons.set-x-zero              <= hm2_7i97.0.7i84.0.0.input-05     => halui.mdi-command-05
+net buttons.set-z-zero              <= hm2_7i97.0.7i84.0.0.input-17     => halui.mdi-command-07
+
+net buttons.home-all                <= hm2_7i97.0.7i84.0.0.input-20     => halui.home-all
+
+net buttons.set-y-zero              <= hm2_7i97.0.7i84.0.0.input-21     => halui.mdi-command-06
 
 net buttons.resume                  <= hm2_7i97.0.7i84.0.0.input-23
 net buttons.pause                   <= hm2_7i97.0.7i84.0.0.input-22
 net buttons.run                     <= hm2_7i97.0.7i84.0.0.input-07
 net buttons.stop                    <= hm2_7i97.0.7i84.0.0.input-06
-net buttons.program-step            <= hm2_7i97.0.7i84.0.0.input-19   => halui.program.step 
+net buttons.program-step            <= hm2_7i97.0.7i84.0.0.input-19     => halui.program.step 
 
 
 # outputs 0->15 (0->5 are red, 6->11 are green)
@@ -31,5 +34,4 @@ net maho-inputs.power-on            => hm2_7i97.0.7i84.0.0.output-06
 net program.is-idle                 => hm2_7i97.0.7i84.0.0.output-07
 net program.is-running              => hm2_7i97.0.7i84.0.0.output-08
 net maho-inputs.lube-pump           => hm2_7i97.0.7i84.0.0.output-11
-
 

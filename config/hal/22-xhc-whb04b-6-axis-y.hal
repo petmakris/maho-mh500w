@@ -6,7 +6,7 @@ setp jog.lowpass.y.gain             0.1
 setp jog.scale.y.gain               0.01
 setp jog.scale.y.offset             0
 
-net pendant.y.is-homed              <= halui.joint.0.is-homed          => whb.halui.joint.y.is-homed      
+net pendant.y.is-homed              <= halui.joint.1.is-homed          => whb.halui.joint.y.is-homed      
 net pendant.y.select                <= whb.halui.axis.y.select         => halui.axis.y.select
 net pendant.y.pos-feedback          <= halui.axis.y.pos-feedback       => whb.halui.axis.y.pos-feedback   
 net pendant.y.pos-relative          <= halui.axis.y.pos-relative       => whb.halui.axis.y.pos-relative   

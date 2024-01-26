@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<pyvcp>
-	<label>
-		<text>"This is a Sample Label:"</text>
-		<font>("Helvetica",10)</font>
-	</label>
-</pyvcp>
