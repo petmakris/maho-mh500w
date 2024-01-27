@@ -1,4 +1,4 @@
-# LINUXCNC INPUTS - 19X7 / MAHO OUTPUTS
+# LINUXCNC INPUTS - 19X7 / MAHO OUTPUTS (00 to 15)
 
 net maho-outputs.handwheel-x      <= hm2_7i97.0.inmux.00.input-03
 net maho-outputs.handwheel-z      <= hm2_7i97.0.inmux.00.input-04

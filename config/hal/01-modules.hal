@@ -4,32 +4,18 @@ loadusr -W hal_manualtoolchange
 loadrt [KINS](KINEMATICS)
 loadrt [EMCMOT](EMCMOT) servo_period_nsec=[EMCMOT](SERVO_PERIOD) num_joints=[KINS](JOINTS)
 loadrt pid names=pid.x,pid.y,pid.z debug=1
-loadrt hostmot2
-loadrt [HM2](DRIVER) board_ip=[HM2](IPADDRESS) config="sserial_port_0=20000000"
-
-setp hm2_7i97.0.dpll.01.timer-us -50
-setp hm2_7i97.0.watchdog.timeout_ns 5000000
-
-addf hm2_7i97.0.read        servo-thread
-addf motion-command-handler servo-thread
-addf motion-controller      servo-thread
-addf pid.x.do-pid-calcs     servo-thread
-addf pid.y.do-pid-calcs     servo-thread
-addf pid.z.do-pid-calcs     servo-thread
-addf hm2_7i97.0.write       servo-thread
 
 loadrt odometer             names=lube.odometer
 loadrt estop_latch          names=estop.latch
-
 loadrt and2                 names=tool-change.and
 loadrt or2                  names=lube.or,buttons.or.resume,buttons.or.pause,buttons.or.run,buttons.or.stop,spindle.on.or,spindle.off.or
 loadrt not                  names=estop.not.0,estop.not.1,tool-change.not
-
 loadrt lowpass              names=feed-pot.lowpass
 loadrt ilowpass             names=jog.lowpass.x,jog.lowpass.y,jog.lowpass.z
 loadrt scale                names=jog.scale.x,jog.scale.y,jog.scale.z,feed-pot.scale,spindle-pot.scale,jog-pot.scale
-
 loadrt encoder              names=spindle.encoder
 loadrt near                 names=spindle.near
-
 loadrt conv_float_s32       names=feed-pot.conv
+
+addf motion-command-handler servo-thread
+addf motion-controller      servo-thread

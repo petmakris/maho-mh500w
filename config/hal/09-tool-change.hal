@@ -1,0 +1,27 @@
+addf tool-change.not                servo-thread
+addf tool-change.and                servo-thread
+
+net buttons.tool-change-completed   => hal_manualtoolchange.change_button
+
+net tool-change.tool-change         <= iocontrol.0.tool-change          => hal_manualtoolchange.change
+
+net tool-change.tool-changed        <= hal_manualtoolchange.changed     => iocontrol.0.tool-changed
+net tool-change.tool-number         <= iocontrol.0.tool-prep-number     => hal_manualtoolchange.number
+net tool-change.tool-prepare-loop   <= iocontrol.0.tool-prepare         => iocontrol.0.tool-prepared
+
+# This should prevent a tool change while the spindle is running
+# Maybe I should prevent a tool change while the program is running
+# (In need to monitor the status of the hal variables, is-running, is-paused etc)
+
+net spindle.is-on                   <= spindle.0.on
+net spindle.is-on                   => tool-change.not.in
+net spindle.is-on                   => whb.halui.spindle.is-on
+
+net spindle.is-off                  <= tool-change.not.out
+net spindle.is-off                  => tool-change.and.in0
+
+net buttons.tool-change             => tool-change.and.in1
+
+net maho-inputs.tool-release        <= tool-change.and.out
+net maho-inputs.tool-release        => spindle.0.inhibit
+net maho-inputs.tool-release        => motion.feed-inhibit

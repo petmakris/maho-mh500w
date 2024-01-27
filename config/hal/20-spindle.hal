@@ -1,27 +1,28 @@
 addf spindle.on.or               servo-thread
 addf spindle.off.or              servo-thread
 
-# addf spindle.encoder.update-counters    base-thread
-# addf spindle.encoder.capture-position   servo-thread
-# setp spindle.encoder.position-scale     4
+addf spindle.encoder.update-counters    base-thread
+addf spindle.encoder.capture-position   servo-thread
+setp spindle.encoder.position-scale     4
 
-# addf spindle.near servo-thread
-# setp spindle.counter-mode               true
-# setp spindle.near.scale                 1.02
+addf spindle.near servo-thread
+setp spindle.counter-mode               true
+setp spindle.near.scale                 1.03
 
 net maho-inputs.spindle-cw      <= spindle.0.reverse
 net maho-inputs.spindle-ccw     <= spindle.0.forward
 
-# net spindle.position            <= encoder.0.position               => spindle.0.revs
+net spindle.position            <= spindle.encoder.position         => spindle.0.revs
 
-# net spindle.velocity            <= encoder.0.velocity               => spindle.0.speed-in          
-# net spindle.velocity            => near.0.in2
+net spindle.velocity            <= spindle.encoder.velocity               
+net spindle.velocity            => spindle.0.speed-in          
+net spindle.velocity            => spindle.near.in2
 
-# net spindle.phase-a             <= hm2_7i97.0.inmux.00.input-12     => encoder.0.phase-A
-# net spindle.commanded-speed     <= spindle.0.speed-out-rps-abs      => near.0.in1
-# net spindle.at-speed            <= near.0.out                       => spindle.0.at-speed
+net spindle.phase-a             <= hm2_7i97.0.inmux.00.input-12     => spindle.encoder.phase-A
+net spindle.commanded-speed     <= spindle.0.speed-out-rps-abs      => spindle.near.in1
+net spindle.at-speed            <= spindle.near.out                 => spindle.0.at-speed
 
-net spindle-on                  => whb.halui.spindle.is-on
+net spindle.is-on               => whb.halui.spindle.is-on
 
 net buttons.set-spindle-on      => spindle.on.or.in0
 net pendant.spindle.on          <= whb.halui.spindle.start          => spindle.on.or.in1     

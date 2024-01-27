@@ -1,3 +1,5 @@
+addf pid.x.do-pid-calcs     servo-thread
+
 setp pid.x.Pgain [JOINT_0](P)
 setp pid.x.Igain [JOINT_0](I)
 setp pid.x.Dgain [JOINT_0](D)

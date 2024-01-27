@@ -15,4 +15,3 @@ net estop.internal-estop-not        => estop.not.1.in
 net estop.internal-estop            <= estop.not.1.out
 
 net maho-inputs.power-on            => iocontrol.0.emc-enable-in
-net maho-inputs.power-on            => hm2_7i97.0.ssr.00.out-00       
