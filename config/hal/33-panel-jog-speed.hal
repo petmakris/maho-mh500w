@@ -1,0 +1,18 @@
+addf jog-pot.lowpass           servo-thread
+addf jog-pot.scale             servo-thread
+addf jog-pot.limit             servo-thread
+
+
+setp jog-pot.lowpass.gain      0.2
+setp jog-pot.scale.gain        300.0
+setp jog-pot.scale.offset      0
+setp jog-pot.limit.max         1200.0
+
+
+net panel.jog-speed.analog-in   <= hm2_7i97.0.7i84.0.0.analogin2       => jog-pot.lowpass.in
+net panel.jog-speed.filtered    <= jog-pot.lowpass.out                 => jog-pot.scale.in
+net panel.jog-speed.unlimited   <= jog-pot.scale.out                   => jog-pot.limit.in
+net panel.jog-speed             => jog-pot.limit.out
+
+net panel.jog-speed             => halui.joint.jog-speed
+net panel.jog-speed             => halui.axis.jog-speed

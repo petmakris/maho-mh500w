@@ -1,8 +1,8 @@
-addf jog.lowpass.x                  servo-thread
+addf jog.ilowpass.x                  servo-thread
 addf jog.scale.x                    servo-thread
 
-setp jog.lowpass.x.scale            100
-setp jog.lowpass.x.gain             0.1
+setp jog.ilowpass.x.scale            100
+setp jog.ilowpass.x.gain             0.1
 setp jog.scale.x.gain               0.01
 setp jog.scale.x.offset             0
 
@@ -15,5 +15,5 @@ net pendant.x.jog-enable            <= whb.axis.x.jog-enable           => axis.x
 
 net pendant.x.jog-scale             <= whb.axis.x.jog-scale            => jog.scale.x.in
 net pendant.x.jog-scaled            <= jog.scale.x.out                 => axis.x.jog-scale
-net pendant.x.jog-counts            <= whb.axis.x.jog-counts           => jog.lowpass.x.in
-net pendant.x.jog-counts-filtered   <= jog.lowpass.x.out               => axis.x.jog-counts
+net pendant.x.jog-counts            <= whb.axis.x.jog-counts           => jog.ilowpass.x.in
+net pendant.x.jog-counts-filtered   <= jog.ilowpass.x.out              => axis.x.jog-counts

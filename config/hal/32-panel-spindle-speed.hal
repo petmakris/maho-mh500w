@@ -3,9 +3,5 @@ addf spindle-pot.scale          servo-thread
 # setp spindle-pot.scale.gain     20
 # setp spindle-pot.scale.offset   0
 
-# net ssia-01-spindle-speed        hm2_7i97.0.7i84.0.0.analogin2
-
-
+# net ssia-01-spindle-speed        hm2_7i97.0.7i84.0.0.analogin1
 # net panel.spindle-speed           pyvcp.spindle-speed
-
-

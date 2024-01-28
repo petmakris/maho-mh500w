@@ -1,13 +1,17 @@
-addf spindle.on.or               servo-thread
-addf spindle.off.or              servo-thread
+addf spindle.on.or                      servo-thread
+addf spindle.off.or                     servo-thread
 
-addf spindle.encoder.update-counters    base-thread
-addf spindle.encoder.capture-position   servo-thread
-setp spindle.encoder.position-scale     4
+addf encoder.update-counters            servo-thread
+addf encoder.capture-position           servo-thread
+addf spindle.near                       servo-thread
 
-addf spindle.near servo-thread
-setp spindle.counter-mode               true
-setp spindle.near.scale                 1.03
+# Note: 4 points on the horizontal spindle, but 8 because of the
+# 2:1 gearing ration between horizontal and vertical spindle
+setp spindle.encoder.position-scale     8
+
+setp spindle.encoder.counter-mode       true
+setp spindle.near.scale                 1.05
+
 
 net maho-inputs.spindle-cw      <= spindle.0.reverse
 net maho-inputs.spindle-ccw     <= spindle.0.forward
@@ -16,10 +20,10 @@ net spindle.position            <= spindle.encoder.position         => spindle.0
 
 net spindle.velocity            <= spindle.encoder.velocity               
 net spindle.velocity            => spindle.0.speed-in          
-net spindle.velocity            => spindle.near.in2
+net spindle.velocity            => spindle.near.in1
 
 net spindle.phase-a             <= hm2_7i97.0.inmux.00.input-12     => spindle.encoder.phase-A
-net spindle.commanded-speed     <= spindle.0.speed-out-rps-abs      => spindle.near.in1
+net spindle.commanded-speed     <= spindle.0.speed-out-rps-abs      => spindle.near.in2
 net spindle.at-speed            <= spindle.near.out                 => spindle.0.at-speed
 
 net spindle.is-on               => whb.halui.spindle.is-on

@@ -1,8 +1,0 @@
-loadrt [HM2](DRIVER) board_ip=[HM2](IPADDRESS) config="sserial_port_0=20000000"
-loadrt hostmot2
-
-setp hm2_7i97.0.dpll.01.timer-us    -50
-setp hm2_7i97.0.watchdog.timeout_ns 5000000
-
-addf hm2_7i97.0.read                servo-thread
-addf hm2_7i97.0.write               servo-thread
