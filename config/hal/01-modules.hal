@@ -30,7 +30,7 @@ loadrt scale                names=jog.scale.x,jog.scale.y,jog.scale.z,feed-pot.s
 	
 loadrt limit1               names=jog-pot.limit
 
-loadrt encoder              names=spindle.encoder
+loadrt encoder
 loadrt near                 names=spindle.near
 loadrt conv_float_s32       names=feed-pot.conv
 

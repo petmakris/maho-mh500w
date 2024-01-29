@@ -5,15 +5,15 @@ placeFrames 0.272145144076841
 set ::ratio 0.272145144076841
 set ::old_w_leftf 503
 set ::watchlist {
-    pin+spindle.encoder.counter-mode
-    pin+spindle.encoder.counts
-    pin+spindle.encoder.phase-A
-    pin+spindle.encoder.position
-    pin+spindle.encoder.position-scale
-    pin+spindle.encoder.rawcounts
-    pin+spindle.encoder.velocity
-    pin+spindle.encoder.velocity-rpm
-    pin+spindle.encoder.x4-mode
+    sig+spindle.at-speed
+    sig+spindle.commanded-speed
+    sig+spindle.position
+    sig+spindle.velocity
+    sig+spindle.velocity-rpm
+    param+spindle.near.difference
+    pin+spindle.near.out
+    pin+spindle.near.in1
+    pin+spindle.near.in2
     pin+spindle.0.at-speed
     pin+spindle.0.forward
     pin+spindle.0.inhibit
@@ -26,8 +26,6 @@ set ::watchlist {
     pin+spindle.0.speed-out-abs
     pin+spindle.0.speed-out-rps
     pin+spindle.0.speed-out-rps-abs
-    pin+spindle.near.in1
-    pin+spindle.near.in2
 }
 set ::workmode watchhal
 set ::watchInterval 100
