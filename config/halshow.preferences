@@ -1,23 +1,31 @@
 # Halshow settings
 # This file is generated automatically.
-wm geometry . 899x1057+1594+334
+wm geometry . 936x1266+974+27
 placeFrames 0.272145144076841
 set ::ratio 0.272145144076841
 set ::old_w_leftf 503
 set ::watchlist {
-    pin+hm2_7i97.0.7i84.0.0.analogin0
-    pin+hm2_7i97.0.7i84.0.0.analogin1
-    pin+hm2_7i97.0.7i84.0.0.analogin2
-    sig+panel.feed-override.analog-in
-    sig+panel.feed-override.filtered
-    sig+panel.feed-override.counts
-    sig+panel.feed-override.value
-    pin+halui.feed-override.count-enable
-    pin+halui.feed-override.counts
-    pin+halui.feed-override.direct-value
-    pin+halui.feed-override.reset
-    pin+halui.feed-override.scale
-    pin+halui.feed-override.value
+    pin+spindle.encoder.counter-mode
+    pin+spindle.encoder.counts
+    pin+spindle.encoder.counts-latched
+    pin+spindle.encoder.index-enable
+    pin+spindle.encoder.latch-falling
+    pin+spindle.encoder.latch-input
+    pin+spindle.encoder.latch-rising
+    pin+spindle.encoder.min-speed-estimate
+    pin+spindle.encoder.missing-teeth
+    pin+spindle.encoder.phase-A
+    pin+spindle.encoder.phase-B
+    pin+spindle.encoder.phase-Z
+    pin+spindle.encoder.position
+    pin+spindle.encoder.position-interpolated
+    pin+spindle.encoder.position-latched
+    pin+spindle.encoder.position-scale
+    pin+spindle.encoder.rawcounts
+    pin+spindle.encoder.reset
+    pin+spindle.encoder.velocity
+    pin+spindle.encoder.velocity-rpm
+    pin+spindle.encoder.x4-mode
 }
 set ::workmode watchhal
 set ::watchInterval 100
