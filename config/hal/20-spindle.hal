@@ -22,6 +22,9 @@ net spindle.velocity            <= spindle.encoder.velocity
 net spindle.velocity            => spindle.0.speed-in          
 net spindle.velocity            => spindle.near.in1
 
+# To PyVCP
+net spindle.velocity-rpm        <= spindle.encoder.velocity-rpm
+
 net spindle.phase-a             <= hm2_7i97.0.inmux.00.input-12     => spindle.encoder.phase-A
 net spindle.commanded-speed     <= spindle.0.speed-out-rps-abs      => spindle.near.in2
 net spindle.at-speed            <= spindle.near.out                 => spindle.0.at-speed

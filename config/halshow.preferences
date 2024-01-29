@@ -1,31 +1,33 @@
 # Halshow settings
 # This file is generated automatically.
-wm geometry . 936x1266+974+27
+wm geometry . 936x1048+974+27
 placeFrames 0.272145144076841
 set ::ratio 0.272145144076841
 set ::old_w_leftf 503
 set ::watchlist {
     pin+spindle.encoder.counter-mode
     pin+spindle.encoder.counts
-    pin+spindle.encoder.counts-latched
-    pin+spindle.encoder.index-enable
-    pin+spindle.encoder.latch-falling
-    pin+spindle.encoder.latch-input
-    pin+spindle.encoder.latch-rising
-    pin+spindle.encoder.min-speed-estimate
-    pin+spindle.encoder.missing-teeth
     pin+spindle.encoder.phase-A
-    pin+spindle.encoder.phase-B
-    pin+spindle.encoder.phase-Z
     pin+spindle.encoder.position
-    pin+spindle.encoder.position-interpolated
-    pin+spindle.encoder.position-latched
     pin+spindle.encoder.position-scale
     pin+spindle.encoder.rawcounts
-    pin+spindle.encoder.reset
     pin+spindle.encoder.velocity
     pin+spindle.encoder.velocity-rpm
     pin+spindle.encoder.x4-mode
+    pin+spindle.0.at-speed
+    pin+spindle.0.forward
+    pin+spindle.0.inhibit
+    pin+spindle.0.on
+    pin+spindle.0.reverse
+    pin+spindle.0.revs
+    pin+spindle.0.speed-cmd-rps
+    pin+spindle.0.speed-in
+    pin+spindle.0.speed-out
+    pin+spindle.0.speed-out-abs
+    pin+spindle.0.speed-out-rps
+    pin+spindle.0.speed-out-rps-abs
+    pin+spindle.near.in1
+    pin+spindle.near.in2
 }
 set ::workmode watchhal
 set ::watchInterval 100
