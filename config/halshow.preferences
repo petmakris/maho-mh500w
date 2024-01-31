@@ -5,19 +5,41 @@ placeFrames 0.272145144076841
 set ::ratio 0.272145144076841
 set ::old_w_leftf 503
 set ::watchlist {
-    sig+spindle.at-speed
-    sig+spindle.commanded-speed
-    sig+spindle.position
-    sig+spindle.velocity
-    sig+spindle.velocity-rpm
-    param+spindle.near.difference
-    pin+spindle.near.out
-    pin+spindle.near.in1
-    pin+spindle.near.in2
+    pin+hm2_7i97.0.encoder.05.count
+    pin+hm2_7i97.0.encoder.05.count-latched
+    pin+hm2_7i97.0.encoder.05.index-enable
+    pin+hm2_7i97.0.encoder.05.input-a
+    pin+hm2_7i97.0.encoder.05.input-b
+    pin+hm2_7i97.0.encoder.05.input-index
+    pin+hm2_7i97.0.encoder.05.position
+    pin+hm2_7i97.0.encoder.05.position-latched
+    pin+hm2_7i97.0.encoder.05.quad-error
+    pin+hm2_7i97.0.encoder.05.quad-error-enable
+    pin+hm2_7i97.0.encoder.05.rawcounts
+    pin+hm2_7i97.0.encoder.05.rawlatch
+    pin+hm2_7i97.0.encoder.05.reset
+    pin+hm2_7i97.0.encoder.05.velocity
+    pin+hm2_7i97.0.encoder.05.velocity-rpm
+    param+hm2_7i97.0.encoder.05.counter-mode
+    param+hm2_7i97.0.encoder.05.filter
+    param+hm2_7i97.0.encoder.05.index-invert
+    param+hm2_7i97.0.encoder.05.index-mask
+    param+hm2_7i97.0.encoder.05.index-mask-invert
+    param+hm2_7i97.0.encoder.05.scale
+    param+hm2_7i97.0.encoder.05.vel-timeout
+    pin+spindle.0.amp-fault-in
     pin+spindle.0.at-speed
+    pin+spindle.0.brake
     pin+spindle.0.forward
+    pin+spindle.0.index-enable
     pin+spindle.0.inhibit
+    pin+spindle.0.is-oriented
+    pin+spindle.0.locked
     pin+spindle.0.on
+    pin+spindle.0.orient
+    pin+spindle.0.orient-angle
+    pin+spindle.0.orient-fault
+    pin+spindle.0.orient-mode
     pin+spindle.0.reverse
     pin+spindle.0.revs
     pin+spindle.0.speed-cmd-rps

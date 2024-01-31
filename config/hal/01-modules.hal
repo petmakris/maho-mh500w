@@ -26,11 +26,9 @@ loadrt not                  names=estop.not.0,estop.not.1,tool-change.not
 loadrt lowpass              names=feed-pot.lowpass,jog-pot.lowpass
 loadrt ilowpass             names=jog.ilowpass.x,jog.ilowpass.y,jog.ilowpass.z
 loadrt scale                names=jog.scale.x,jog.scale.y,jog.scale.z,feed-pot.scale,spindle-pot.scale,jog-pot.scale
-
 	
 loadrt limit1               names=jog-pot.limit
 
-loadrt encoder
-loadrt near                 names=spindle.near
+# loadrt near                 names=spindle.near
 loadrt conv_float_s32       names=feed-pot.conv
 

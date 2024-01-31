@@ -1,34 +1,27 @@
 addf spindle.on.or                      servo-thread
 addf spindle.off.or                     servo-thread
 
-addf encoder.update-counters            servo-thread
-addf encoder.capture-position           servo-thread
+# addf spindle.near                       servo-thread
 
-# Note: 3 points on the horizontal spindle, but 6 because of the
-# 2:1 gearing ration between horizontal and vertical spindle
+setp hm2_7i97.0.encoder.05.counter-mode         1
+setp hm2_7i97.0.encoder.05.filter               1
+setp hm2_7i97.0.encoder.05.index-invert         0
+setp hm2_7i97.0.encoder.05.index-mask           0
+setp hm2_7i97.0.encoder.05.index-mask-invert    0
+setp hm2_7i97.0.encoder.05.scale                3
 
-setp encoder.0.position-scale             6
+# setp spindle.near.scale                         1.05
 
-addf spindle.near                       servo-thread
-setp encoder.0.counter-mode             true
-setp spindle.near.scale                 1.05
-
-net maho-inputs.spindle-cw              <= spindle.0.reverse
-net maho-inputs.spindle-ccw             <= spindle.0.forward
-
-net spindle.position                    <= encoder.0.position         => spindle.0.revs
-
-net spindle.velocity                    <= encoder.0.velocity               
-net spindle.velocity                    => spindle.0.speed-in          
-net spindle.velocity                    => spindle.near.in1
+net spindle.position                    <= hm2_7i97.0.encoder.05.position   => spindle.0.revs
+net spindle.velocity                    <= hm2_7i97.0.encoder.05.velocity
+net spindle.velocity                    => spindle.0.speed-in
+# net spindle.velocity                    => spindle.near.in1
 
 # To PyVCP
-net spindle.velocity-rpm                <= encoder.0.velocity-rpm
+net spindle.velocity-rpm                <= hm2_7i97.0.encoder.05.velocity-rpm
 
-net spindle.phase-a                     <= hm2_7i97.0.inmux.00.input-12     => encoder.0.phase-A
-net spindle.commanded-speed             <= spindle.0.speed-out-rps-abs      => spindle.near.in2
-net spindle.at-speed                    <= spindle.near.out                 => spindle.0.at-speed
-
+# net spindle.commanded-speed             <= spindle.0.speed-out-rps-abs      => spindle.near.in2
+# net spindle.at-speed                    <= spindle.near.out                 => spindle.0.at-speed
 
 net spindle.is-on                       => whb.halui.spindle.is-on
 
@@ -42,6 +35,9 @@ net spindle.set-off                     <= spindle.off.or.out               => h
 
 net pendant.spindle.forward             <= whb.halui.spindle.forward        => halui.spindle.0.forward
 net pendant.spindle.reverse             <= whb.halui.spindle.reverse        => halui.spindle.0.reverse
+
+net maho-inputs.spindle-cw              <= spindle.0.reverse
+net maho-inputs.spindle-ccw             <= spindle.0.forward
 
 
 # net pendant.spindle.increase                 whb.halui.spindle.increase            halui.spindle.0.increase
