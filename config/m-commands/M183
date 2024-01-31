@@ -11,7 +11,7 @@ if (len(sys.argv) >= 2):
     except:
         pass
 
-RPM_IS_SET_SIGNAL = "ssi-09-rpm-is-set"
+RPM_IS_SET_SIGNAL = "buttons.rpm-is-set"
 
 h = hal.component("passthrough")
 h.ready()
