@@ -1,0 +1,6 @@
+config/halshow.preferences
+config/autosave.halscope
+config/maho.var.bak
+config/maho.ini.expanded
+
+**/*.code-workspace
