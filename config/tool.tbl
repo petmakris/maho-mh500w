@@ -1,5 +1,10 @@
 T1 P1 Z0 D1 ;empty 
 T2 P2 Z203.727 D3 ;mechanical edge finder 
+
+
+
+
+
 T3 P3 Z0 D1 ;digital edge finder 
 T4 P4 Z125.467 D6 ;[#04] [6mm] spot drill
 T5 P5 Z92.360 D6 ;[#05] [6mm] 2f

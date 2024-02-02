@@ -24,8 +24,9 @@ loadrt and2                 names=tool-change.and
 loadrt or2                  names=lube.or,buttons.or.resume,buttons.or.pause,buttons.or.run,buttons.or.stop,spindle.on.or,spindle.off.or
 loadrt not                  names=estop.not.0,estop.not.1,tool-change.not
 loadrt lowpass              names=feed-pot.lowpass,jog-pot.lowpass
-loadrt ilowpass             names=jog.ilowpass.x,jog.ilowpass.y,jog.ilowpass.z
-loadrt scale                names=jog.scale.x,jog.scale.y,jog.scale.z,feed-pot.scale,spindle-pot.scale,jog-pot.scale
+# loadrt ilowpass             names=jog.ilowpass.x,jog.ilowpass.y,jog.ilowpass.z
+loadrt scale                names=feed-pot.scale,spindle-pot.scale,jog-pot.scale
+# loadrt scale                names=jog.scale.x,jog.scale.y,jog.scale.z,feed-pot.scale,spindle-pot.scale,jog-pot.scale
 	
 loadrt limit1               names=jog-pot.limit
 

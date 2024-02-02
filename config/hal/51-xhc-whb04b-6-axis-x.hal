@@ -1,19 +1,27 @@
-addf jog.ilowpass.x                  servo-thread
-addf jog.scale.x                    servo-thread
+# addf jog.ilowpass.x                 servo-thread
+# addf jog.scale.x                    servo-thread
 
-setp jog.ilowpass.x.scale            100
-setp jog.ilowpass.x.gain             0.1
-setp jog.scale.x.gain               0.01
-setp jog.scale.x.offset             0
+# setp jog.ilowpass.x.scale           100
+# setp jog.ilowpass.x.gain            0.1
+# setp jog.scale.x.gain               0.01
+# setp jog.scale.x.offset             0
 
-net pendant.x.is-homed              <= halui.joint.0.is-homed          => whb.halui.joint.x.is-homed      
-net pendant.x.select                <= whb.halui.axis.x.select         => halui.axis.x.select
-net pendant.x.pos-feedback          <= halui.axis.x.pos-feedback       => whb.halui.axis.x.pos-feedback   
-net pendant.x.pos-relative          <= halui.axis.x.pos-relative       => whb.halui.axis.x.pos-relative   
-net pendant.x.jog-vel-mode          <= whb.axis.x.jog-vel-mode         => axis.x.jog-vel-mode
-net pendant.x.jog-enable            <= whb.axis.x.jog-enable           => axis.x.jog-enable
+# net pendant.x.is-homed              <= halui.joint.0.is-homed          => whb.halui.joint.x.is-homed      
+# net pendant.x.select                <= whb.halui.axis.x.select         => halui.axis.x.select
+# net pendant.x.pos-feedback          <= halui.axis.x.pos-feedback       => whb.halui.axis.x.pos-feedback   
+# net pendant.x.pos-relative          <= halui.axis.x.pos-relative       => whb.halui.axis.x.pos-relative   
+# net pendant.x.jog-vel-mode          <= whb.axis.x.jog-vel-mode         => axis.x.jog-vel-mode
+# net pendant.x.jog-enable            <= whb.axis.x.jog-enable           => axis.x.jog-enable
+# net pendant.x.jog-scale             <= whb.axis.x.jog-scale            => jog.scale.x.in
+# net pendant.x.jog-scaled            <= jog.scale.x.out                 => axis.x.jog-scale
+# net pendant.x.jog-counts            <= whb.axis.x.jog-counts           => jog.ilowpass.x.in
+# net pendant.x.jog-counts-filtered   <= jog.ilowpass.x.out              => axis.x.jog-counts
 
-net pendant.x.jog-scale             <= whb.axis.x.jog-scale            => jog.scale.x.in
-net pendant.x.jog-scaled            <= jog.scale.x.out                 => axis.x.jog-scale
-net pendant.x.jog-counts            <= whb.axis.x.jog-counts           => jog.ilowpass.x.in
-net pendant.x.jog-counts-filtered   <= jog.ilowpass.x.out              => axis.x.jog-counts
+net pendant.x.is-homed        <= halui.joint.0.is-homed      => whb.halui.joint.x.is-homed
+net pendant.x.select          <= whb.halui.axis.x.select     => halui.axis.x.select
+net pendant.x.jog-scale       <= whb.axis.x.jog-scale        => axis.x.jog-scale
+net pendant.x.jog-counts      <= whb.axis.x.jog-counts       => axis.x.jog-counts
+net pendant.x.jog-enable      <= whb.axis.x.jog-enable       => axis.x.jog-enable
+net pendant.x.jog-vel-mode    <= whb.axis.x.jog-vel-mode     => axis.x.jog-vel-mode
+
+

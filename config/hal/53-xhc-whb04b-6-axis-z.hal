@@ -1,19 +1,27 @@
-addf jog.ilowpass.z                  servo-thread
-addf jog.scale.z                    servo-thread
+# addf jog.ilowpass.z                  servo-thread
+# addf jog.scale.z                    servo-thread
 
-setp jog.ilowpass.z.scale            100
-setp jog.ilowpass.z.gain             0.1
-setp jog.scale.z.gain               0.01
-setp jog.scale.z.offset             0
+# setp jog.ilowpass.z.scale            100
+# setp jog.ilowpass.z.gain             0.1
+# setp jog.scale.z.gain               0.01
+# setp jog.scale.z.offset             0
 
-net pendant.z.is-homed              <= halui.joint.2.is-homed          => whb.halui.joint.z.is-homed      
-net pendant.z.select                <= whb.halui.axis.z.select         => halui.axis.z.select
-net pendant.z.pos-feedback          <= halui.axis.z.pos-feedback       => whb.halui.axis.z.pos-feedback   
-net pendant.z.pos-relative          <= halui.axis.z.pos-relative       => whb.halui.axis.z.pos-relative   
-net pendant.z.jog-vel-mode          <= whb.axis.z.jog-vel-mode         => axis.z.jog-vel-mode
-net pendant.z.jog-enable            <= whb.axis.z.jog-enable           => axis.z.jog-enable
+# net pendant.z.is-homed              <= halui.joint.2.is-homed          => whb.halui.joint.z.is-homed      
+# net pendant.z.select                <= whb.halui.axis.z.select         => halui.axis.z.select
+# net pendant.z.pos-feedback          <= halui.axis.z.pos-feedback       => whb.halui.axis.z.pos-feedback   
+# net pendant.z.pos-relative          <= halui.axis.z.pos-relative       => whb.halui.axis.z.pos-relative   
+# net pendant.z.jog-vel-mode          <= whb.axis.z.jog-vel-mode         => axis.z.jog-vel-mode
+# net pendant.z.jog-enable            <= whb.axis.z.jog-enable           => axis.z.jog-enable
+# net pendant.z.jog-scale             <= whb.axis.z.jog-scale            => jog.scale.z.in
+# net pendant.z.jog-scaled            <= jog.scale.z.out                 => axis.z.jog-scale
+# net pendant.z.jog-counts            <= whb.axis.z.jog-counts           => jog.ilowpass.z.in
+# net pendant.z.jog-counts-filtered   <= jog.ilowpass.z.out               => axis.z.jog-counts
 
-net pendant.z.jog-scale             <= whb.axis.z.jog-scale            => jog.scale.z.in
-net pendant.z.jog-scaled            <= jog.scale.z.out                 => axis.z.jog-scale
-net pendant.z.jog-counts            <= whb.axis.z.jog-counts           => jog.ilowpass.z.in
-net pendant.z.jog-counts-filtered   <= jog.ilowpass.z.out               => axis.z.jog-counts
+net pendant.z.is-homed        <= halui.joint.1.is-homed      => whb.halui.joint.z.is-homed
+net pendant.z.select          <= whb.halui.axis.z.select     => halui.axis.z.select
+net pendant.z.jog-scale       <= whb.axis.z.jog-scale        => axis.z.jog-scale
+net pendant.z.jog-counts      <= whb.axis.z.jog-counts       => axis.z.jog-counts
+net pendant.z.jog-enable      <= whb.axis.z.jog-enable       => axis.z.jog-enable
+net pendant.z.jog-vel-mode    <= whb.axis.z.jog-vel-mode     => axis.z.jog-vel-mode
+
+
