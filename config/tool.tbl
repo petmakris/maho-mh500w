@@ -18,6 +18,4 @@ T28 P28 Z161.245 D1 ; [#28] [20mm] 4F
 T29 P29 Z160.510 D1 ;
 T30 P30 Z142.618 D1 ;[#30] FaceMill 32mm 5F
 T31 P31 Z108.734 D1 ;
-
-
-T100 P100 Z125.436 D6 ; [#100] Spot Drill 6mm [#03] Duplicate
+T90 P90 Z125.436 D6 ; [#90] Spot Drill 6mm [#03] Duplicate
