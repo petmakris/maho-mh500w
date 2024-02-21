@@ -1,21 +1,21 @@
 T1 P1 Z0 D1 ;empty 
 T2 P2 Z204.649 D3 ;mechanical edge finder 
-T3 P3 Z125.436 D6 ; [#03] Spot Drill 6mm
-T4 P4 Z119.592 D1 ; [#04] Drill 3.3mm
-T5 P5 Z123.502 D1 ; [#05] Drill 4.2mm
-T6 P6 Z130.729 D1 ; [#06] Drill 5.0mm
-T8 P8 Z99.243 D1 ; [#08] [3mm] 2F
-T9 P9 Z98.592 D1 ; [#09] [4mm] 2F
-T13 P13 Z92.280 D1 ; [#13] [6mm] 2F
-T14 P14 Z95.361 D1 ; [#14] [6mm] 3F
-T18 P18 Z112.462 D1 ; [#18] [8mm] 3F
-T19 P19 Z106.408 D1 ; [#19] [8mm] 4F
-T20 P20 Z115.444 D1 ; [#20] [10mm] 2F
-T22 P22 Z122.240 D1 ; [#22] [12mm] 4F
-T26 P26 Z125.440 D1 ; [#26] [20mm] 4F Roughing
-T27 P27 Z159.043 D1 ; [#27] [16mm] 4F
-T28 P28 Z161.245 D1 ; [#28] [20mm] 4F
-T29 P29 Z160.510 D1 ; [#29]
-T30 P30 Z142.618 D1 ;[#30] FaceMill 32mm 5F
-T31 P31 Z108.734 D1 ; [#31]
-T90 P90 Z125.436 D6 ; [#90] Spot Drill 6mm [#03] Duplicate
+T4 P4 Z99.243 D3 ;[#08] [3mm] 2f 
+T5 P5 Z98.592 D4 ;[#09] [4mm] 2f 
+T13 P13 Z92.28 D6 ;[#13] [6mm] 2f 
+T14 P14 Z95.361 D6 ;[#14] [6mm] 3f 
+T18 P18 Z112.462 D8 ;[#18] [8mm] 3f 
+T19 P19 Z102.702 D8 ;[#19] [8mm] 4f 
+T20 P20 Z115.444 D10 ;[#20] [10mm] 2f 
+T22 P22 Z122.24 D12 ;[#22] [12mm] 4f 
+T26 P26 Z125.44 D20 ;[#26] [20mm] 4f roughing 
+T27 P27 Z159.043 D16 ;[#27] [16mm] 4f 
+T28 P28 Z161.245 D20 ;[#28] [20mm] 4f 
+T30 P30 Z142.618 D32 ;[#30] facemill 32mm 5f 
+T61 P61 Z125.436 D8.0 ;[#61] spot drill 8mm 
+T62 P62 Z119.592 D3.3 ;[#62] drill 3.3mm 
+T63 P63 Z123.502 D4.2 ;[#63] drill 4.2mm 
+T64 P64 Z130.729 D5.0 ;[#64] drill 5.0mm 
+T65 P65 Z130.729 D6.0 ;[#65] drill 6.0mm 
+T66 P66 Z130.729 D6.8 ;[#66] drill 6.8mm 
+T90 P90 Z125.436 D6 ;[#90] spot drill 8mm [#61] duplicate 
