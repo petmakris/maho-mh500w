@@ -27,3 +27,8 @@ net program.is-idle                 => hm2_7i97.0.7i84.0.0.output-07
 net program.is-running              => hm2_7i97.0.7i84.0.0.output-08
 net maho-inputs.lube-pump           => hm2_7i97.0.7i84.0.0.output-11
 
+net air.output-1                    => hm2_7i97.0.7i84.0.0.output-12
+net air.output-2                    => hm2_7i97.0.7i84.0.0.output-13
+net air.output-3                    => hm2_7i97.0.7i84.0.0.output-14
+
+

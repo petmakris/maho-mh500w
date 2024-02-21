@@ -1,8 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "XY2500R-C(5.08)-2P")(type "KiCad")(uri "${KICAD_LIBS}/parts/connectors/TERMINAL/XY2500R-C(5.08)-2P/XY2500R-C(5.08)-2P.kicad_sym")(options "")(descr "XY2500R-C(5.08)-2P"))
-  (lib (name "XY2500R-C(5.08)-3P")(type "KiCad")(uri "${KICAD_LIBS}/parts/connectors/TERMINAL/XY2500R-C(5.08)-3P/XY2500R-C(5.08)-3P.kicad_sym")(options "")(descr "XY2500R-C(5.08)-3P"))
-  (lib (name "XY2500R-C(5.08)-4P")(type "KiCad")(uri "${KICAD_LIBS}/parts/connectors/TERMINAL/XY2500R-C(5.08)-4P/XY2500R-C(5.08)-4P.kicad_sym")(options "")(descr "XY2500R-C(5.08)-4P"))
-  (lib (name "FDN335N")(type "KiCad")(uri "${KICAD_LIBS}/parts/mosfet/FD335N/FDN335N.kicad_sym")(options "")(descr "FDN335N"))
-  (lib (name "74AHCT1G14SE-7")(type "KiCad")(uri "${KICAD_LIBS}/parts/74xx/74AHCT1G14SE-7/74AHCT1G14SE-7.kicad_sym")(options "")(descr "74AHCT1G14SE-7"))
-)
