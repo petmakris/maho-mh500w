@@ -1,5 +1,5 @@
 T1 P1 Z0 D1 ;empty 
-T2 P2 Z204.623 D3 ;mechanical edge finder 
+T2 P2 Z204.671 D3 ;mechanical edge finder 
 T4 P4 Z99.23 D3 ;[#04] [3mm] 2f 
 T5 P5 Z98.554 D4 ;[#05] [4mm] 2f 
 T13 P13 Z92.235 D6 ;[#13] [6mm] 2f 
@@ -17,7 +17,7 @@ T62 P62 Z119.592 D3.3 ;[#62] drill 3.3mm
 T63 P63 Z123.502 D4.2 ;[#63] drill 4.2mm 
 T64 P64 Z130.729 D5 ;[#64] drill 5.0mm 
 T65 P65 Z130.729 D6 ;[#65] drill 6.0mm 
-T66 P66 Z130.729 D6.8 ;[#66] drill 6.8mm 
+T66 P66 Z141.538 D6.8 ;[#66] drill 6.8mm 
 T90 P90 Z125.436 D6 ;[#90] spot drill 8mm [#61] duplicate 
 T21 P21 Z103.472 D10 ;[#21] [10mm] 4f 
 T23 P23 Z159.533 D10.5 ;[#23] drill 10.5mm 
