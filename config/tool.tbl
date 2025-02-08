@@ -2,16 +2,16 @@ T1 P1 Z0 D1 ;empty
 T2 P2 Z204.655 D3 ;mechanical edge finder 
 T4 P4 Z99.23 D3 ;[#04] [3mm] 2f 
 T5 P5 Z98.554 D4 ;[#05] [4mm] 2f 
-T13 P13 Z92.377 D6 ;[#13] [6mm] 2f 
+T13 P13 Z95.038 D6 ;[#13] [6mm] 2f 
 T14 P14 Z95.477 D6 ;[#14] [6mm] 3f 
 T18 P18 Z110.355 D8 ;[#18] [8mm] 3f 
 T19 P19 Z102.716 D8 ;[#19] [8mm] 4f 
 T20 P20 Z115.592 D10 ;[#20] [10mm] 2f 
 T22 P22 Z122.379 D12 ;[#22] [12mm] 4f 
-T26 P26 Z125.572 D20 ;[#26] [20mm] 4f roughing 
+T26 P26 Z122.706 D16 ;[#26] [20mm] 4f 
 T27 P27 Z159.031 D16 ;[#27] [16mm] 4f 
 T28 P28 Z161.248 D20 ;[#28] [20mm] 4f 
-T30 P30 Z142.738 D32 ;[#30] facemill 32mm 5f 
+T30 P30 Z142.82 D32 ;[#30] facemill 32mm 5f 
 T61 P61 Z130.518 D8 ;[#61] spot drill 8mm 
 T62 P62 Z123.778 D3.3 ;[#62] drill 3.3mm 
 T63 P63 Z123.325 D4.2 ;[#63] drill 4.2mm 
@@ -22,3 +22,4 @@ T90 P90 Z130.518 D6 ;[#90] spot drill 8mm [#61] duplicate
 T21 P21 Z103.618 D10 ;[#21] [10mm] 4f 
 T23 P23 Z159.477 D10.5 ;[#23] drill 10.5mm 
 T24 P24 Z170.223 D16 ;[#24] drill 16.0mm 
+T25 P25 Z93.217 D11.77 ;[#25] dovetail 11.77mm 
