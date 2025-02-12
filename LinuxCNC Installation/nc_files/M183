@@ -1,0 +1,49 @@
+#!/usr/bin/env python3
+
+import time, hal, time, sys
+import tkinter as tk
+
+rpm_value = "(undefined)"
+if (len(sys.argv) >= 2):
+    rpm_value = sys.argv[1]
+    try:
+        rpm_value = int(float(sys.argv[1]))
+    except:
+        pass
+
+RPM_IS_SET_SIGNAL = "buttons.rpm-is-set"
+
+h = hal.component("passthrough")
+h.ready()
+
+root = tk.Tk()
+root.title("Configure Spindle RPM")
+
+def center_window(window, width, height):
+    x = (window.winfo_screenwidth() - width) // 2
+    y = (window.winfo_screenheight() - height) // 2
+    window.geometry(f"{width}x{height}+{x}+{y}")
+
+def check_event():
+    if hal.get_value(RPM_IS_SET_SIGNAL):
+        root.destroy()
+    else:
+        root.after(100, check_event)
+
+
+label1 = tk.Label(root, text="Set RPM to", font=("Arial", 32))
+label2 = tk.Label(root, text="%s" % rpm_value, font=("Arial", 48), bg="blue", fg="white")
+label1.pack(pady=10)
+label2.pack(pady=10)
+
+button_text = "OK"
+button = tk.Button(root, text=button_text, font=("Arial", 32), command=lambda : root.destroy())
+button.pack(pady=10)
+
+check_event()
+
+width = 400
+height = 280
+center_window(root, width, height)
+
+root.mainloop()
