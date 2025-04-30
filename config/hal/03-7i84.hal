@@ -9,7 +9,7 @@ addf jog.z.auto-enable.or  servo-thread
 net buttons.set-x-zero                <= hm2_7i97.0.7i84.0.0.input-05 => halui.mdi-command-05
 net buttons.stop                      <= hm2_7i97.0.7i84.0.0.input-06
 net buttons.run                       <= hm2_7i97.0.7i84.0.0.input-07
-# TODO: mist is not implemented yet
+
 net buttons.coolant-mist              <= hm2_7i97.0.7i84.0.0.input-08
 net buttons.rpm-is-set                <= hm2_7i97.0.7i84.0.0.input-09
 net buttons.set-spindle-off           <= hm2_7i97.0.7i84.0.0.input-10
@@ -77,12 +77,12 @@ net maho-inputs.power-on              => hm2_7i97.0.7i84.0.0.output-06
 net program.is-idle                   => hm2_7i97.0.7i84.0.0.output-07
 net program.is-running                => hm2_7i97.0.7i84.0.0.output-08
 net maho-inputs.lube-pump             => hm2_7i97.0.7i84.0.0.output-09
-net coolant-mist                      => hm2_7i97.0.7i84.0.0.output-10
-net coolant-pump                      => hm2_7i97.0.7i84.0.0.output-11
+net buttons.coolant-mist              => hm2_7i97.0.7i84.0.0.output-10
+net maho-inputs.coolant-pump          => hm2_7i97.0.7i84.0.0.output-11
 
 #################################### Other outputs
-net coolant-mist                    => hm2_7i97.0.7i84.0.0.output-12
+net buttons.coolant-mist              => hm2_7i97.0.7i84.0.0.output-12
 
-#                                   => hm2_7i97.0.7i84.0.0.output-13
-#                                   => hm2_7i97.0.7i84.0.0.output-14
-#                                   => hm2_7i97.0.7i84.0.0.output-15
+#                                     => hm2_7i97.0.7i84.0.0.output-13
+#                                     => hm2_7i97.0.7i84.0.0.output-14
+#                                     => hm2_7i97.0.7i84.0.0.output-15
