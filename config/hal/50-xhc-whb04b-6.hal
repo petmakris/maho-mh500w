@@ -1,3 +1,5 @@
+# TODO: PENDANT IS NOT WORKING CORRECTLY
+
 addf buttons.or.resume              servo-thread
 addf buttons.or.pause               servo-thread
 addf buttons.or.run                 servo-thread

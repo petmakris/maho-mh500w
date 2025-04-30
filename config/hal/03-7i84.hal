@@ -1,34 +1,88 @@
-# inputs 0 -> 31
+addf jog.z.plus.or         servo-thread
+addf jog.z.auto-enable.or  servo-thread
 
-net buttons.set-x-zero              <= hm2_7i97.0.7i84.0.0.input-05     => halui.mdi-command-05
-net buttons.stop                    <= hm2_7i97.0.7i84.0.0.input-06
-net buttons.run                     <= hm2_7i97.0.7i84.0.0.input-07
-net buttons.rpm-is-set              <= hm2_7i97.0.7i84.0.0.input-09
-net buttons.set-spindle-off         <= hm2_7i97.0.7i84.0.0.input-10
-net buttons.set-spindle-on          <= hm2_7i97.0.7i84.0.0.input-11
-net buttons.tool-change             <= hm2_7i97.0.7i84.0.0.input-12
-net buttons.tool-change-completed   <= hm2_7i97.0.7i84.0.0.input-13
-net buttons.force-lubricator        <= hm2_7i97.0.7i84.0.0.input-16
-net buttons.set-z-zero              <= hm2_7i97.0.7i84.0.0.input-17     => halui.mdi-command-07
-net buttons.program-step            <= hm2_7i97.0.7i84.0.0.input-19     => halui.program.step 
-net buttons.home-all                <= hm2_7i97.0.7i84.0.0.input-20     => halui.home-all
-net buttons.set-y-zero              <= hm2_7i97.0.7i84.0.0.input-21     => halui.mdi-command-06
-net buttons.pause                   <= hm2_7i97.0.7i84.0.0.input-22
-net buttons.resume                  <= hm2_7i97.0.7i84.0.0.input-23
+########################################
+# INPUTS 0 -> 31
+########################################
 
-# outputs 0->15 (0->5 are red, 6->11 are green)
+# PROBE                               <= hm2_7i97.0.7i84.0.0.input-04
+net buttons.set-x-zero                <= hm2_7i97.0.7i84.0.0.input-05 => halui.mdi-command-05
+net buttons.stop                      <= hm2_7i97.0.7i84.0.0.input-06
+net buttons.run                       <= hm2_7i97.0.7i84.0.0.input-07
+# TODO: mist is not implemented yet
+net buttons.coolant-mist              <= hm2_7i97.0.7i84.0.0.input-08
+net buttons.rpm-is-set                <= hm2_7i97.0.7i84.0.0.input-09
+net buttons.set-spindle-off           <= hm2_7i97.0.7i84.0.0.input-10
+net buttons.set-spindle-on            <= hm2_7i97.0.7i84.0.0.input-11
+net buttons.tool-change               <= hm2_7i97.0.7i84.0.0.input-12
+net buttons.tool-change-completed     <= hm2_7i97.0.7i84.0.0.input-13
 
-net estop.internal-estop            => hm2_7i97.0.7i84.0.0.output-00
-net pendant.program.is-paused       => hm2_7i97.0.7i84.0.0.output-01
-net tool-change.tool-change         => hm2_7i97.0.7i84.0.0.output-05
-
-net maho-inputs.power-on            => hm2_7i97.0.7i84.0.0.output-06
-net program.is-idle                 => hm2_7i97.0.7i84.0.0.output-07
-net program.is-running              => hm2_7i97.0.7i84.0.0.output-08
-net maho-inputs.lube-pump           => hm2_7i97.0.7i84.0.0.output-11
-
-net air.output-1                    => hm2_7i97.0.7i84.0.0.output-12
-net air.output-2                    => hm2_7i97.0.7i84.0.0.output-13
-net air.output-3                    => hm2_7i97.0.7i84.0.0.output-14
+# TODO: buttons.force-lubricator should be set only when the machine is powered on
+net buttons.force-lubricator          <= hm2_7i97.0.7i84.0.0.input-16
+net buttons.set-z-zero                <= hm2_7i97.0.7i84.0.0.input-17 => halui.mdi-command-07
+net buttons.jog-z-plus-raw            <= hm2_7i97.0.7i84.0.0.input-18
 
 
+net buttons.program-step              <= hm2_7i97.0.7i84.0.0.input-19 => halui.program.step
+net buttons.home-all                  <= hm2_7i97.0.7i84.0.0.input-20 => halui.home-all
+net buttons.set-y-zero                <= hm2_7i97.0.7i84.0.0.input-21 => halui.mdi-command-06
+net buttons.pause                     <= hm2_7i97.0.7i84.0.0.input-22
+net buttons.resume                    <= hm2_7i97.0.7i84.0.0.input-23
+
+# cts stands for `close-to-spindle`
+net buttons.tool-change-cts           <= hm2_7i97.0.7i84.0.0.input-24
+net buttons.tool-change-completed-cts <= hm2_7i97.0.7i84.0.0.input-25
+
+# Used by the on-machine jog-buttons
+net buttons.separated.jog-x-minus     <= hm2_7i97.0.7i84.0.0.input-26 => halui.axis.x.minus
+net buttons.separated.jog-x-plus      <= hm2_7i97.0.7i84.0.0.input-27 => halui.axis.x.plus
+net buttons.separated.jog-y-minus     <= hm2_7i97.0.7i84.0.0.input-28 => halui.axis.y.minus
+net buttons.separated.jog-y-plus      <= hm2_7i97.0.7i84.0.0.input-29 => halui.axis.y.plus
+net buttons.separated.jog-z-minus     <= hm2_7i97.0.7i84.0.0.input-30 => halui.axis.z.minus
+net buttons.separated.jog-z-plus      <= hm2_7i97.0.7i84.0.0.input-31
+
+
+# Both buttons will trigger the buttons.jog-z-plus net
+net buttons.jog-z-plus-raw            => jog.z.plus.or.in0
+net buttons.separated.jog-z-plus      => jog.z.plus.or.in1
+
+net buttons.jog-z-plus                <= jog.z.plus.or.out
+net buttons.jog-z-plus                => halui.axis.z.plus
+
+# net buttons.jog-z-plus                => jog.z.auto-enable.or.in0
+# net pendant.z.select                  => jog.z.auto-enable.or.in1
+
+# net buttons.separated.jog-z-axis-selected   <= jog.z.auto-enable.or.out => halui.axis.z.select
+
+
+########################################
+# OUTPUTS 0->15
+########################################
+
+################################### 0->5 are RED LEDs
+net estop.internal-estop              => hm2_7i97.0.7i84.0.0.output-00
+net program.is-paused                 => hm2_7i97.0.7i84.0.0.output-01
+
+net jog-is-active                     <= motion.jog-is-active
+net jog-is-active                     => hm2_7i97.0.7i84.0.0.output-02
+
+net teleop-is-active                  <= motion.teleop-mode
+net teleop-is-active                  => hm2_7i97.0.7i84.0.0.output-03
+
+net spindle.is-on                     => hm2_7i97.0.7i84.0.0.output-04
+net tool-change.tool-change           => hm2_7i97.0.7i84.0.0.output-05
+
+################################### 6->11 are GREEN LEDs
+net maho-inputs.power-on              => hm2_7i97.0.7i84.0.0.output-06
+net program.is-idle                   => hm2_7i97.0.7i84.0.0.output-07
+net program.is-running                => hm2_7i97.0.7i84.0.0.output-08
+net maho-inputs.lube-pump             => hm2_7i97.0.7i84.0.0.output-09
+net coolant-mist                      => hm2_7i97.0.7i84.0.0.output-10
+net coolant-pump                      => hm2_7i97.0.7i84.0.0.output-11
+
+#################################### Other outputs
+net coolant-mist                    => hm2_7i97.0.7i84.0.0.output-12
+
+#                                   => hm2_7i97.0.7i84.0.0.output-13
+#                                   => hm2_7i97.0.7i84.0.0.output-14
+#                                   => hm2_7i97.0.7i84.0.0.output-15

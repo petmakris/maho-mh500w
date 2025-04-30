@@ -14,9 +14,9 @@ net lube.total-distance         <= lube.odometer.total-distance
 net lube.current-distance       <= lube.odometer.current-distance
 net lube.cycles                 <= lube.odometer.cycles
 
-net lube.bypass_or_0            <= lube.odometer.active         
+net lube.bypass_or_0            <= lube.odometer.active
 net lube.bypass_or_0            => lube.or.in0
 
-net buttons.force-lubricator    => lube.or.in1       
+net buttons.force-lubricator    => lube.or.in1
 
 net maho-inputs.lube-pump       <= lube.or.out

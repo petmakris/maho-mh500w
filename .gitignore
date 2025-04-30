@@ -1,3 +1,5 @@
+**/*.bak
+
 config/halshow.preferences
 config/autosave.halscope
 config/halscope

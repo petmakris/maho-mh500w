@@ -1,2 +1,2 @@
-net coolant-mist                <= iocontrol.0.coolant-mist    
+net coolant-mist                <= iocontrol.0.coolant-mist
 net maho-inputs.coolant-pump    <= iocontrol.0.coolant-flood

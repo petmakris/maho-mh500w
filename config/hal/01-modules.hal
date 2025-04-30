@@ -21,8 +21,9 @@ addf hm2_7i97.0.write       servo-thread
 loadrt odometer             names=lube.odometer
 loadrt estop_latch          names=estop.latch
 loadrt and2                 names=tool-change.and
-loadrt or2                  names=lube.or,buttons.or.resume,buttons.or.pause,buttons.or.run,buttons.or.stop,spindle.on.or,spindle.off.or
+loadrt or2                  names=lube.or,buttons.or.resume,buttons.or.pause,buttons.or.run,buttons.or.stop,spindle.on.or,spindle.off.or,tool-change.complete.or,tool-change.initiate.or,jog.z.plus.or,jog.z.auto-enable.or
 loadrt not                  names=estop.not.0,estop.not.1,tool-change.not
+
 loadrt lowpass              names=feed-pot.lowpass,jog-pot.lowpass
 # loadrt ilowpass             names=jog.ilowpass.x,jog.ilowpass.y,jog.ilowpass.z
 loadrt scale                names=feed-pot.scale,spindle-pot.scale,jog-pot.scale

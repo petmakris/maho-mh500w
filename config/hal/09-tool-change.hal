@@ -1,27 +1,29 @@
 addf tool-change.not                servo-thread
 addf tool-change.and                servo-thread
+addf tool-change.complete.or        servo-thread
+addf tool-change.initiate.or        servo-thread
 
-net buttons.tool-change-completed   => hal_manualtoolchange.change_button
+# Tool change completion signals
+net buttons.tool-change-completed     => tool-change.complete.or.in0
+net buttons.tool-change-completed-cts => tool-change.complete.or.in1
+net buttons.tool-change-completed-out <= tool-change.complete.or.out
+net buttons.tool-change-completed-out => hal_manualtoolchange.change_button
 
-net tool-change.tool-change         <= iocontrol.0.tool-change          => hal_manualtoolchange.change
+# Tool change initiation signals
+net buttons.tool-change               => tool-change.initiate.or.in0
+net buttons.tool-change-cts           => tool-change.initiate.or.in1
+net buttons.tool-change-out           <= tool-change.initiate.or.out => tool-change.and.in1
 
-net tool-change.tool-changed        <= hal_manualtoolchange.changed     => iocontrol.0.tool-changed
-net tool-change.tool-number         <= iocontrol.0.tool-prep-number     => hal_manualtoolchange.number
-net tool-change.tool-prepare-loop   <= iocontrol.0.tool-prepare         => iocontrol.0.tool-prepared
+net spindle.is-off                    => tool-change.and.in0
 
-# This should prevent a tool change while the spindle is running
-# Maybe I should prevent a tool change while the program is running
-# (In need to monitor the status of the hal variables, is-running, is-paused etc)
+net maho-inputs.tool-release          <= tool-change.and.out
+net maho-inputs.tool-release          => spindle.0.inhibit
+net maho-inputs.tool-release          => motion.feed-inhibit
 
-net spindle.is-on                   <= spindle.0.on
-net spindle.is-on                   => tool-change.not.in
-net spindle.is-on                   => whb.halui.spindle.is-on
+net tool-change.tool-change           <= iocontrol.0.tool-change          => hal_manualtoolchange.change
+net tool-change.tool-changed          <= hal_manualtoolchange.changed     => iocontrol.0.tool-changed
+net tool-change.tool-number           <= iocontrol.0.tool-prep-number     => hal_manualtoolchange.number
+net tool-change.tool-prepare-loop     <= iocontrol.0.tool-prepare         => iocontrol.0.tool-prepared
 
-net spindle.is-off                  <= tool-change.not.out
-net spindle.is-off                  => tool-change.and.in0
-
-net buttons.tool-change             => tool-change.and.in1
-
-net maho-inputs.tool-release        <= tool-change.and.out
-net maho-inputs.tool-release        => spindle.0.inhibit
-net maho-inputs.tool-release        => motion.feed-inhibit
+net spindle.is-on                     => tool-change.not.in
+net spindle.is-off                    <= tool-change.not.out

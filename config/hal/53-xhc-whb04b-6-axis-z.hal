@@ -18,6 +18,8 @@
 # net pendant.z.jog-counts-filtered   <= jog.ilowpass.z.out               => axis.z.jog-counts
 
 net pendant.z.is-homed        <= halui.joint.1.is-homed      => whb.halui.joint.z.is-homed
+
+# skipping writing to axis select, bacause it will be written by the 7i84 buttons (=> halui.axis.z.select)
 net pendant.z.select          <= whb.halui.axis.z.select     => halui.axis.z.select
 net pendant.z.jog-scale       <= whb.axis.z.jog-scale        => axis.z.jog-scale
 net pendant.z.jog-counts      <= whb.axis.z.jog-counts       => axis.z.jog-counts

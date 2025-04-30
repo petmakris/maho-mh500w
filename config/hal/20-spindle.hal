@@ -23,6 +23,7 @@ net spindle.velocity-rpm                <= hm2_7i97.0.encoder.05.velocity-rpm
 # net spindle.commanded-speed             <= spindle.0.speed-out-rps-abs      => spindle.near.in2
 # net spindle.at-speed                    <= spindle.near.out                 => spindle.0.at-speed
 
+net spindle.is-on                       <= spindle.0.on
 net spindle.is-on                       => whb.halui.spindle.is-on
 
 net buttons.set-spindle-on              => spindle.on.or.in0
