@@ -1,6 +1,14 @@
 addf jog.z.plus.or         servo-thread
 addf jog.z.auto-enable.or  servo-thread
 
+###
+#
+#
+# TODO: ADD DEBOUNCE FOR ALL BUTTONS
+#
+#
+###
+
 ########################################
 # INPUTS 0 -> 31
 ########################################
