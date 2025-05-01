@@ -1,6 +1,0 @@
-Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
-Bus 001 Device 005: ID 13d3:3503 IMC Networks 
-Bus 001 Device 004: ID 258a:002a SINO WEALTH Gaming KB 
-Bus 001 Device 003: ID 10ce:eb93 Silicon Labs 
-Bus 001 Device 002: ID 046d:c019 Logitech, Inc. Optical Tilt Wheel Mouse
-Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub

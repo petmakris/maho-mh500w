@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "1f1e5f2a-469e-4728-a571-66903717e3a9")
 	(paper "A4")
 	(lib_symbols
@@ -101,16 +101,34 @@
 			)
 			(symbol "EXE-610C_1_1_1"
 				(pin passive line
-					(at 24.13 -15.24 180)
+					(at -22.86 10.16 0)
 					(length 5.08)
-					(name "(Yellow)_1)"
+					(name "(Gray)_Ie0A"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "/"
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -22.86 7.62 0)
+					(length 5.08)
+					(name "(Pink)_Ie0B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -137,96 +155,6 @@
 					)
 				)
 				(pin passive line
-					(at 24.13 7.62 180)
-					(length 5.08)
-					(name "(Pink)_/Ua2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 24.13 -2.54 180)
-					(length 5.08)
-					(name "(White/Green)_/0V_UN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 24.13 -7.62 180)
-					(length 5.08)
-					(name "(White)_/0V_Sensor"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 24.13 0 180)
-					(length 5.08)
-					(name "(Brown/Green)_/5V_UP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 24.13 -5.08 180)
-					(length 5.08)
-					(name "(Blue)_/5V_Sensor"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -22.86 2.54 0)
 					(length 5.08)
 					(name "(Yellow)_Ie1B"
@@ -237,6 +165,42 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -22.86 0 0)
+					(length 5.08)
+					(name "(Blue)_Ie2A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -22.86 -2.54 0)
+					(length 5.08)
+					(name "(Red)_Ie2B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -263,42 +227,6 @@
 					)
 				)
 				(pin passive line
-					(at 24.13 5.08 180)
-					(length 5.08)
-					(name "(Red)_Ua0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 24.13 2.54 180)
-					(length 5.08)
-					(name "(Black)_/Ua0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -22.86 -7.62 0)
 					(length 5.08)
 					(name "(White)_0V"
@@ -317,16 +245,16 @@
 					)
 				)
 				(pin passive line
-					(at -22.86 0 0)
+					(at -22.86 -10.16 0)
 					(length 5.08)
-					(name "(Blue)_Ie2A"
+					(name "SHIELD"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -371,16 +299,16 @@
 					)
 				)
 				(pin passive line
-					(at -22.86 -2.54 0)
+					(at 24.13 10.16 180)
 					(length 5.08)
-					(name "(Red)_Ie2B"
+					(name "(Gray)_Ua2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -389,16 +317,142 @@
 					)
 				)
 				(pin passive line
-					(at -22.86 10.16 0)
+					(at 24.13 7.62 180)
 					(length 5.08)
-					(name "(Gray)_Ie0A"
+					(name "(Pink)_/Ua2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "7"
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 5.08 180)
+					(length 5.08)
+					(name "(Red)_Ua0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 2.54 180)
+					(length 5.08)
+					(name "(Black)_/Ua0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 0 180)
+					(length 5.08)
+					(name "(Brown/Green)_/5V_UP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 -2.54 180)
+					(length 5.08)
+					(name "(White/Green)_/0V_UN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 -5.08 180)
+					(length 5.08)
+					(name "(Blue)_/5V_Sensor"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 -7.62 180)
+					(length 5.08)
+					(name "(White)_/0V_Sensor"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 -10.16 180)
+					(length 5.08)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -425,70 +479,16 @@
 					)
 				)
 				(pin passive line
-					(at 24.13 10.16 180)
+					(at 24.13 -15.24 180)
 					(length 5.08)
-					(name "(Gray)_Ua2"
+					(name "(Yellow)_1)"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -22.86 7.62 0)
-					(length 5.08)
-					(name "(Pink)_Ie0B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -22.86 -10.16 0)
-					(length 5.08)
-					(name "SHIELD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 24.13 -10.16 180)
-					(length 5.08)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
+					(number "/"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -497,6 +497,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "EXE-610C_2"
 			(exclude_from_sim no)
@@ -594,16 +595,34 @@
 			)
 			(symbol "EXE-610C_2_1_1"
 				(pin passive line
-					(at 24.13 -15.24 180)
+					(at -22.86 10.16 0)
 					(length 5.08)
-					(name "(Yellow)_1)"
+					(name "(Gray)_Ie0A"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "/"
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -22.86 7.62 0)
+					(length 5.08)
+					(name "(Pink)_Ie0B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -630,96 +649,6 @@
 					)
 				)
 				(pin passive line
-					(at 24.13 7.62 180)
-					(length 5.08)
-					(name "(Pink)_/Ua2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 24.13 -2.54 180)
-					(length 5.08)
-					(name "(White/Green)_/0V_UN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 24.13 -7.62 180)
-					(length 5.08)
-					(name "(White)_/0V_Sensor"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 24.13 0 180)
-					(length 5.08)
-					(name "(Brown/Green)_/5V_UP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 24.13 -5.08 180)
-					(length 5.08)
-					(name "(Blue)_/5V_Sensor"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -22.86 2.54 0)
 					(length 5.08)
 					(name "(Yellow)_Ie1B"
@@ -730,6 +659,42 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -22.86 0 0)
+					(length 5.08)
+					(name "(Blue)_Ie2A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -22.86 -2.54 0)
+					(length 5.08)
+					(name "(Red)_Ie2B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -756,42 +721,6 @@
 					)
 				)
 				(pin passive line
-					(at 24.13 5.08 180)
-					(length 5.08)
-					(name "(Red)_Ua0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 24.13 2.54 180)
-					(length 5.08)
-					(name "(Black)_/Ua0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -22.86 -7.62 0)
 					(length 5.08)
 					(name "(White)_0V"
@@ -810,16 +739,16 @@
 					)
 				)
 				(pin passive line
-					(at -22.86 0 0)
+					(at -22.86 -10.16 0)
 					(length 5.08)
-					(name "(Blue)_Ie2A"
+					(name "SHIELD"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -864,16 +793,16 @@
 					)
 				)
 				(pin passive line
-					(at -22.86 -2.54 0)
+					(at 24.13 10.16 180)
 					(length 5.08)
-					(name "(Red)_Ie2B"
+					(name "(Gray)_Ua2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -882,16 +811,142 @@
 					)
 				)
 				(pin passive line
-					(at -22.86 10.16 0)
+					(at 24.13 7.62 180)
 					(length 5.08)
-					(name "(Gray)_Ie0A"
+					(name "(Pink)_/Ua2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "7"
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 5.08 180)
+					(length 5.08)
+					(name "(Red)_Ua0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 2.54 180)
+					(length 5.08)
+					(name "(Black)_/Ua0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 0 180)
+					(length 5.08)
+					(name "(Brown/Green)_/5V_UP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 -2.54 180)
+					(length 5.08)
+					(name "(White/Green)_/0V_UN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 -5.08 180)
+					(length 5.08)
+					(name "(Blue)_/5V_Sensor"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 -7.62 180)
+					(length 5.08)
+					(name "(White)_/0V_Sensor"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 -10.16 180)
+					(length 5.08)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -918,70 +973,16 @@
 					)
 				)
 				(pin passive line
-					(at 24.13 10.16 180)
+					(at 24.13 -15.24 180)
 					(length 5.08)
-					(name "(Gray)_Ua2"
+					(name "(Yellow)_1)"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -22.86 7.62 0)
-					(length 5.08)
-					(name "(Pink)_Ie0B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -22.86 -10.16 0)
-					(length 5.08)
-					(name "SHIELD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 24.13 -10.16 180)
-					(length 5.08)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
+					(number "/"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -990,6 +991,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "LS-403-C_1"
 			(exclude_from_sim no)
@@ -1039,32 +1041,32 @@
 				)
 			)
 			(symbol "LS-403-C_1_0_1"
-				(rectangle
-					(start 0 -12.7)
-					(end 0 -12.7)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 0 -12.7)
-					(end 0 -12.7)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy 0 -12.7) (xy 0 -12.7)
 					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0 -12.7)
+					(end 0 -12.7)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0 -12.7)
+					(end 0 -12.7)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -1086,6 +1088,42 @@
 				)
 			)
 			(symbol "LS-403-C_1_1_1"
+				(pin passive line
+					(at 12.7 10.16 180)
+					(length 5.08)
+					(name "(Gray)_Ie0A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 7.62 180)
+					(length 5.08)
+					(name "(Pink)_Ie0B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin passive line
 					(at 12.7 5.08 180)
 					(length 5.08)
@@ -1115,42 +1153,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -5.08 180)
-					(length 5.08)
-					(name "(Brown)_5V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -7.62 180)
-					(length 5.08)
-					(name "(White)_0V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1195,16 +1197,16 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 10.16 180)
+					(at 12.7 -5.08 180)
 					(length 5.08)
-					(name "(Gray)_Ie0A"
+					(name "(Brown)_5V"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "7"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1213,16 +1215,16 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 7.62 180)
+					(at 12.7 -7.62 180)
 					(length 5.08)
-					(name "(Pink)_Ie0B"
+					(name "(White)_0V"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1249,6 +1251,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "LS-403-C_2"
 			(exclude_from_sim no)
@@ -1298,32 +1301,32 @@
 				)
 			)
 			(symbol "LS-403-C_2_0_1"
-				(rectangle
-					(start 0 -12.7)
-					(end 0 -12.7)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 0 -12.7)
-					(end 0 -12.7)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy 0 -12.7) (xy 0 -12.7)
 					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0 -12.7)
+					(end 0 -12.7)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0 -12.7)
+					(end 0 -12.7)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -1345,6 +1348,42 @@
 				)
 			)
 			(symbol "LS-403-C_2_1_1"
+				(pin passive line
+					(at 12.7 10.16 180)
+					(length 5.08)
+					(name "(Gray)_Ie0A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 7.62 180)
+					(length 5.08)
+					(name "(Pink)_Ie0B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin passive line
 					(at 12.7 5.08 180)
 					(length 5.08)
@@ -1374,42 +1413,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -5.08 180)
-					(length 5.08)
-					(name "(Brown)_5V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -7.62 180)
-					(length 5.08)
-					(name "(White)_0V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1454,16 +1457,16 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 10.16 180)
+					(at 12.7 -5.08 180)
 					(length 5.08)
-					(name "(Gray)_Ie0A"
+					(name "(Brown)_5V"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "7"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1472,16 +1475,16 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 7.62 180)
+					(at 12.7 -7.62 180)
 					(length 5.08)
-					(name "(Pink)_Ie0B"
+					(name "(White)_0V"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1508,6 +1511,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "MAHO:7i97-ENC0"
 			(exclude_from_sim no)
@@ -1607,24 +1611,6 @@
 					)
 				)
 				(pin passive line
-					(at -8.89 -8.89 0)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -8.89 3.81 0)
 					(length 5.08)
 					(name "QB0"
@@ -1653,24 +1639,6 @@
 						)
 					)
 					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -8.89 -6.35 0)
-					(length 5.08)
-					(name "5V+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1714,7 +1682,44 @@
 						)
 					)
 				)
+				(pin passive line
+					(at -8.89 -6.35 0)
+					(length 5.08)
+					(name "5V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -8.89 -8.89 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "MAHO:7i97-ENC1"
 			(exclude_from_sim no)
@@ -1778,6 +1783,24 @@
 			)
 			(symbol "7i97-ENC1_1_1"
 				(pin passive line
+					(at -8.89 8.89 0)
+					(length 5.08)
+					(name "QA1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
 					(at -8.89 6.35 0)
 					(length 5.08)
 					(name "/QA1"
@@ -1788,24 +1811,6 @@
 						)
 					)
 					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -8.89 -8.89 0)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1850,24 +1855,6 @@
 					)
 				)
 				(pin passive line
-					(at -8.89 -6.35 0)
-					(length 5.08)
-					(name "5V+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -8.89 -1.27 0)
 					(length 5.08)
 					(name "IDX1"
@@ -1904,16 +1891,34 @@
 					)
 				)
 				(pin passive line
-					(at -8.89 8.89 0)
+					(at -8.89 -6.35 0)
 					(length 5.08)
-					(name "QA1"
+					(name "5V+"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "9"
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -8.89 -8.89 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1922,6 +1927,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "MAHO:7i97-ENC2"
 			(exclude_from_sim no)
@@ -2021,24 +2027,6 @@
 					)
 				)
 				(pin passive line
-					(at -8.89 -8.89 0)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -8.89 3.81 0)
 					(length 5.08)
 					(name "GB2"
@@ -2067,24 +2055,6 @@
 						)
 					)
 					(number "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -8.89 -6.35 0)
-					(length 5.08)
-					(name "5V+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "22"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2128,7 +2098,44 @@
 						)
 					)
 				)
+				(pin passive line
+					(at -8.89 -6.35 0)
+					(length 5.08)
+					(name "5V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -8.89 -8.89 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "MAHO:EXE-610C"
 			(exclude_from_sim no)
@@ -2226,16 +2233,34 @@
 			)
 			(symbol "EXE-610C_1_1"
 				(pin passive line
-					(at 24.13 -15.24 180)
+					(at -22.86 10.16 0)
 					(length 5.08)
-					(name "(Yellow)_1)"
+					(name "(Gray)_Ie0A"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "/"
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -22.86 7.62 0)
+					(length 5.08)
+					(name "(Pink)_Ie0B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2262,96 +2287,6 @@
 					)
 				)
 				(pin passive line
-					(at 24.13 7.62 180)
-					(length 5.08)
-					(name "(Pink)_/Ua2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 24.13 -2.54 180)
-					(length 5.08)
-					(name "(White/Green)_/0V_UN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 24.13 -7.62 180)
-					(length 5.08)
-					(name "(White)_/0V_Sensor"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 24.13 0 180)
-					(length 5.08)
-					(name "(Brown/Green)_/5V_UP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 24.13 -5.08 180)
-					(length 5.08)
-					(name "(Blue)_/5V_Sensor"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -22.86 2.54 0)
 					(length 5.08)
 					(name "(Yellow)_Ie1B"
@@ -2362,6 +2297,42 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -22.86 0 0)
+					(length 5.08)
+					(name "(Blue)_Ie2A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -22.86 -2.54 0)
+					(length 5.08)
+					(name "(Red)_Ie2B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2388,42 +2359,6 @@
 					)
 				)
 				(pin passive line
-					(at 24.13 5.08 180)
-					(length 5.08)
-					(name "(Red)_Ua0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 24.13 2.54 180)
-					(length 5.08)
-					(name "(Black)_/Ua0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -22.86 -7.62 0)
 					(length 5.08)
 					(name "(White)_0V"
@@ -2442,16 +2377,16 @@
 					)
 				)
 				(pin passive line
-					(at -22.86 0 0)
+					(at -22.86 -10.16 0)
 					(length 5.08)
-					(name "(Blue)_Ie2A"
+					(name "SHIELD"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2496,16 +2431,16 @@
 					)
 				)
 				(pin passive line
-					(at -22.86 -2.54 0)
+					(at 24.13 10.16 180)
 					(length 5.08)
-					(name "(Red)_Ie2B"
+					(name "(Gray)_Ua2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2514,16 +2449,142 @@
 					)
 				)
 				(pin passive line
-					(at -22.86 10.16 0)
+					(at 24.13 7.62 180)
 					(length 5.08)
-					(name "(Gray)_Ie0A"
+					(name "(Pink)_/Ua2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "7"
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 5.08 180)
+					(length 5.08)
+					(name "(Red)_Ua0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 2.54 180)
+					(length 5.08)
+					(name "(Black)_/Ua0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 0 180)
+					(length 5.08)
+					(name "(Brown/Green)_/5V_UP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 -2.54 180)
+					(length 5.08)
+					(name "(White/Green)_/0V_UN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 -5.08 180)
+					(length 5.08)
+					(name "(Blue)_/5V_Sensor"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 -7.62 180)
+					(length 5.08)
+					(name "(White)_/0V_Sensor"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 -10.16 180)
+					(length 5.08)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2550,70 +2611,16 @@
 					)
 				)
 				(pin passive line
-					(at 24.13 10.16 180)
+					(at 24.13 -15.24 180)
 					(length 5.08)
-					(name "(Gray)_Ua2"
+					(name "(Yellow)_1)"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -22.86 7.62 0)
-					(length 5.08)
-					(name "(Pink)_Ie0B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -22.86 -10.16 0)
-					(length 5.08)
-					(name "SHIELD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 24.13 -10.16 180)
-					(length 5.08)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
+					(number "/"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2622,6 +2629,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "MAHO:LS-403-C"
 			(exclude_from_sim no)
@@ -2671,32 +2679,32 @@
 				)
 			)
 			(symbol "LS-403-C_0_1"
-				(rectangle
-					(start 0 -12.7)
-					(end 0 -12.7)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 0 -12.7)
-					(end 0 -12.7)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy 0 -12.7) (xy 0 -12.7)
 					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0 -12.7)
+					(end 0 -12.7)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0 -12.7)
+					(end 0 -12.7)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -2718,6 +2726,42 @@
 				)
 			)
 			(symbol "LS-403-C_1_1"
+				(pin passive line
+					(at 12.7 10.16 180)
+					(length 5.08)
+					(name "(Gray)_Ie0A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 7.62 180)
+					(length 5.08)
+					(name "(Pink)_Ie0B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin passive line
 					(at 12.7 5.08 180)
 					(length 5.08)
@@ -2747,42 +2791,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -5.08 180)
-					(length 5.08)
-					(name "(Brown)_5V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -7.62 180)
-					(length 5.08)
-					(name "(White)_0V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2827,16 +2835,16 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 10.16 180)
+					(at 12.7 -5.08 180)
 					(length 5.08)
-					(name "(Gray)_Ie0A"
+					(name "(Brown)_5V"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "7"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2845,16 +2853,16 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 7.62 180)
+					(at 12.7 -7.62 180)
 					(length 5.08)
-					(name "(Pink)_Ie0B"
+					(name "(White)_0V"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2881,7 +2889,501 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "RED"
+		(exclude_from_sim no)
+		(at 172.72 133.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0402b30c-c0b3-4812-85d1-56a59eef6ad9")
+	)
+	(text "WHITE"
+		(exclude_from_sim no)
+		(at 203.2 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "059378fc-bfa7-4f2c-8789-71b3ea27641d")
+	)
+	(text "RED"
+		(exclude_from_sim no)
+		(at 172.72 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d634b54-49de-44d8-affa-0f8cd81a948c")
+	)
+	(text "BROWN"
+		(exclude_from_sim no)
+		(at 203.2 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d71355d-12c8-4518-9b7e-7d477209319e")
+	)
+	(text "PINK"
+		(exclude_from_sim no)
+		(at 172.72 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "12c1e8ed-c1da-4f7c-bb63-9819db55f649")
+	)
+	(text "PINK/GRAY"
+		(exclude_from_sim no)
+		(at 190.5 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "26b3e30f-20cd-4c6a-b95b-ebf0f648ab67")
+	)
+	(text "PURPLE"
+		(exclude_from_sim no)
+		(at 172.72 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2d49e7bb-c8a6-4fd0-9a03-f5a8fa0b9930")
+	)
+	(text "PINK"
+		(exclude_from_sim no)
+		(at 172.72 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "360a9c0b-f77c-4b69-a6b8-4e8c4b820931")
+	)
+	(text "BLUE"
+		(exclude_from_sim no)
+		(at 172.72 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3e41d2ae-34f0-45cf-9a4c-921881ecc14e")
+	)
+	(text "WHITE"
+		(exclude_from_sim no)
+		(at 172.72 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3f1e5dfe-17e9-4236-b72f-43040ba09cb3")
+	)
+	(text "BLUE"
+		(exclude_from_sim no)
+		(at 203.2 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "420a7517-2704-43b9-8e68-f8da244ab538")
+	)
+	(text "YELLOW"
+		(exclude_from_sim no)
+		(at 190.5 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "4c723171-59d4-4602-a386-9e5287d8278f")
+	)
+	(text "RED"
+		(exclude_from_sim no)
+		(at 203.2 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "55fb301d-911e-4623-9f63-63a734f7bd98")
+	)
+	(text "GREEN"
+		(exclude_from_sim no)
+		(at 172.72 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "59c7b9d7-903a-412f-a495-eedb6606c322")
+	)
+	(text "GRAY"
+		(exclude_from_sim no)
+		(at 172.72 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6c47905c-893d-4705-b236-d9b9ed0d6b18")
+	)
+	(text "GRAY"
+		(exclude_from_sim no)
+		(at 172.72 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6c6faaac-8743-442a-be71-3be2f06b3787")
+	)
+	(text "GREEN"
+		(exclude_from_sim no)
+		(at 172.72 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "749d8542-9c0c-4d0a-9e10-29880142b471")
+	)
+	(text "BROWN"
+		(exclude_from_sim no)
+		(at 172.72 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7a8280f8-6a72-43a9-b6ac-48ae7790ca1f")
+	)
+	(text "BROWN"
+		(exclude_from_sim no)
+		(at 172.72 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7c27f047-f9c5-4755-970b-97fd7fbceaf1")
+	)
+	(text "RED/BLUE"
+		(exclude_from_sim no)
+		(at 190.5 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "821a5819-1270-4ec8-b8cd-3105acb54607")
+	)
+	(text "PINK"
+		(exclude_from_sim no)
+		(at 172.72 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8293595b-766e-4d5f-ba5d-44dc64fbd5fa")
+	)
+	(text "PINK"
+		(exclude_from_sim no)
+		(at 203.2 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8c66cb61-016d-469e-b1e8-3e469bc21ebc")
+	)
+	(text "GREEN"
+		(exclude_from_sim no)
+		(at 172.72 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8d978876-9a40-4bed-8331-e0a1148ec44a")
+	)
+	(text "WHITE"
+		(exclude_from_sim no)
+		(at 172.72 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8df82f43-fe4a-4a7e-92fa-d019170a76f7")
+	)
+	(text "PURPLE"
+		(exclude_from_sim no)
+		(at 172.72 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "99329c9e-3d20-483b-8767-26053f883cc2")
+	)
+	(text "BLACK"
+		(exclude_from_sim no)
+		(at 172.72 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "99c4bc69-431a-4dc2-b1e4-b30b29b9f3ca")
+	)
+	(text "GRAY"
+		(exclude_from_sim no)
+		(at 203.2 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a0c854ba-6693-4209-833f-c0a9076a072c")
+	)
+	(text "RED/BLUE"
+		(exclude_from_sim no)
+		(at 190.5 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "a91ec742-4e8c-4323-a647-0029b6f72882")
+	)
+	(text "YELLOW"
+		(exclude_from_sim no)
+		(at 190.5 146.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "a947dc66-53cf-4c8e-b5ff-414b15cd411b")
+	)
+	(text "BLACK"
+		(exclude_from_sim no)
+		(at 172.72 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "adc3bd5e-bfbd-4514-a3da-9fe90ac89275")
+	)
+	(text "BROWN"
+		(exclude_from_sim no)
+		(at 172.72 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b7c0ac1b-dd07-48f1-b3cb-bf3d28d15a3a")
+	)
+	(text "BLUE"
+		(exclude_from_sim no)
+		(at 172.72 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b7fbc9d3-8b05-4455-a65e-428918dbcc52")
+	)
+	(text "BLUE"
+		(exclude_from_sim no)
+		(at 172.72 49.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b92a6647-28df-46d7-a0d0-a009fed79dca")
+	)
+	(text "PURPLE"
+		(exclude_from_sim no)
+		(at 172.72 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c1de09a9-97b5-4e30-9e60-f0d07d3e5ade")
+	)
+	(text "WHITE"
+		(exclude_from_sim no)
+		(at 172.72 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c337987e-2554-40d4-804c-afe0c7dc9eb5")
+	)
+	(text "YELLOW"
+		(exclude_from_sim no)
+		(at 190.5 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "c423d7f5-44f5-4b99-a359-4b838ca93b3e")
+	)
+	(text "PINK/GRAY"
+		(exclude_from_sim no)
+		(at 190.5 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "c5c773e3-744d-40e7-9c25-540e701d8d27")
+	)
+	(text "RED/BLUE"
+		(exclude_from_sim no)
+		(at 190.5 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "c851527d-b25f-4557-84b7-4cb3da438f00")
+	)
+	(text "BLACK"
+		(exclude_from_sim no)
+		(at 172.72 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e24176a1-7b15-4ee8-a435-5ce0614c1dbf")
+	)
+	(text "GRAY"
+		(exclude_from_sim no)
+		(at 172.72 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e5dc147d-66f6-4bb1-8c70-a9dba5f8b384")
+	)
+	(text "BLACK"
+		(exclude_from_sim no)
+		(at 203.2 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e65f4909-3984-4455-8623-65515b13aa69")
+	)
+	(text "GREEN"
+		(exclude_from_sim no)
+		(at 203.2 49.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e76a5d08-f6e7-464b-a648-d02ae7fe2819")
+	)
+	(text "RED"
+		(exclude_from_sim no)
+		(at 172.72 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f8907bae-ed7b-4b6d-a190-555474784584")
+	)
+	(text "PINK/GRAY"
+		(exclude_from_sim no)
+		(at 190.5 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "fb749767-2b38-476a-a8ab-f19d64c7a962")
 	)
 	(no_connect
 		(at 167.64 57.15)
@@ -3440,499 +3942,6 @@
 			(type default)
 		)
 		(uuid "fa308706-d104-4a09-b66a-328634687246")
-	)
-	(text "RED"
-		(exclude_from_sim no)
-		(at 172.72 133.35 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0402b30c-c0b3-4812-85d1-56a59eef6ad9")
-	)
-	(text "WHITE"
-		(exclude_from_sim no)
-		(at 203.2 46.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "059378fc-bfa7-4f2c-8789-71b3ea27641d")
-	)
-	(text "RED"
-		(exclude_from_sim no)
-		(at 172.72 88.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0d634b54-49de-44d8-affa-0f8cd81a948c")
-	)
-	(text "BROWN"
-		(exclude_from_sim no)
-		(at 203.2 52.07 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0d71355d-12c8-4518-9b7e-7d477209319e")
-	)
-	(text "PINK"
-		(exclude_from_sim no)
-		(at 172.72 86.36 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "12c1e8ed-c1da-4f7c-bb63-9819db55f649")
-	)
-	(text "PINK/GRAY"
-		(exclude_from_sim no)
-		(at 190.5 106.68 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(italic yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "26b3e30f-20cd-4c6a-b95b-ebf0f648ab67")
-	)
-	(text "PURPLE"
-		(exclude_from_sim no)
-		(at 172.72 62.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2d49e7bb-c8a6-4fd0-9a03-f5a8fa0b9930")
-	)
-	(text "PINK"
-		(exclude_from_sim no)
-		(at 172.72 41.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "360a9c0b-f77c-4b69-a6b8-4e8c4b820931")
-	)
-	(text "BLUE"
-		(exclude_from_sim no)
-		(at 172.72 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3e41d2ae-34f0-45cf-9a4c-921881ecc14e")
-	)
-	(text "WHITE"
-		(exclude_from_sim no)
-		(at 172.72 52.07 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3f1e5dfe-17e9-4236-b72f-43040ba09cb3")
-	)
-	(text "BLUE"
-		(exclude_from_sim no)
-		(at 203.2 39.37 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "420a7517-2704-43b9-8e68-f8da244ab538")
-	)
-	(text "YELLOW"
-		(exclude_from_sim no)
-		(at 190.5 101.6 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(italic yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "4c723171-59d4-4602-a386-9e5287d8278f")
-	)
-	(text "RED"
-		(exclude_from_sim no)
-		(at 203.2 36.83 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "55fb301d-911e-4623-9f63-63a734f7bd98")
-	)
-	(text "GREEN"
-		(exclude_from_sim no)
-		(at 172.72 36.83 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "59c7b9d7-903a-412f-a495-eedb6606c322")
-	)
-	(text "GRAY"
-		(exclude_from_sim no)
-		(at 172.72 128.27 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6c47905c-893d-4705-b236-d9b9ed0d6b18")
-	)
-	(text "GRAY"
-		(exclude_from_sim no)
-		(at 172.72 39.37 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6c6faaac-8743-442a-be71-3be2f06b3787")
-	)
-	(text "GREEN"
-		(exclude_from_sim no)
-		(at 172.72 125.73 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "749d8542-9c0c-4d0a-9e10-29880142b471")
-	)
-	(text "BROWN"
-		(exclude_from_sim no)
-		(at 172.72 123.19 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7a8280f8-6a72-43a9-b6ac-48ae7790ca1f")
-	)
-	(text "BROWN"
-		(exclude_from_sim no)
-		(at 172.72 78.74 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7c27f047-f9c5-4755-970b-97fd7fbceaf1")
-	)
-	(text "RED/BLUE"
-		(exclude_from_sim no)
-		(at 190.5 148.59 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(italic yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "821a5819-1270-4ec8-b8cd-3105acb54607")
-	)
-	(text "PINK"
-		(exclude_from_sim no)
-		(at 172.72 130.81 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8293595b-766e-4d5f-ba5d-44dc64fbd5fa")
-	)
-	(text "PINK"
-		(exclude_from_sim no)
-		(at 203.2 41.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8c66cb61-016d-469e-b1e8-3e469bc21ebc")
-	)
-	(text "GREEN"
-		(exclude_from_sim no)
-		(at 172.72 81.28 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8d978876-9a40-4bed-8331-e0a1148ec44a")
-	)
-	(text "WHITE"
-		(exclude_from_sim no)
-		(at 172.72 96.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8df82f43-fe4a-4a7e-92fa-d019170a76f7")
-	)
-	(text "PURPLE"
-		(exclude_from_sim no)
-		(at 172.72 151.13 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "99329c9e-3d20-483b-8767-26053f883cc2")
-	)
-	(text "BLACK"
-		(exclude_from_sim no)
-		(at 172.72 135.89 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "99c4bc69-431a-4dc2-b1e4-b30b29b9f3ca")
-	)
-	(text "GRAY"
-		(exclude_from_sim no)
-		(at 203.2 44.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a0c854ba-6693-4209-833f-c0a9076a072c")
-	)
-	(text "RED/BLUE"
-		(exclude_from_sim no)
-		(at 190.5 104.14 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(italic yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "a91ec742-4e8c-4323-a647-0029b6f72882")
-	)
-	(text "YELLOW"
-		(exclude_from_sim no)
-		(at 190.5 146.05 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(italic yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "a947dc66-53cf-4c8e-b5ff-414b15cd411b")
-	)
-	(text "BLACK"
-		(exclude_from_sim no)
-		(at 172.72 91.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "adc3bd5e-bfbd-4514-a3da-9fe90ac89275")
-	)
-	(text "BROWN"
-		(exclude_from_sim no)
-		(at 172.72 34.29 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b7c0ac1b-dd07-48f1-b3cb-bf3d28d15a3a")
-	)
-	(text "BLUE"
-		(exclude_from_sim no)
-		(at 172.72 138.43 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b7fbc9d3-8b05-4455-a65e-428918dbcc52")
-	)
-	(text "BLUE"
-		(exclude_from_sim no)
-		(at 172.72 49.53 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b92a6647-28df-46d7-a0d0-a009fed79dca")
-	)
-	(text "PURPLE"
-		(exclude_from_sim no)
-		(at 172.72 106.68 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c1de09a9-97b5-4e30-9e60-f0d07d3e5ade")
-	)
-	(text "WHITE"
-		(exclude_from_sim no)
-		(at 172.72 140.97 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c337987e-2554-40d4-804c-afe0c7dc9eb5")
-	)
-	(text "YELLOW"
-		(exclude_from_sim no)
-		(at 190.5 57.15 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(italic yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "c423d7f5-44f5-4b99-a359-4b838ca93b3e")
-	)
-	(text "PINK/GRAY"
-		(exclude_from_sim no)
-		(at 190.5 62.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(italic yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "c5c773e3-744d-40e7-9c25-540e701d8d27")
-	)
-	(text "RED/BLUE"
-		(exclude_from_sim no)
-		(at 190.5 59.69 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(italic yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "c851527d-b25f-4557-84b7-4cb3da438f00")
-	)
-	(text "BLACK"
-		(exclude_from_sim no)
-		(at 172.72 46.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e24176a1-7b15-4ee8-a435-5ce0614c1dbf")
-	)
-	(text "GRAY"
-		(exclude_from_sim no)
-		(at 172.72 83.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e5dc147d-66f6-4bb1-8c70-a9dba5f8b384")
-	)
-	(text "BLACK"
-		(exclude_from_sim no)
-		(at 203.2 34.29 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e65f4909-3984-4455-8623-65515b13aa69")
-	)
-	(text "GREEN"
-		(exclude_from_sim no)
-		(at 203.2 49.53 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e76a5d08-f6e7-464b-a648-d02ae7fe2819")
-	)
-	(text "RED"
-		(exclude_from_sim no)
-		(at 172.72 44.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f8907bae-ed7b-4b6d-a190-555474784584")
-	)
-	(text "PINK/GRAY"
-		(exclude_from_sim no)
-		(at 190.5 151.13 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(italic yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "fb749767-2b38-476a-a8ab-f19d64c7a962")
 	)
 	(symbol
 		(lib_id "MAHO:7i97-ENC2")
