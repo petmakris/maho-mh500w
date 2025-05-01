@@ -1162,7 +1162,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "MAHO:7i97-ENC2"
+		(symbol "MAHO:7i97-ENC5"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1174,7 +1174,7 @@
 					)
 				)
 			)
-			(property "Value" "7i97-ENC2"
+			(property "Value" "7i97-ENC5"
 				(at 0 12.7 0)
 				(effects
 					(font
@@ -1209,7 +1209,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "7i97-ENC2_0_1"
+			(symbol "7i97-ENC5_0_1"
 				(rectangle
 					(start -3.81 11.43)
 					(end 3.81 -11.43)
@@ -1222,11 +1222,11 @@
 					)
 				)
 			)
-			(symbol "7i97-ENC2_1_1"
+			(symbol "7i97-ENC5_1_1"
 				(pin passive line
 					(at -8.89 8.89 0)
 					(length 5.08)
-					(name "QA2"
+					(name "QA5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1244,7 +1244,7 @@
 				(pin passive line
 					(at -8.89 6.35 0)
 					(length 5.08)
-					(name "/QA2"
+					(name "/QA5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1262,7 +1262,7 @@
 				(pin passive line
 					(at -8.89 3.81 0)
 					(length 5.08)
-					(name "GB2"
+					(name "QB5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1280,7 +1280,7 @@
 				(pin passive line
 					(at -8.89 1.27 0)
 					(length 5.08)
-					(name "/GB2"
+					(name "/QB5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1298,7 +1298,7 @@
 				(pin passive line
 					(at -8.89 -1.27 0)
 					(length 5.08)
-					(name "IDX2"
+					(name "IDX5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1316,7 +1316,7 @@
 				(pin passive line
 					(at -8.89 -3.81 0)
 					(length 5.08)
-					(name "/IDX2"
+					(name "/IDX5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6003,7 +6003,7 @@
 	)
 	(text "Add 7i84 Wiring	"
 		(exclude_from_sim no)
-		(at 294.64 133.35 0)
+		(at 279.146 73.66 0)
 		(effects
 			(font
 				(size 4 4)
@@ -6289,7 +6289,7 @@
 	)
 	(text "Add here spindle speed encoder"
 		(exclude_from_sim no)
-		(at 93.98 246.38 0)
+		(at 67.31 245.618 0)
 		(effects
 			(font
 				(size 3 3)
@@ -9371,93 +9371,6 @@
 		)
 	)
 	(symbol
-		(lib_id "MAHO:7i97-ENC2")
-		(at 189.23 245.11 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "39064c9b-d453-4cb0-8d46-4d317d84955d")
-		(property "Reference" "U18"
-			(at 187.96 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "7i97-ENC2"
-			(at 184.15 231.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 245.745 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 245.745 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 189.23 245.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "17"
-			(uuid "7ed0e4db-d585-4f57-8d41-66b1dbdabe59")
-		)
-		(pin "18"
-			(uuid "3185aa8e-1df1-4a7e-99cf-695366085a5b")
-		)
-		(pin "19"
-			(uuid "08e29ee7-99a4-42ec-8341-dcc35550a9c0")
-		)
-		(pin "20"
-			(uuid "a83ecbfd-38c5-4497-99f3-892747f44618")
-		)
-		(pin "21"
-			(uuid "edf79d57-d273-4058-bc32-846d1fee942c")
-		)
-		(pin "22"
-			(uuid "38990fcf-0b55-452b-a9dc-240ef0494c5e")
-		)
-		(pin "23"
-			(uuid "da5ccb16-ed9d-4d89-a07f-161b270f561e")
-		)
-		(pin "24"
-			(uuid "8a8fae92-6108-4cc8-a94f-9dae7ede1dcb")
-		)
-		(instances
-			(project "master"
-				(path "/6b7450d6-3952-419a-ab30-dcf88fa68fd4"
-					(reference "U18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "MAHO:Breakout")
 		(at 102.87 83.82 0)
 		(unit 1)
@@ -10666,6 +10579,94 @@
 			(project "master"
 				(path "/6b7450d6-3952-419a-ab30-dcf88fa68fd4"
 					(reference "U?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MAHO:7i97-ENC5")
+		(at 199.39 250.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d73dde14-258a-47b7-90b0-bcfa18d4b9d0")
+		(property "Reference" "U18"
+			(at 204.47 248.9199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "7i97-ENC5"
+			(at 204.47 251.4599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.905 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.905 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 199.39 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "20"
+			(uuid "a00e63c9-e709-4ccb-ace8-c1bf94035bb2")
+		)
+		(pin "19"
+			(uuid "8799ad2f-e9fe-4c26-9c9d-7d14366d39b9")
+		)
+		(pin "21"
+			(uuid "8e22dd2e-f80e-47f7-a421-29982de5a84d")
+		)
+		(pin "23"
+			(uuid "420edcf1-064f-4c8a-9b8f-dbccb10988c1")
+		)
+		(pin "24"
+			(uuid "d75044d9-9d0e-492f-881c-4112cd8b9d0e")
+		)
+		(pin "18"
+			(uuid "d49cedc4-7632-43f2-aa0c-0aadf57d0066")
+		)
+		(pin "17"
+			(uuid "bbe206df-b886-441f-9946-bf4e8e3e4407")
+		)
+		(pin "22"
+			(uuid "c85b9749-23f8-4a57-ab25-52df284eb756")
+		)
+		(instances
+			(project ""
+				(path "/6b7450d6-3952-419a-ab30-dcf88fa68fd4"
+					(reference "U18")
 					(unit 1)
 				)
 			)

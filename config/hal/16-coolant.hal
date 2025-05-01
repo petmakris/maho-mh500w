@@ -1,2 +1,13 @@
-net coolant-mist                <= iocontrol.0.coolant-mist
-net maho-inputs.coolant-pump    <= iocontrol.0.coolant-flood
+addf   mist.toggle        servo-thread
+addf   mist.toggle2nist   servo-thread
+
+net maho-inputs.coolant-pump   <= iocontrol.0.coolant-flood
+net coolant-mist               <= iocontrol.0.coolant-mist
+
+net buttons.coolant-mist       => mist.toggle.in
+
+net coolant-mist-toggle-out    <= mist.toggle.out         => mist.toggle2nist.in
+net coolant-mist-is-on         <= halui.mist.is-on        => mist.toggle2nist.is_on          
+
+net coolant-mist-on            <= mist.toggle2nist.on     =>  halui.mist.on
+net coolant-mist-off           <= mist.toggle2nist.off    =>  halui.mist.off

@@ -33,4 +33,5 @@ loadrt limit1               names=jog-pot.limit
 
 # loadrt near                 names=spindle.near
 loadrt conv_float_s32       names=feed-pot.conv
-
+loadrt toggle2              names=mist.toggle
+loadrt toggle2nist          names=mist.toggle2nist

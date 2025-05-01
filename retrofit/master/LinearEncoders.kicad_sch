@@ -2029,7 +2029,7 @@
 				(pin passive line
 					(at -8.89 3.81 0)
 					(length 5.08)
-					(name "GB2"
+					(name "QB2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2047,7 +2047,7 @@
 				(pin passive line
 					(at -8.89 1.27 0)
 					(length 5.08)
-					(name "/GB2"
+					(name "/QB2"
 						(effects
 							(font
 								(size 1.27 1.27)
