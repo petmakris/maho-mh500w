@@ -7,7 +7,7 @@ net coolant-mist               <= iocontrol.0.coolant-mist
 net buttons.coolant-mist       => mist.toggle.in
 
 net coolant-mist-toggle-out    <= mist.toggle.out         => mist.toggle2nist.in
-net coolant-mist-is-on         <= halui.mist.is-on        => mist.toggle2nist.is_on          
+net coolant-mist-is-on         <= halui.mist.is-on        => mist.toggle2nist.is-on          
 
 net coolant-mist-on            <= mist.toggle2nist.on     =>  halui.mist.on
 net coolant-mist-off           <= mist.toggle2nist.off    =>  halui.mist.off
