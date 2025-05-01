@@ -45,9 +45,11 @@ net pendant.flood.is-on         <= halui.flood.is-on                => whb.halui
 net pendant.flood.off           <= whb.halui.flood.off              => halui.flood.off
 net pendant.flood.on            <= whb.halui.flood.on               => halui.flood.on
 
-net pendant.mist.is-on          <= halui.mist.is-on                 => whb.halui.mist.is-on      
-net pendant.mist.off            <= whb.halui.mist.off               => halui.mist.off
-net pendant.mist.on             <= whb.halui.mist.on                => halui.mist.on
+net coolant-mist-is-on          => whb.halui.mist.is-on
+# TODO: make this work along with the panel buttons
+# net pendant.mist.is-on         <= halui.mist.is-on                 => whb.halui.mist.is-on      
+# net pendant.mist.off            <= whb.halui.mist.off               => halui.mist.off
+# net pendant.mist.on             <= whb.halui.mist.on                => halui.mist.on
 
 net pendant.lube.is-on          <= halui.lube.is-on                 => whb.halui.lube.is-on
 net pendant.lube.off            <= whb.halui.lube.off               => halui.lube.off
