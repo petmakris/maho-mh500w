@@ -1,25 +1,33 @@
-# TODO: once spindle at speed is implemented the M183 will be removed
+# NOTE: once spindle at speed is implemented the M183 can be will be removed
 
 [HALUI]
+# 0
 MDI_COMMAND = M3 S1000 M183 P1000
+# 01
 MDI_COMMAND = M5
+# 02
 MDI_COMMAND = (DEBUG,<2>)
+# 03
 MDI_COMMAND = (DEBUG,<3>)
+# 04
 MDI_COMMAND = (DEBUG,<4>)
-
 # 05
 MDI_COMMAND = G10 L20 P1 X0
 # 06
 MDI_COMMAND = G10 L20 P1 Y0
 # 07
 MDI_COMMAND = G10 L20 P1 Z0
-
-
-
+# 08
 MDI_COMMAND = (DEBUG,<8>)
+# 09
 MDI_COMMAND = (DEBUG,<9)
+# 10
 MDI_COMMAND = (DEBUG,<10>)
+# 11
 MDI_COMMAND = (DEBUG,<11>)
+# 12
 MDI_COMMAND = (DEBUG,<12>)
+# 13
 MDI_COMMAND = (DEBUG,<13>)
+# 14
 MDI_COMMAND = (DEBUG,<14>)
