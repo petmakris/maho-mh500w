@@ -717,6 +717,24 @@
 			(pin passive line
 				(at -8.89 3.81 0)
 				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -8.89 1.27 0)
+				(length 5.08)
 				(name "QB0"
 					(effects
 						(font
@@ -733,7 +751,7 @@
 				)
 			)
 			(pin passive line
-				(at -8.89 1.27 0)
+				(at -8.89 -1.27 0)
 				(length 5.08)
 				(name "/QB0"
 					(effects
@@ -751,43 +769,7 @@
 				)
 			)
 			(pin passive line
-				(at -8.89 -1.27 0)
-				(length 5.08)
-				(name "IDX0"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at -8.89 -3.81 0)
-				(length 5.08)
-				(name "/IDX0"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -8.89 -6.35 0)
 				(length 5.08)
 				(name "5V+"
 					(effects
@@ -805,16 +787,34 @@
 				)
 			)
 			(pin passive line
-				(at -8.89 -8.89 0)
+				(at -8.89 -6.35 0)
 				(length 5.08)
-				(name "GND"
+				(name "IDX0"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "3"
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -8.89 -8.89 0)
+				(length 5.08)
+				(name "/IDX0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -925,6 +925,24 @@
 			(pin passive line
 				(at -8.89 3.81 0)
 				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -8.89 1.27 0)
+				(length 5.08)
 				(name "QB1"
 					(effects
 						(font
@@ -941,7 +959,7 @@
 				)
 			)
 			(pin passive line
-				(at -8.89 1.27 0)
+				(at -8.89 -1.27 0)
 				(length 5.08)
 				(name "/QB1"
 					(effects
@@ -959,43 +977,7 @@
 				)
 			)
 			(pin passive line
-				(at -8.89 -1.27 0)
-				(length 5.08)
-				(name "IDX1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "15"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at -8.89 -3.81 0)
-				(length 5.08)
-				(name "/IDX1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -8.89 -6.35 0)
 				(length 5.08)
 				(name "5V+"
 					(effects
@@ -1013,16 +995,34 @@
 				)
 			)
 			(pin passive line
-				(at -8.89 -8.89 0)
+				(at -8.89 -6.35 0)
 				(length 5.08)
-				(name "GND"
+				(name "IDX1"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "11"
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -8.89 -8.89 0)
+				(length 5.08)
+				(name "/IDX1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1133,6 +1133,24 @@
 			(pin passive line
 				(at -8.89 3.81 0)
 				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -8.89 1.27 0)
+				(length 5.08)
 				(name "QB2"
 					(effects
 						(font
@@ -1149,7 +1167,7 @@
 				)
 			)
 			(pin passive line
-				(at -8.89 1.27 0)
+				(at -8.89 -1.27 0)
 				(length 5.08)
 				(name "/QB2"
 					(effects
@@ -1167,43 +1185,7 @@
 				)
 			)
 			(pin passive line
-				(at -8.89 -1.27 0)
-				(length 5.08)
-				(name "IDX2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "23"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at -8.89 -3.81 0)
-				(length 5.08)
-				(name "/IDX2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "24"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -8.89 -6.35 0)
 				(length 5.08)
 				(name "5V+"
 					(effects
@@ -1221,16 +1203,34 @@
 				)
 			)
 			(pin passive line
-				(at -8.89 -8.89 0)
+				(at -8.89 -6.35 0)
 				(length 5.08)
-				(name "GND"
+				(name "IDX2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "19"
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -8.89 -8.89 0)
+				(length 5.08)
+				(name "/IDX2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1341,6 +1341,24 @@
 			(pin passive line
 				(at -8.89 3.81 0)
 				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -8.89 1.27 0)
+				(length 5.08)
 				(name "QB5"
 					(effects
 						(font
@@ -1357,7 +1375,7 @@
 				)
 			)
 			(pin passive line
-				(at -8.89 1.27 0)
+				(at -8.89 -1.27 0)
 				(length 5.08)
 				(name "/QB5"
 					(effects
@@ -1375,43 +1393,7 @@
 				)
 			)
 			(pin passive line
-				(at -8.89 -1.27 0)
-				(length 5.08)
-				(name "IDX5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "23"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at -8.89 -3.81 0)
-				(length 5.08)
-				(name "/IDX5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "24"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -8.89 -6.35 0)
 				(length 5.08)
 				(name "5V+"
 					(effects
@@ -1429,16 +1411,34 @@
 				)
 			)
 			(pin passive line
-				(at -8.89 -8.89 0)
+				(at -8.89 -6.35 0)
 				(length 5.08)
-				(name "GND"
+				(name "IDX5"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "19"
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -8.89 -8.89 0)
+				(length 5.08)
+				(name "/IDX5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5997,6 +5997,24 @@
 			(pin passive line
 				(at 24.13 10.16 180)
 				(length 5.08)
+				(name "(White/Green)_/0V_UN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 24.13 7.62 180)
+				(length 5.08)
 				(name "(Gray)_Ua2"
 					(effects
 						(font
@@ -6013,7 +6031,7 @@
 				)
 			)
 			(pin passive line
-				(at 24.13 7.62 180)
+				(at 24.13 5.08 180)
 				(length 5.08)
 				(name "(Pink)_/Ua2"
 					(effects
@@ -6031,43 +6049,7 @@
 				)
 			)
 			(pin passive line
-				(at 24.13 5.08 180)
-				(length 5.08)
-				(name "(Red)_Ua0"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at 24.13 2.54 180)
-				(length 5.08)
-				(name "(Black)_/Ua0"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 24.13 0 180)
 				(length 5.08)
 				(name "(Brown/Green)_/5V_UP"
 					(effects
@@ -6085,16 +6067,34 @@
 				)
 			)
 			(pin passive line
-				(at 24.13 -2.54 180)
+				(at 24.13 0 180)
 				(length 5.08)
-				(name "(White/Green)_/0V_UN"
+				(name "(Red)_Ua0"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "10"
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 24.13 -2.54 180)
+				(length 5.08)
+				(name "(Black)_/Ua0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)

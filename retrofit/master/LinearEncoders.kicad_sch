@@ -301,6 +301,24 @@
 				(pin passive line
 					(at 24.13 10.16 180)
 					(length 5.08)
+					(name "(White/Green)_/0V_UN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 7.62 180)
+					(length 5.08)
 					(name "(Gray)_Ua2"
 						(effects
 							(font
@@ -317,7 +335,7 @@
 					)
 				)
 				(pin passive line
-					(at 24.13 7.62 180)
+					(at 24.13 5.08 180)
 					(length 5.08)
 					(name "(Pink)_/Ua2"
 						(effects
@@ -335,43 +353,7 @@
 					)
 				)
 				(pin passive line
-					(at 24.13 5.08 180)
-					(length 5.08)
-					(name "(Red)_Ua0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 24.13 2.54 180)
-					(length 5.08)
-					(name "(Black)_/Ua0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 24.13 0 180)
 					(length 5.08)
 					(name "(Brown/Green)_/5V_UP"
 						(effects
@@ -389,16 +371,34 @@
 					)
 				)
 				(pin passive line
-					(at 24.13 -2.54 180)
+					(at 24.13 0 180)
 					(length 5.08)
-					(name "(White/Green)_/0V_UN"
+					(name "(Red)_Ua0"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "10"
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 -2.54 180)
+					(length 5.08)
+					(name "(Black)_/Ua0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -795,6 +795,24 @@
 				(pin passive line
 					(at 24.13 10.16 180)
 					(length 5.08)
+					(name "(White/Green)_/0V_UN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 7.62 180)
+					(length 5.08)
 					(name "(Gray)_Ua2"
 						(effects
 							(font
@@ -811,7 +829,7 @@
 					)
 				)
 				(pin passive line
-					(at 24.13 7.62 180)
+					(at 24.13 5.08 180)
 					(length 5.08)
 					(name "(Pink)_/Ua2"
 						(effects
@@ -829,43 +847,7 @@
 					)
 				)
 				(pin passive line
-					(at 24.13 5.08 180)
-					(length 5.08)
-					(name "(Red)_Ua0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 24.13 2.54 180)
-					(length 5.08)
-					(name "(Black)_/Ua0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 24.13 0 180)
 					(length 5.08)
 					(name "(Brown/Green)_/5V_UP"
 						(effects
@@ -883,16 +865,34 @@
 					)
 				)
 				(pin passive line
-					(at 24.13 -2.54 180)
+					(at 24.13 0 180)
 					(length 5.08)
-					(name "(White/Green)_/0V_UN"
+					(name "(Red)_Ua0"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "10"
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 -2.54 180)
+					(length 5.08)
+					(name "(Black)_/Ua0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1613,6 +1613,24 @@
 				(pin passive line
 					(at -8.89 3.81 0)
 					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -8.89 1.27 0)
+					(length 5.08)
 					(name "QB0"
 						(effects
 							(font
@@ -1629,7 +1647,7 @@
 					)
 				)
 				(pin passive line
-					(at -8.89 1.27 0)
+					(at -8.89 -1.27 0)
 					(length 5.08)
 					(name "/QB0"
 						(effects
@@ -1647,43 +1665,7 @@
 					)
 				)
 				(pin passive line
-					(at -8.89 -1.27 0)
-					(length 5.08)
-					(name "IDX0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -8.89 -3.81 0)
-					(length 5.08)
-					(name "/IDX0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -8.89 -6.35 0)
 					(length 5.08)
 					(name "5V+"
 						(effects
@@ -1701,16 +1683,34 @@
 					)
 				)
 				(pin passive line
-					(at -8.89 -8.89 0)
+					(at -8.89 -6.35 0)
 					(length 5.08)
-					(name "GND"
+					(name "IDX0"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -8.89 -8.89 0)
+					(length 5.08)
+					(name "/IDX0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1821,6 +1821,24 @@
 				(pin passive line
 					(at -8.89 3.81 0)
 					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -8.89 1.27 0)
+					(length 5.08)
 					(name "QB1"
 						(effects
 							(font
@@ -1837,7 +1855,7 @@
 					)
 				)
 				(pin passive line
-					(at -8.89 1.27 0)
+					(at -8.89 -1.27 0)
 					(length 5.08)
 					(name "/QB1"
 						(effects
@@ -1855,43 +1873,7 @@
 					)
 				)
 				(pin passive line
-					(at -8.89 -1.27 0)
-					(length 5.08)
-					(name "IDX1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -8.89 -3.81 0)
-					(length 5.08)
-					(name "/IDX1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -8.89 -6.35 0)
 					(length 5.08)
 					(name "5V+"
 						(effects
@@ -1909,16 +1891,34 @@
 					)
 				)
 				(pin passive line
-					(at -8.89 -8.89 0)
+					(at -8.89 -6.35 0)
 					(length 5.08)
-					(name "GND"
+					(name "IDX1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "11"
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -8.89 -8.89 0)
+					(length 5.08)
+					(name "/IDX1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2029,6 +2029,24 @@
 				(pin passive line
 					(at -8.89 3.81 0)
 					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -8.89 1.27 0)
+					(length 5.08)
 					(name "QB2"
 						(effects
 							(font
@@ -2045,7 +2063,7 @@
 					)
 				)
 				(pin passive line
-					(at -8.89 1.27 0)
+					(at -8.89 -1.27 0)
 					(length 5.08)
 					(name "/QB2"
 						(effects
@@ -2063,43 +2081,7 @@
 					)
 				)
 				(pin passive line
-					(at -8.89 -1.27 0)
-					(length 5.08)
-					(name "IDX2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -8.89 -3.81 0)
-					(length 5.08)
-					(name "/IDX2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -8.89 -6.35 0)
 					(length 5.08)
 					(name "5V+"
 						(effects
@@ -2117,16 +2099,34 @@
 					)
 				)
 				(pin passive line
-					(at -8.89 -8.89 0)
+					(at -8.89 -6.35 0)
 					(length 5.08)
-					(name "GND"
+					(name "IDX2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "19"
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -8.89 -8.89 0)
+					(length 5.08)
+					(name "/IDX2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2433,6 +2433,24 @@
 				(pin passive line
 					(at 24.13 10.16 180)
 					(length 5.08)
+					(name "(White/Green)_/0V_UN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 7.62 180)
+					(length 5.08)
 					(name "(Gray)_Ua2"
 						(effects
 							(font
@@ -2449,7 +2467,7 @@
 					)
 				)
 				(pin passive line
-					(at 24.13 7.62 180)
+					(at 24.13 5.08 180)
 					(length 5.08)
 					(name "(Pink)_/Ua2"
 						(effects
@@ -2467,43 +2485,7 @@
 					)
 				)
 				(pin passive line
-					(at 24.13 5.08 180)
-					(length 5.08)
-					(name "(Red)_Ua0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 24.13 2.54 180)
-					(length 5.08)
-					(name "(Black)_/Ua0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 24.13 0 180)
 					(length 5.08)
 					(name "(Brown/Green)_/5V_UP"
 						(effects
@@ -2521,16 +2503,34 @@
 					)
 				)
 				(pin passive line
-					(at 24.13 -2.54 180)
+					(at 24.13 0 180)
 					(length 5.08)
-					(name "(White/Green)_/0V_UN"
+					(name "(Red)_Ua0"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "10"
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 24.13 -2.54 180)
+					(length 5.08)
+					(name "(Black)_/Ua0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2892,20 +2892,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "RED"
-		(exclude_from_sim no)
-		(at 172.72 133.35 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0402b30c-c0b3-4812-85d1-56a59eef6ad9")
-	)
 	(text "WHITE"
 		(exclude_from_sim no)
-		(at 203.2 46.99 0)
+		(at 172.212 46.736 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2914,20 +2903,9 @@
 		)
 		(uuid "059378fc-bfa7-4f2c-8789-71b3ea27641d")
 	)
-	(text "RED"
-		(exclude_from_sim no)
-		(at 172.72 88.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0d634b54-49de-44d8-affa-0f8cd81a948c")
-	)
 	(text "BROWN"
 		(exclude_from_sim no)
-		(at 203.2 52.07 0)
+		(at 172.212 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2936,16 +2914,16 @@
 		)
 		(uuid "0d71355d-12c8-4518-9b7e-7d477209319e")
 	)
-	(text "PINK"
+	(text "BLACK"
 		(exclude_from_sim no)
-		(at 172.72 86.36 0)
+		(at 172.466 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "12c1e8ed-c1da-4f7c-bb63-9819db55f649")
+		(uuid "1a5f7a31-e643-406a-8c02-76c314fa7a30")
 	)
 	(text "PINK/GRAY"
 		(exclude_from_sim no)
@@ -2970,42 +2948,9 @@
 		)
 		(uuid "2d49e7bb-c8a6-4fd0-9a03-f5a8fa0b9930")
 	)
-	(text "PINK"
-		(exclude_from_sim no)
-		(at 172.72 41.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "360a9c0b-f77c-4b69-a6b8-4e8c4b820931")
-	)
 	(text "BLUE"
 		(exclude_from_sim no)
-		(at 172.72 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3e41d2ae-34f0-45cf-9a4c-921881ecc14e")
-	)
-	(text "WHITE"
-		(exclude_from_sim no)
-		(at 172.72 52.07 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3f1e5dfe-17e9-4236-b72f-43040ba09cb3")
-	)
-	(text "BLUE"
-		(exclude_from_sim no)
-		(at 203.2 39.37 0)
+		(at 172.212 39.116 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3028,7 +2973,7 @@
 	)
 	(text "RED"
 		(exclude_from_sim no)
-		(at 203.2 36.83 0)
+		(at 172.212 36.576 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3037,18 +2982,7 @@
 		)
 		(uuid "55fb301d-911e-4623-9f63-63a734f7bd98")
 	)
-	(text "GREEN"
-		(exclude_from_sim no)
-		(at 172.72 36.83 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "59c7b9d7-903a-412f-a495-eedb6606c322")
-	)
-	(text "GRAY"
+	(text "BLUE"
 		(exclude_from_sim no)
 		(at 172.72 128.27 0)
 		(effects
@@ -3057,31 +2991,20 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "6c47905c-893d-4705-b236-d9b9ed0d6b18")
+		(uuid "5663e610-1258-48ac-8431-077884aec910")
 	)
-	(text "GRAY"
+	(text "PINK"
 		(exclude_from_sim no)
-		(at 172.72 39.37 0)
+		(at 172.72 130.81 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "6c6faaac-8743-442a-be71-3be2f06b3787")
+		(uuid "617631f9-4273-4593-8aa2-038c5bcc899f")
 	)
-	(text "GREEN"
-		(exclude_from_sim no)
-		(at 172.72 125.73 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "749d8542-9c0c-4d0a-9e10-29880142b471")
-	)
-	(text "BROWN"
+	(text "BLACK"
 		(exclude_from_sim no)
 		(at 172.72 123.19 0)
 		(effects
@@ -3090,18 +3013,18 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "7a8280f8-6a72-43a9-b6ac-48ae7790ca1f")
+		(uuid "724f2716-abbd-4968-878b-8a3d66a2e86d")
 	)
-	(text "BROWN"
+	(text "PINK"
 		(exclude_from_sim no)
-		(at 172.72 78.74 0)
+		(at 172.466 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "7c27f047-f9c5-4755-970b-97fd7fbceaf1")
+		(uuid "76a26610-15b8-4b75-b8a5-b1380658743e")
 	)
 	(text "RED/BLUE"
 		(exclude_from_sim no)
@@ -3117,18 +3040,7 @@
 	)
 	(text "PINK"
 		(exclude_from_sim no)
-		(at 172.72 130.81 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8293595b-766e-4d5f-ba5d-44dc64fbd5fa")
-	)
-	(text "PINK"
-		(exclude_from_sim no)
-		(at 203.2 41.91 0)
+		(at 172.212 41.656 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3136,28 +3048,6 @@
 			(justify left bottom)
 		)
 		(uuid "8c66cb61-016d-469e-b1e8-3e469bc21ebc")
-	)
-	(text "GREEN"
-		(exclude_from_sim no)
-		(at 172.72 81.28 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8d978876-9a40-4bed-8331-e0a1148ec44a")
-	)
-	(text "WHITE"
-		(exclude_from_sim no)
-		(at 172.72 96.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8df82f43-fe4a-4a7e-92fa-d019170a76f7")
 	)
 	(text "PURPLE"
 		(exclude_from_sim no)
@@ -3170,7 +3060,7 @@
 		)
 		(uuid "99329c9e-3d20-483b-8767-26053f883cc2")
 	)
-	(text "BLACK"
+	(text "WHITE"
 		(exclude_from_sim no)
 		(at 172.72 135.89 0)
 		(effects
@@ -3179,11 +3069,11 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "99c4bc69-431a-4dc2-b1e4-b30b29b9f3ca")
+		(uuid "a0032d75-99bc-4cd1-b3b1-52670879816a")
 	)
 	(text "GRAY"
 		(exclude_from_sim no)
-		(at 203.2 44.45 0)
+		(at 172.212 44.196 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3216,49 +3106,38 @@
 		)
 		(uuid "a947dc66-53cf-4c8e-b5ff-414b15cd411b")
 	)
-	(text "BLACK"
+	(text "GREEN"
 		(exclude_from_sim no)
-		(at 172.72 91.44 0)
+		(at 172.466 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "adc3bd5e-bfbd-4514-a3da-9fe90ac89275")
+		(uuid "b63be127-0e39-4b2f-bcd0-4c29c2b21267")
+	)
+	(text "GRAY"
+		(exclude_from_sim no)
+		(at 172.72 133.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c060326f-45c6-4c3c-a1f3-0c3ed9d9b969")
 	)
 	(text "BROWN"
 		(exclude_from_sim no)
-		(at 172.72 34.29 0)
+		(at 172.466 96.774 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "b7c0ac1b-dd07-48f1-b3cb-bf3d28d15a3a")
-	)
-	(text "BLUE"
-		(exclude_from_sim no)
-		(at 172.72 138.43 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b7fbc9d3-8b05-4455-a65e-428918dbcc52")
-	)
-	(text "BLUE"
-		(exclude_from_sim no)
-		(at 172.72 49.53 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b92a6647-28df-46d7-a0d0-a009fed79dca")
+		(uuid "c0f17e27-5c72-4811-bb9e-2d4f453f6a1a")
 	)
 	(text "PURPLE"
 		(exclude_from_sim no)
@@ -3271,17 +3150,6 @@
 		)
 		(uuid "c1de09a9-97b5-4e30-9e60-f0d07d3e5ade")
 	)
-	(text "WHITE"
-		(exclude_from_sim no)
-		(at 172.72 140.97 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c337987e-2554-40d4-804c-afe0c7dc9eb5")
-	)
 	(text "YELLOW"
 		(exclude_from_sim no)
 		(at 190.5 57.15 0)
@@ -3293,6 +3161,17 @@
 			(justify left bottom)
 		)
 		(uuid "c423d7f5-44f5-4b99-a359-4b838ca93b3e")
+	)
+	(text "GREEN"
+		(exclude_from_sim no)
+		(at 172.72 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c4bbe492-5778-4645-ba76-bdc106371562")
 	)
 	(text "PINK/GRAY"
 		(exclude_from_sim no)
@@ -3318,31 +3197,31 @@
 		)
 		(uuid "c851527d-b25f-4557-84b7-4cb3da438f00")
 	)
-	(text "BLACK"
+	(text "BLUE"
 		(exclude_from_sim no)
-		(at 172.72 46.99 0)
+		(at 172.466 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "e24176a1-7b15-4ee8-a435-5ce0614c1dbf")
+		(uuid "d006b355-1510-4ba2-837d-fd093f989263")
 	)
-	(text "GRAY"
+	(text "BROWN"
 		(exclude_from_sim no)
-		(at 172.72 83.82 0)
+		(at 172.72 141.224 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "e5dc147d-66f6-4bb1-8c70-a9dba5f8b384")
+		(uuid "db231000-6487-485f-9ac6-57c32141dbe0")
 	)
 	(text "BLACK"
 		(exclude_from_sim no)
-		(at 203.2 34.29 0)
+		(at 172.212 34.036 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3353,7 +3232,7 @@
 	)
 	(text "GREEN"
 		(exclude_from_sim no)
-		(at 203.2 49.53 0)
+		(at 172.212 49.276 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3364,14 +3243,36 @@
 	)
 	(text "RED"
 		(exclude_from_sim no)
-		(at 172.72 44.45 0)
+		(at 172.466 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "f8907bae-ed7b-4b6d-a190-555474784584")
+		(uuid "e8575d20-07b7-4eff-81ad-384f2fe15e31")
+	)
+	(text "WHITE"
+		(exclude_from_sim no)
+		(at 172.466 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "edff7628-fed1-4cdf-ad96-b919608fc1eb")
+	)
+	(text "GRAY"
+		(exclude_from_sim no)
+		(at 172.466 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f8517e5b-c09b-4a23-8431-06fba5ac6c4e")
 	)
 	(text "PINK/GRAY"
 		(exclude_from_sim no)
@@ -3384,6 +3285,17 @@
 			(justify left bottom)
 		)
 		(uuid "fb749767-2b38-476a-a8ab-f19d64c7a962")
+	)
+	(text "RED"
+		(exclude_from_sim no)
+		(at 172.72 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ff48edd4-cf1b-45ce-9817-a014c2572611")
 	)
 	(no_connect
 		(at 167.64 57.15)
@@ -3942,6 +3854,147 @@
 			(type default)
 		)
 		(uuid "fa308706-d104-4a09-b66a-328634687246")
+	)
+	(image
+		(at 210.82 43.18)
+		(scale 0.247454)
+		(uuid "4dbac915-2ebf-499f-a2ee-8dd7d6940756")
+		(data "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"
+			"QrHhX+AgwgRohvW9IdUYqdIlcDqRvpZFNQnh3mcloqAH/w5/HKOlqmdkvpdFFZpo3TzO5nJx4876"
+			"wDSo71/6jXSMVPve16XUBic19g3xokPDp2G8VFbGtTfjc/Ez0+pTpLqfeu004MeUyp7Zc3upkmFS"
+			"+fdsT8NIqcx/9kwWxZ11dbmXTXEeLKkC+VML4A7dNaSKtIc2Hrq5IHuzgcOk2vc7/FGMkyp5hUgV"
+			"74J8ae5fvHM6RqrEPVV7/13mqG/kd69Ygf35sFTDfoc/jlFSpf8zlNeZJqH7qZIxUpnnTm5bCFT8"
+			"CBUr2NPTpV57CkZJle526akmSW9pks3xUsWeU0WnzxM1q/zvMWKGfuenYZxUrThzWRZ2GRVzTxU6"
+			"CJAzlSTBC+ERUvXK4cSqKIYmJgI92MtZUVEet2s5d6fT2xvOb2W9zbtAF9g04nj3U9ZrEam8c+/O"
+			"BPemyc1wMLFmzxsGptb+9YeKT81oqSoeNrJeOavUV2vZBCvnQbZ4S5NsjpHqlcyXPzir1IdUV6zx"
+			"h4GRVepusbknRkcqAGhBKgBlkApAGaQCUAapAJRBKgBlkApAGaQCUAapAJT5L1tNh60DmxpeAAAA"
+			"AElFTkSuQmCCAG0AKABGAG8AbABkAGUAcgBMAGEAeQBvAHUAdABDAG8AbgB0AGEAaQBuAGUAcgBG"
+			"AG8AcgBjAGUAKQAiACAAbABhAHkAbwB1AHQAcABvAHMAPQAiAEMAbABpAGUAbgB0ACIAIABsAGEA"
+			"eQBvAHUAdAA9ACIAYgBvAHIAZABlAHIAbABhAHkAbwB1AHQAKAApACIAIABzAGgAZQBlAHQAPQAi"
+			"AGMAbwBtAG0AbwBuAGkAdABlAG0AZABpAGEAbABvAGcAbABhAHkAbwB1AHQAcwB0AHkAbABlACIA"
+			"PgANAAoAPABFAGwAZQBtAGUAbgB0ACAAbABhAHkAbwB1AHQAcABvAHMAPQAiAEMAbABpAGUAbgB0"
+			"ACIAIABsAGEAeQBvAHUAdAA9ACIAYgBvAHIAZABlAHIAbABhAHkAbwB1AHQAKAApACIAPgANAAoA"
+			"PABJAG4AZgBvAEIAYQByAEgAbwBzAHQATQBvAGQAdQBsAGUAIABNAG8AZAB1AGwAZQBJAEQAPQAi"
+			"AEkAbgBmAG8AQgBhAHIASABvAHMAdABNAG8AZAB1AGwAZQAiACAAcwBoAGUAZQB0AD0AIgBpAG4A"
+			"ZgBvAGIAYQByAHMAdAB5AGwAZQAiACAAbABhAHkAbwB1AHQAcABvAHMAPQAiAHQAbwBwACIAIABs"
+			"AGEAeQBvAHUAdAA9ACIAZgBpAGwAbABsAGEAeQBvAHUAdAAoACkAIgAgAGEAbgBpAG0AYQB0AGkA"
+			"bwBuAD0AIgByAGUAYwB0AGEAbgBnAGwAZQB2AHwAcwB8AGYAYQBzAHQAIgAvAD4ADQAKADwAUABy"
+			"AG8AcABlAHIAVAByAGUAZQBNAG8AZAB1AGwAZQAgAGkAZAA9ACIAYQB0AG8AbQAoAFAAcgBvAHAA"
+			"ZQByAFQAcgBlAGUAKQAiACAATQBvAGQAdQBsAGUASQBEAD0AIgBQAHIAbwBwAGUAcgBUAHIAZQBl"
+			"AE0AbwBkAHUAbABlACIAIABzAGgAZQBlAHQAPQAiAGQAbwBjAHUAbQBlAG4AdABzAGwAYQB5AG8A"
+			"dQB0AHMAdAB5AGwAZQAiACAAbABhAHkAbwB1AHQAcABvAHMAPQAiAEwAZQBmAHQAIgAgAGEAbgBp"
+			"AG0AYQB0AGkAbwBuAD0AIgByAGUAYwB0AGEAbgBnAGwAZQB2AHwAcwB8AGYAYQBzAHQAIgAvAD4A"
+			"DQAKADwAVABlAG0AcABsAGEAdABlAEIAYQBjAGsAZwByAG8AdQBuAGQAIABpAGQAPQAiAGEAdABv"
+			"AG0AKABSAGUAYQBkAGkAbgBnAFAAYQBuAGUAKQAiACAAbABhAHkAbwB1AHQAPQAiAGYAaQBsAGwA"
+			"bABhAHkAbwAAAAAAAAAAAAAAAAAPAAAAAAAAAAB22Bh2AQAAAAAAAAAAAAAAAAAAAAAAAA8AAAAA"
+			"AAAAAGVyZGFuYQAAAAAAAAAAAAAAAAAAAAAADwAAAAAAAAAAaW5lciBIYW5kIElUQwAAAAAAAAAA"
+			"AAAPAAAAAAAAAABpdmFsZGkAAAAAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAGxhZGltaXIgU2NyaXB0"
+			"AAAAAAAAAAAADwAAAAAAAAAAZWJkaW5ncwAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAABpZGUgTGF0"
+			"aW4AAAAAAAAAAAAAAAAAAA8AAAAAAAAAAGluZ2RpbmdzAAAAAAAAAAAAAAAAAAAADwAAAAAAAAAA"
+			"aW5nZGluZ3MgMgAAAAAAAAAAAAAAAAAPAAAAAAAAAABpbmdkaW5ncyAzAAAAAAAAAAAAAAAAAA8A"
+			"AAAAAAAAAHUgR290aGljAAAAAAAAAAAAAAAAAAAADwAAAAAAAAAAdSBHb3RoaWMgTGlnaHQAAAAA"
+			"AAAAAAAPAAAAAAAAAAB52Bh2AQAAAAAAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAHUgR290aGljIFVJ"
+			"AAAAAAAAAAAAAAAADwAAAAAAAAAAe9gYdgEAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAABz2Bh2"
+			"AQAAAAAAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAHLYGHYBAAAAAAAAAAAAAAAAAAAAAAAADwAAAAAA"
+			"AAAAAAAAfwAAAAAAAAAAAAAAAAAAAH8AAAAAAAAAAAAAAAAAAAB/AOQAAAAAAAAAAAAAAAAAfwAA"
+			"AAAAAAAAAAAAAAAAAH8AAAAAAAAAAAAAAAAAAAAABwDkGAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAABoBUAACAQ8AAAAAAAEAAAAAAAAAfwAAAAAAAAAAAAAAAAAAAAEB5AAA"
+			"AAAAAwAAAAAAAAB/AAAAAAAAAAAAAAAAAAAAfwAAAAAAAAAAAAAAAAAAAH8A5AAAAAAAAAAAAAAA"
+			"AAB/AAAAAAAAAAAAAAAAAAAAfwAAAAAAAAAAAAAAAAAAAH8A5AAAAAAAAAAAAAAAAAB/AAAAAAAA"
+			"AAAAAAAAAAAAfwAAAAAAAAAAAAAAAAAAAAAHAOQZAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAGgFQAAABAwAAAAAAAAAAAAAAAAB/AAAAAAAAAAAAAAAAAAAAAAHkAAAAAAAB"
+			"AAAAAAAAAH8AAAAAAAAAAAAAAAAAAAB/AAAAAAAAAAAAAAAAAAAAfwDkAAAAAAAAAAAAAAAAAH8A"
+			"AAAAAAAAAA=="
+		)
 	)
 	(symbol
 		(lib_id "MAHO:7i97-ENC2")
